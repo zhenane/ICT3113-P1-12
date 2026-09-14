@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Service runtime data (dev only — testing/ holds the logs kept for reported runs)
+service/data/
+service/logs/
+service/.env
+
+# OS
+.DS_Store
+Thumbs.db
