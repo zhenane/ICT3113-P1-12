@@ -1,5 +1,6 @@
 import pandas as pd
 from pathlib import Path
+from sklearn.metrics import cohen_kappa_score
 
 ANNOTATORS = ["sakilan", "ernest"]
 
@@ -16,6 +17,18 @@ def main():
 
 	assert saki_indexed.index.equals(ernest_indexed.index), \
     "The two files do not contain the same row indices."
+
+	labels_saki = saki_indexed['human_label']
+	labels_ernest = ernest_indexed['human_label']
+
+	# Raw agreement
+	agreement = (labels_saki == labels_ernest).mean()
+
+	# Cohen's kappa
+	kappa = cohen_kappa_score(labels_saki, labels_ernest)
+
+	print(f"Raw agreement: {agreement:.4f} ({agreement * 100:.2f}%)")
+	print(f"Cohen's kappa: {kappa:.4f}")
 
 	cond_diff = saki_indexed['human_label'] != ernest_indexed['human_label']
 	cond_particular = (saki_indexed['human_label'] == 'TBD') | (ernest_indexed['human_label'] == 'TBD') | (saki_indexed['human_label'] == 'TBC') | (ernest_indexed['human_label'] == 'TBC')
