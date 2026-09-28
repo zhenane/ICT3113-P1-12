@@ -11,18 +11,6 @@ Sources:
 - CFPB data publication notes: https://www.consumerfinance.gov/complaint/data-use/
 - CFPB search API overview: https://cfpb.github.io/ccdb5-api/
 
-## Files
-
-Place these files together in the repo:
-
-```text
-complaints.csv
-workload_model.py
-README.md
-```
-
-`complaints.csv` is the local CFPB complaints dataset. `workload_model.py` reads the CSV in chunks so the full multi-GB dataset does not need to fit into memory.
-
 ## Setup
 
 From the repo folder:
