@@ -8,7 +8,8 @@ VALID_LABELS = {
     "Credit card",
     "Bank account or service",
     "Consumer loan",
-    "Money transfer or service"
+    "Money transfer or service",
+    "Out-of-scope"
 }
 
 def main():
@@ -92,7 +93,7 @@ def main():
 
     # Keep relevant columns
     golden = golden[
-        ["row", "source_label", "ticket", "human_label"]
+        ["row", "source_label", "narrative", "human_label"]
     ]
 
     golden.to_csv(output_file, index=False)

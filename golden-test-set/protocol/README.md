@@ -73,7 +73,7 @@ Contents:
 
 
 
-# Version 2 (270926):
+# Version 2 (280926):
 ## Categories:
 1. Credit Reporting
   - Definition: Issues involving collection, maintenance, investigation, correction, or sharing of credit-report information
@@ -116,6 +116,13 @@ Contents:
  ## Special case: Identity theft/fraud
  - Fraud and identity theft are not separate categories. When fraud or identity theft is mentioned, classify the complaint according to the financial product or service that is the primary subject of the complaint. If the primary issue is fraudulent or inaccurate information appearing on a credit report, use Credit Reporting.
 
+ **## Special case: Out-of-scope tickets**
+ - The seven categories define the scope of the classification task. Do not force a ticket into one of the seven categories if its primary issue clearly concerns a financial product or service that is not represented by any of the seven categories.
+ - If a ticket clearly concerns an out-of-scope product or service, mark it as `TBD` during independent labelling and discuss it during adjudication. If both annotators agree that it is outside the seven-category taxonomy, or discussion establishes that no existing category accurately represents the complaint, assign the final adjudicated label `Out-of-scope`.
+ - Out-of-scope tickets should be retained in the golden-set record and documented in the revision log, but should not be treated as an additional classification category for the seven-category model.
+ - Do not use `Out-of-scope` merely because a ticket is difficult to classify. If the ticket clearly belongs to one of the seven categories but the appropriate category is ambiguous, it remains a `TBD` case and must be resolved through discussion.
+ - Example: "My insurance company approved a claim for repairs but has refused to release the insurance funds." The primary issue concerns an insurance claim rather than a mortgage, bank account, loan, credit card, credit reporting, debt collection, or money-transfer service. This should be treated as `Out-of-scope` rather than being forced into Mortgage merely because the claim concerns a residential property.
+
  ## Step by step workflow
  1. Read full complaint
  2. Extract the primary issue the consumer wants resolved. Ignore polite or impolite filler, emotional language, and incidental consequences. Identify what the consumer is actually asking the company or service to fix.
@@ -135,5 +142,9 @@ Contents:
     → Debt Collection
   5. Distinguish the underlying financial product from the primary complaint. The financial product involved does not automatically determine the category. For example, a credit-card debt can be Debt Collection, a credit-card account can be Credit Reporting when reporting is the primary issue, and a bank account can be involved in a Money Transfer or Service complaint.
   6. Fraud and identity theft are not separate categories. Classify according to the financial product or service that is the primary subject of the complaint. If the primary issue is fraudulent or inaccurate information appearing on a credit report, use Credit Reporting.
-  7. If unable to categorise, label as TBD case for discussion before revision
-  8. Do not modify the protocol while labeling, proposed changes should be discussed before revision and recorded in revision logs.
+  7. If the appropriate category is unclear but the ticket appears to fall within the seven-category taxonomy, label it as `TBD` for discussion and adjudication. If the ticket clearly concerns a product or service outside the seven-category taxonomy, also initially label it `TBD`, but during adjudication determine whether it should receive the final label `Out-of-scope`. Do not force an out-of-scope ticket into an existing category.
+  8. During disagreement resolution, distinguish between an ambiguous in-scope ticket and an out-of-scope ticket.
+    - Ambiguous in-scope ticket: the ticket belongs to one of the seven categories, but the annotators disagree about which category best represents the primary issue. Resolve the disagreement using the existing protocol and update the protocol if the disagreement reveals a missing rule.
+    - Out-of-scope ticket: the ticket's primary issue clearly concerns a product or service that none of the seven categories represents. Assign `Out-of-scope` as the final adjudicated label and document the reason in the revision log.
+    - Do not create a new category solely because an isolated ticket is out of scope. The seven-category taxonomy remains unchanged unless the project requirements are formally changed.
+  9. Do not modify the protocol while labeling, proposed changes should be discussed before revision and recorded in revision logs.
