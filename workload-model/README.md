@@ -24,7 +24,7 @@ pip install pandas numpy
 Run the workload script:
 
 ```powershell
-python .\workload_model.py
+python .\analyze_complaints_workload.py
 ```
 
 The script scans the full CSV and prints the August 2026 workload summary. On a normal laptop this can take about a minute because the CSV is several gigabytes.
@@ -212,8 +212,8 @@ Clearly label the source of each figure:
 ## Recreating The Model
 
 1. Download or place the CFPB `complaints.csv` file in the repo root.
-2. Confirm `workload_model.py` is in the same folder as `complaints.csv`.
+2. Confirm `analyze_complaints_workload.py` is in the same folder as `complaints.csv`.
 3. Install dependencies with `pip install pandas numpy`.
-4. Run `python .\workload_model.py`.
+4. Run `python .\analyze_complaints_workload.py`.
 5. Copy the printed figures into this README and into `../requirements/`.
 6. Mark every value as either measured from CFPB data or estimated from assumptions.
