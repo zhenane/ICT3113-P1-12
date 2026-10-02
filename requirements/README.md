@@ -15,6 +15,42 @@ Contents:
   - at least one throughput requirement
   - a classification accuracy requirement (overall and per category)
 
+## Candidate Models
+
+Four candidate models were selected from the Ollama library:
+
+| Model | Parameter Size | Ollama Tag | Ollama Digest (SHA-256) | Local Size |
+|---|---:|---|---|---:|
+| Llama 3.2 | 1B | `llama3.2:1b` | `sha256:baf6a787fdffd633537aa2eb51cfd54cb93ff08e28040095462bb63daf552878` | 1.3 GB |
+| Qwen 3 | 1.7B | `qwen3:1.7b` | `sha256:8f68893c685c3ddff2aa3fffce2aa60a30bb2da65ca488b61fff134a4d1730e7` | 1.4 GB |
+| Llama 3.2 | 3B | `llama3.2:3b` | `sha256:a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72` | 2.0 GB |
+| Qwen 3 | 4B | `qwen3:4b` | `sha256:359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7` | 2.5 GB |
+
+The full digests were recorded from the Ollama tags API for these installed
+tags. Use the same tag and digest when running each candidate benchmark.
+
+### Candidate Set Justification
+
+The candidate set was selected to expose the trade-off between model
+size, classification accuracy, inference latency, and throughput under
+the project's CPU-only deployment constraint.
+
+The models range from 1B to 4B parameters and include two model
+families, Llama 3.2 and Qwen 3. The smaller 1B and 1.7B models provide
+lightweight candidates expected to require less CPU inference time,
+while the 3B and 4B models allow the team to evaluate whether increased
+model capacity improves classification accuracy sufficiently to justify
+the additional computational cost.
+
+Using two sizes from each model family also enables useful comparisons:
+
+- Llama 3.2: 1B vs 3B
+- Qwen 3: 1.7B vs 4B
+
+This makes it possible to investigate both the effect of model size and
+differences between model families instead of assuming that parameter
+count alone determines classification performance.
+
 ## Requirements
 
 These requirements are based on the Step 3 workload model in
