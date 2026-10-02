@@ -7,6 +7,31 @@ services:
       - ollama_data:/root/.ollama
     # CPU only, intentionally: no GPU passthrough, per the client's hardware constraint.
 
+  ollama-setup:
+    image: ollama/ollama:latest
+    environment:
+      OLLAMA_HOST: http://ollama:11434
+    volumes:
+      - ollama_data:/root/.ollama
+    depends_on:
+      - ollama
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - |
+        echo "Waiting for Ollama..."
+        until ollama list >/dev/null 2>&1; do
+          sleep 2
+        done
+
+        echo "Pulling candidate models..."
+        ollama pull llama3.2:1b
+        ollama pull qwen3:1.7b
+        ollama pull llama3.2:3b
+        ollama pull qwen3:4b
+
+        echo "Candidate models ready:"
+        ollama list
+
   triage-service:
     build: .
     ports:
