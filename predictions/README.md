@@ -29,9 +29,10 @@ conditions stated below.
   at a time, one selected model already loaded, no competing test traffic.
   The table predicts the median over successful, valid golden-set requests.
   Cold starts and failed requests are excluded from this latency statistic.
-- Input basis: team rows 12000–12999. Narrative lengths have median 825.50,
-  p95 1788.70, and p99 1945.08 characters using linear interpolation. These
-  character counts are not token counts. The final golden subset may have a
+- Input basis: team rows 12000–12999. Narrative lengths have median 147,
+  p95 320, and p99 353 words. Words are counted by whitespace separation;
+  percentiles use linear interpolation and are rounded to whole words.
+  Word counts are not model-token counts. The final golden subset may have a
   different length distribution.
 - Accuracy: correct predictions divided by all tickets in the frozen golden set.
   Failed requests and invalid outputs count as incorrect. Predictions assume

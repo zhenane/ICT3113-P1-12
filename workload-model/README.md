@@ -137,21 +137,21 @@ The search rate is an estimate. Replace `S` with production analytics if actual 
 
 Two ticket-length distributions are recorded.
 
-The primary distribution measures the `narrative` field in `ict3113_tickets.csv`, selected by `row` values `12000` to `12999` inclusive (all 1,000 team tickets). Length means characters, including spaces and punctuation, without trimming or normalising the text; it is not a word or token count. Percentiles use linear interpolation at position `(N - 1) * percentile` in the sorted lengths, matching NumPy's default quantile method. Values below are shown to two decimal places.
+The primary distribution measures the `narrative` field in `ict3113_tickets.csv`, selected by `row` values `12000` to `12999` inclusive (all 1,000 team tickets). Length means whitespace-separated words, counted with `len(narrative.split())`; it is not a character or model-token count. Percentiles use linear interpolation at position `(N - 1) * percentile` in the sorted lengths, matching NumPy's default quantile method. Values below are rounded to whole words. Before rounding, the mean is 162.167, p95 is 320.10, and p99 is 353.03 words.
 
 This describes the team's full traffic pool and does not change when the golden subset changes. Any golden-set-specific length distribution should be reported separately.
 
 ```text
-Metric         Ticket length
-min                   200.00
-25th perc             532.00
-median (p50)          825.50
-mean                  907.98
-75th perc            1244.25
-p90                  1609.60
-p95                  1788.70
-p99                  1945.08
-max                  1998.00
+Metric         Ticket length (words)
+min                       29
+25th perc                 97
+median (p50)             147
+mean                     162
+75th perc                221
+p90                      288
+p95                      320
+p99                      353
+max                      384
 ```
 
 Reproduce this distribution from the repository root (no third-party dependencies required):
@@ -202,11 +202,11 @@ average_search_requests_per_day = 6462.77 * S
 peak_search_requests_per_day = 9403.33 * S
 ticket_length_source_primary = ict3113_tickets.csv rows 12000-12999
 ticket_length_field = narrative
-ticket_length_unit = characters including whitespace
-ticket_length_percentile_method = linear interpolation
-ticket_length_p50_chars = 825.50
-ticket_length_p95_chars = 1788.70
-ticket_length_p99_chars = 1945.08
+ticket_length_unit = whitespace-separated words
+ticket_length_percentile_method = linear interpolation, rounded to whole words
+ticket_length_p50_words = 147
+ticket_length_p95_words = 320
+ticket_length_p99_words = 353
 complaints_csv_ticket_length_p50_chars = 141
 complaints_csv_ticket_length_p95_chars = 188
 complaints_csv_ticket_length_p99_chars = 188
@@ -218,7 +218,8 @@ Clearly label the source of each figure:
 - Peak multiplier: measured from the top 3 companies in local CFPB complaint CSV.
 - `POST /tickets` rate: calculated from modeled monthly complaint volume.
 - `GET /search` rate: estimated from ticket rate multiplied by assumed searches per ticket.
-- Ticket length distribution: measured from either `ict3113_tickets.csv` rows `12000` to `12999`, or from structured fields in `complaints.csv`.
+- Primary narrative length: measured in words from `ict3113_tickets.csv` rows `12000` to `12999`.
+- Secondary structured-field proxy: measured in characters from `complaints.csv`; this has a different unit and does not represent full narratives.
 
 ## Recreating The Model
 

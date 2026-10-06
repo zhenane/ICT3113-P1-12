@@ -13,7 +13,7 @@ def main():
     start = args.team * 1000
     with open(args.csv_path, encoding="utf-8-sig", newline="") as source:
         lengths = sorted(
-            len(row["narrative"])
+            len(row["narrative"].split())
             for row in csv.DictReader(source)
             if start <= int(row["row"]) < start + 1000
         )
@@ -28,7 +28,7 @@ def main():
         return lengths[lower] + (lengths[upper] - lengths[lower]) * (position - lower)
 
     print(f"Rows {start}-{start + 999}: {len(lengths)} narratives")
-    print("Characters including whitespace; linear-interpolated percentiles")
+    print("Whitespace-separated words; linear-interpolated percentiles rounded to whole words")
     metrics = {
         "min": min(lengths),
         "25th perc": percentile(0.25),
@@ -41,7 +41,7 @@ def main():
         "max": max(lengths),
     }
     for name, value in metrics.items():
-        print(f"{name:<16} {value:.2f}")
+        print(f"{name:<16} {round(value)}")
 
 
 if __name__ == "__main__":
