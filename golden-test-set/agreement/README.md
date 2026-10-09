@@ -8,3 +8,6 @@ Also record every disagreement and how it was resolved by discussion
 (this doubles as input to the protocol revision log). A golden set with
 implausibly perfect agreement and no recorded resolutions will be examined
 closely — so keep this honest and complete.
+
+Raw Agreement statistics: 90.82%
+Cohen's Kappa: 89.33%

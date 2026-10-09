@@ -11,7 +11,7 @@ Contents:
 - A revision log — record every change made after a disagreement revealed a
   gap in the protocol, with the date/commit and reason.
 
-# Version 1:
+# Version 1 (180926):
 ## Categories:
 1. Credit Reporting
   - Definition: Issues involving collection, maintenance, investigation, correction, or sharing of credit-report information
