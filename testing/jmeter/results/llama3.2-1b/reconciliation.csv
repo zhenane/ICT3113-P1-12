@@ -1,0 +1,2 @@
+model,rate_per_min,rep,jtl,jmeter_samples,log_entries_in_window,jmeter_codes,log_codes,jmeter_timeouts,ids_matched,ids_missing_in_log,log_200_not_success_in_jmeter,log_models,overhead_p50_ms,clock_offset_s,verdict
+llama3.2:1b,2,1,llama3.2-1b_r2_rep1.jtl,2,2,200 x2,200 x2,0,2,0,0,llama3.2:1b x2,156.4,-0.85,RECONCILED

@@ -1,0 +1,197 @@
+row,human_label,predicted,correct,http_status,client_latency_ms,server_latency_ms,ticket_id,timestamp
+12630,Bank account or service,Debt collection,False,200,17822.7,17788.22,2878,2026-10-08T22:17:16
+12658,Bank account or service,Bank account or service,True,200,14333.5,14284.88,2879,2026-10-08T22:17:30
+12876,Bank account or service,Bank account or service,True,200,13756.9,13717.73,2880,2026-10-08T22:17:44
+12363,Bank account or service,Bank account or service,True,200,10377.3,10340.22,2881,2026-10-08T22:17:54
+12579,Bank account or service,Credit reporting,False,200,21426.6,21372.7,2882,2026-10-08T22:18:16
+12190,Bank account or service,Debt collection,False,200,31698.3,31664.0,2883,2026-10-08T22:18:48
+12604,Bank account or service,Bank account or service,True,200,14557.2,14494.8,2884,2026-10-08T22:19:02
+12344,Bank account or service,Bank account or service,True,200,18026.0,17985.97,2885,2026-10-08T22:19:20
+12597,Bank account or service,Bank account or service,True,200,14678.4,14620.42,2886,2026-10-08T22:19:35
+12877,Bank account or service,Bank account or service,True,200,38131.4,38056.7,2887,2026-10-08T22:20:13
+12138,Bank account or service,Bank account or service,True,200,23245.0,23173.39,2888,2026-10-08T22:20:36
+12538,Bank account or service,Bank account or service,True,200,15165.0,15116.29,2889,2026-10-08T22:20:51
+12115,Bank account or service,Bank account or service,True,200,32397.8,32351.49,2890,2026-10-08T22:21:24
+12424,Bank account or service,Credit card,False,200,16771.3,16715.07,2891,2026-10-08T22:21:41
+12168,Money transfer or service,Money transfer or service,True,200,15545.5,15510.06,2892,2026-10-08T22:21:56
+12191,Bank account or service,Bank account or service,True,200,14176.4,14095.63,2893,2026-10-08T22:22:10
+12797,Debt collection,Debt collection,True,200,9377.0,9324.27,2894,2026-10-08T22:22:20
+12915,Bank account or service,Bank account or service,True,200,14004.4,13958.12,2895,2026-10-08T22:22:34
+12591,Bank account or service,Credit card,False,200,24596.5,24540.61,2896,2026-10-08T22:22:58
+12123,Bank account or service,Bank account or service,True,200,11356.5,11292.63,2897,2026-10-08T22:23:10
+12486,Money transfer or service,Consumer loan,False,200,37952.5,37920.35,2898,2026-10-08T22:23:48
+12133,Bank account or service,Bank account or service,True,200,28811.0,28772.24,2899,2026-10-08T22:24:16
+12090,Bank account or service,Money transfer or service,False,200,41094.4,41028.85,2900,2026-10-08T22:24:57
+12059,Bank account or service,Bank account or service,True,200,13417.4,13349.05,2901,2026-10-08T22:25:11
+12194,Bank account or service,Bank account or service,True,200,15668.3,15600.8,2902,2026-10-08T22:25:27
+12943,Bank account or service,Bank account or service,True,200,35924.6,35867.24,2903,2026-10-08T22:26:02
+12589,Bank account or service,Bank account or service,True,200,18448.8,18393.07,2904,2026-10-08T22:26:21
+12364,Bank account or service,Bank account or service,True,200,25313.2,25242.49,2905,2026-10-08T22:26:46
+12488,Consumer loan,Debt collection,False,200,18740.6,18684.47,2906,2026-10-08T22:27:05
+12733,Consumer loan,Debt collection,False,200,9896.7,9853.19,2907,2026-10-08T22:27:15
+12257,Consumer loan,Debt collection,False,200,12751.2,12697.95,2908,2026-10-08T22:27:28
+12396,Credit reporting,Credit reporting,True,200,16038.9,15966.78,2909,2026-10-08T22:27:44
+12647,Consumer loan,Debt collection,False,200,15564.3,15489.01,2910,2026-10-08T22:27:59
+12946,Consumer loan,Consumer loan,True,200,12120.6,12040.55,2911,2026-10-08T22:28:11
+12567,Consumer loan,Credit card,False,200,15057.9,15007.84,2912,2026-10-08T22:28:26
+12818,Debt collection,Debt collection,True,200,10405.2,10328.09,2913,2026-10-08T22:28:37
+12931,Consumer loan,Credit card,False,200,21343.9,21302.83,2914,2026-10-08T22:28:58
+12086,Consumer loan,Mortgage,False,200,15851.4,15777.74,2915,2026-10-08T22:29:14
+12209,Debt collection,Debt collection,True,200,13069.6,12991.65,2916,2026-10-08T22:29:27
+12318,Debt collection,Debt collection,True,200,15216.3,15156.22,2917,2026-10-08T22:29:42
+12136,Consumer loan,Debt collection,False,200,26280.9,26237.46,2918,2026-10-08T22:30:09
+12720,Consumer loan,Credit reporting,False,200,41502.4,41465.02,2919,2026-10-08T22:30:50
+12778,Consumer loan,Consumer loan,True,200,49580.0,49547.11,2920,2026-10-08T22:31:40
+12967,Credit reporting,Credit reporting,True,200,19201.7,19162.51,2921,2026-10-08T22:31:59
+12208,Debt collection,Debt collection,True,200,9980.0,9915.26,2922,2026-10-08T22:32:09
+12944,Consumer loan,Debt collection,False,200,21403.8,21339.79,2923,2026-10-08T22:32:30
+12085,Consumer loan,Bank account or service,False,200,28841.7,28802.21,2924,2026-10-08T22:32:59
+12856,Consumer loan,Mortgage,False,200,11359.7,11324.38,2925,2026-10-08T22:33:10
+12487,Consumer loan,Debt collection,False,200,12917.7,12877.78,2926,2026-10-08T22:33:23
+12640,Mortgage,Mortgage,True,200,12558.7,12524.96,2927,2026-10-08T22:33:36
+12846,Consumer loan,Debt collection,False,200,12911.3,12863.09,2928,2026-10-08T22:33:49
+12739,Consumer loan,Consumer loan,True,200,12106.6,12051.89,2929,2026-10-08T22:34:01
+12474,Consumer loan,Bank account or service,False,200,27390.1,27351.45,2930,2026-10-08T22:34:28
+12045,Consumer loan,Debt collection,False,200,27236.0,27139.29,2931,2026-10-08T22:34:56
+12440,Out-of-scope,Debt collection,False,200,18254.5,18200.92,2932,2026-10-08T22:35:14
+12309,Consumer loan,Debt collection,False,200,17984.2,17938.26,2933,2026-10-08T22:35:32
+12834,Credit card,Credit card,True,200,14105.8,14070.97,2934,2026-10-08T22:35:46
+12516,Credit card,Debt collection,False,200,16204.9,16163.96,2935,2026-10-08T22:36:02
+12226,Credit card,Bank account or service,False,200,17746.2,17692.53,2936,2026-10-08T22:36:20
+12909,Credit card,Debt collection,False,200,8472.4,8395.96,2937,2026-10-08T22:36:28
+12326,Credit card,Credit reporting,False,200,29491.5,29439.72,2938,2026-10-08T22:36:58
+12061,Credit card,Bank account or service,False,200,14333.5,14273.88,2939,2026-10-08T22:37:12
+12639,Credit reporting,Bank account or service,False,200,10222.7,10184.27,2940,2026-10-08T22:37:22
+12532,Credit card,Debt collection,False,200,16305.0,16264.4,2941,2026-10-08T22:37:39
+12815,Credit card,Credit card,True,200,9388.9,9333.24,2942,2026-10-08T22:37:48
+12837,Credit reporting,Credit reporting,True,200,7795.4,7728.25,2943,2026-10-08T22:37:56
+12865,Credit card,Credit reporting,False,200,45916.7,45852.84,2944,2026-10-08T22:38:42
+12463,Credit card,Money transfer or service,False,200,36583.8,36527.69,2945,2026-10-08T22:39:18
+12507,Credit card,Credit card,True,200,20702.2,20550.66,2946,2026-10-08T22:39:39
+12106,Credit card,(error),False,502,60073.9,,,2026-10-08T22:40:39
+12981,Credit card,Debt collection,False,200,19408.0,19343.93,2947,2026-10-08T22:40:59
+12603,Credit card,Credit card,True,200,14541.6,14484.07,2948,2026-10-08T22:41:13
+12053,Credit card,Credit card,True,200,14744.5,14700.4,2949,2026-10-08T22:41:28
+12195,Credit card,Debt collection,False,200,10247.3,10199.47,2950,2026-10-08T22:41:38
+12963,Credit card,Credit card,True,200,9359.9,9298.17,2951,2026-10-08T22:41:47
+12844,Credit card,Bank account or service,False,200,19335.8,19290.96,2952,2026-10-08T22:42:07
+12283,Credit card,Credit card,True,200,16075.9,16012.7,2953,2026-10-08T22:42:23
+12906,Credit card,Credit card,True,200,15513.7,15455.76,2954,2026-10-08T22:42:38
+12484,Credit card,Bank account or service,False,200,13630.3,13577.75,2955,2026-10-08T22:42:52
+12017,Credit card,Credit card,True,200,22289.7,22250.67,2956,2026-10-08T22:43:14
+12980,Bank account or service,Credit card,False,200,11528.4,11474.01,2957,2026-10-08T22:43:26
+12187,Credit reporting,Credit reporting,True,200,9988.3,9951.81,2958,2026-10-08T22:43:36
+12997,Credit card,Credit card,True,200,14900.5,14859.08,2959,2026-10-08T22:43:51
+12727,Credit card,Credit card,True,200,15506.2,15465.23,2960,2026-10-08T22:44:06
+12649,Credit reporting,Credit reporting,True,200,14490.6,14454.83,2961,2026-10-08T22:44:21
+12743,Credit reporting,Credit reporting,True,200,15418.6,15374.13,2962,2026-10-08T22:44:36
+12110,Credit reporting,Credit reporting,True,200,11262.6,11178.01,2963,2026-10-08T22:44:47
+12172,Credit reporting,Credit reporting,True,200,12161.6,12117.37,2964,2026-10-08T22:45:00
+12415,Credit reporting,Credit reporting,True,200,13385.5,13323.53,2965,2026-10-08T22:45:13
+12423,Credit reporting,Debt collection,False,200,15821.6,15768.51,2966,2026-10-08T22:45:29
+12420,Credit reporting,Credit reporting,True,200,10345.7,10275.88,2967,2026-10-08T22:45:39
+12812,Credit reporting,Debt collection,False,200,16151.8,16091.88,2968,2026-10-08T22:45:55
+12750,Credit reporting,Credit reporting,True,200,39938.0,39896.08,2969,2026-10-08T22:46:35
+12478,Credit reporting,Credit reporting,True,200,6210.7,6150.9,2970,2026-10-08T22:46:41
+12617,Credit reporting,Credit reporting,True,200,22092.8,22050.64,2971,2026-10-08T22:47:03
+12285,Credit reporting,Debt collection,False,200,20472.2,20430.07,2972,2026-10-08T22:47:24
+12526,Credit reporting,Credit reporting,True,200,22379.6,22343.71,2973,2026-10-08T22:47:46
+12436,Credit reporting,Credit reporting,True,200,30644.8,30593.06,2974,2026-10-08T22:48:17
+12188,Credit reporting,Credit reporting,True,200,14503.2,14423.67,2975,2026-10-08T22:48:31
+12261,Credit reporting,Credit reporting,True,200,12300.4,12262.8,2976,2026-10-08T22:48:44
+12178,Credit reporting,Credit reporting,True,200,12414.4,12360.14,2977,2026-10-08T22:48:56
+12139,Credit reporting,Credit reporting,True,200,16642.7,16596.61,2978,2026-10-08T22:49:13
+12622,Credit reporting,Credit card,False,200,17665.6,17611.04,2979,2026-10-08T22:49:31
+12361,Credit reporting,Credit reporting,True,200,14681.0,14613.17,2980,2026-10-08T22:49:45
+12757,Credit reporting,Credit reporting,True,200,15982.6,15938.74,2981,2026-10-08T22:50:01
+12047,Credit reporting,Credit reporting,True,200,21466.4,21406.01,2982,2026-10-08T22:50:23
+12765,Credit reporting,Credit reporting,True,200,11823.0,11785.68,2983,2026-10-08T22:50:34
+12219,Credit reporting,Credit reporting,True,200,33339.7,33292.62,2984,2026-10-08T22:51:08
+12742,Credit reporting,Debt collection,False,200,14275.4,14219.5,2985,2026-10-08T22:51:22
+12975,Credit reporting,Credit reporting,True,200,15192.3,15105.0,2986,2026-10-08T22:51:37
+12125,Credit reporting,Credit reporting,True,200,15128.7,15084.49,2987,2026-10-08T22:51:52
+12127,Credit reporting,Credit reporting,True,200,9244.8,9199.66,2988,2026-10-08T22:52:02
+12758,Debt collection,Debt collection,True,200,9617.9,9577.73,2989,2026-10-08T22:52:11
+12446,Debt collection,Debt collection,True,200,14587.5,14519.31,2990,2026-10-08T22:52:26
+12240,Credit reporting,Credit reporting,True,200,10225.7,10146.79,2991,2026-10-08T22:52:36
+12814,Debt collection,Credit reporting,False,200,26634.1,26592.84,2992,2026-10-08T22:53:03
+12314,Debt collection,Credit card,False,200,14445.4,14403.41,2993,2026-10-08T22:53:17
+12064,Debt collection,Debt collection,True,200,24568.1,24536.82,2994,2026-10-08T22:53:42
+12564,Debt collection,Debt collection,True,200,21176.2,21132.19,2995,2026-10-08T22:54:03
+12456,Debt collection,Debt collection,True,200,9575.8,9526.07,2996,2026-10-08T22:54:12
+12726,Debt collection,Debt collection,True,200,7918.4,7861.1,2997,2026-10-08T22:54:20
+12760,Debt collection,Debt collection,True,200,19259.4,19184.57,2998,2026-10-08T22:54:40
+12788,Debt collection,Debt collection,True,200,12753.9,12701.53,2999,2026-10-08T22:54:52
+12401,Debt collection,Debt collection,True,200,7164.1,7126.49,3000,2026-10-08T22:55:00
+12439,Debt collection,Debt collection,True,200,16605.0,16536.07,3001,2026-10-08T22:55:16
+12154,Debt collection,Debt collection,True,200,13898.6,13864.07,3002,2026-10-08T22:55:30
+12895,Credit reporting,Credit reporting,True,200,6350.7,6316.58,3003,2026-10-08T22:55:36
+12534,Credit reporting,Credit reporting,True,200,7718.2,7668.68,3004,2026-10-08T22:55:44
+12063,Debt collection,Consumer loan,False,200,42750.6,42709.93,3005,2026-10-08T22:56:27
+12221,Debt collection,Debt collection,True,200,10746.3,10674.45,3006,2026-10-08T22:56:38
+12880,Debt collection,Debt collection,True,200,11646.9,11588.04,3007,2026-10-08T22:56:49
+12767,Debt collection,Credit card,False,200,17117.6,17086.38,3008,2026-10-08T22:57:06
+12255,Debt collection,Credit card,False,200,15602.5,15557.26,3009,2026-10-08T22:57:22
+12807,Debt collection,Debt collection,True,200,7813.7,7763.54,3010,2026-10-08T22:57:30
+12414,Debt collection,Debt collection,True,200,17686.3,17650.74,3011,2026-10-08T22:57:48
+12032,Debt collection,Debt collection,True,200,10078.2,10027.58,3012,2026-10-08T22:57:58
+12894,Debt collection,Credit reporting,False,200,38295.2,38244.85,3013,2026-10-08T22:58:36
+12216,Debt collection,Credit reporting,False,200,13972.9,13917.18,3014,2026-10-08T22:58:50
+12969,Debt collection,Debt collection,True,200,14118.4,14085.58,3015,2026-10-08T22:59:04
+12656,Debt collection,Debt collection,True,200,13313.7,13261.65,3016,2026-10-08T22:59:17
+12434,Bank account or service,Bank account or service,True,200,17839.1,17795.17,3017,2026-10-08T22:59:35
+12339,Money transfer or service,Bank account or service,False,200,14143.6,14098.07,3018,2026-10-08T22:59:49
+12167,Money transfer or service,Money transfer or service,True,200,11597.1,11534.79,3019,2026-10-08T23:00:01
+12263,Money transfer or service,Money transfer or service,True,200,13285.4,13243.15,3020,2026-10-08T23:00:14
+12756,Money transfer or service,Bank account or service,False,200,14267.4,14223.46,3021,2026-10-08T23:00:28
+12438,Money transfer or service,Bank account or service,False,200,13520.8,13483.92,3022,2026-10-08T23:00:42
+12521,Money transfer or service,Money transfer or service,True,200,11642.7,11597.75,3023,2026-10-08T23:00:54
+12819,Money transfer or service,Bank account or service,False,200,11419.0,11364.92,3024,2026-10-08T23:01:05
+12598,Money transfer or service,Debt collection,False,200,19645.1,19585.9,3025,2026-10-08T23:01:25
+12245,Money transfer or service,Bank account or service,False,200,35576.9,35530.98,3026,2026-10-08T23:02:00
+12738,Bank account or service,Bank account or service,True,200,13987.8,13922.9,3027,2026-10-08T23:02:14
+12248,Money transfer or service,Money transfer or service,True,200,12834.6,12801.47,3028,2026-10-08T23:02:27
+12481,Money transfer or service,Credit card,False,200,17978.4,17923.38,3029,2026-10-08T23:02:45
+12041,Money transfer or service,Bank account or service,False,200,12531.7,12473.4,3030,2026-10-08T23:02:58
+12744,Money transfer or service,(error),False,502,60105.7,,,2026-10-08T23:03:58
+12892,Bank account or service,Credit reporting,False,200,18383.1,18321.84,3031,2026-10-08T23:04:16
+12280,Money transfer or service,Money transfer or service,True,200,24729.1,24687.58,3032,2026-10-08T23:04:41
+12594,Money transfer or service,Debt collection,False,200,16258.5,16224.58,3033,2026-10-08T23:04:57
+12984,Bank account or service,Bank account or service,True,200,14191.9,14147.65,3034,2026-10-08T23:05:11
+12644,Money transfer or service,Money transfer or service,True,200,14632.5,14580.93,3035,2026-10-08T23:05:26
+12166,Money transfer or service,Money transfer or service,True,200,13882.2,13846.42,3036,2026-10-08T23:05:40
+12092,Money transfer or service,Bank account or service,False,200,26336.8,26283.76,3037,2026-10-08T23:06:06
+12923,Money transfer or service,Money transfer or service,True,200,15177.8,15134.77,3038,2026-10-08T23:06:21
+12119,Money transfer or service,Bank account or service,False,200,9770.0,9737.57,3039,2026-10-08T23:06:31
+12822,Money transfer or service,Money transfer or service,True,200,13036.2,12975.68,3040,2026-10-08T23:06:44
+12375,Money transfer or service,Money transfer or service,True,200,8662.8,8622.53,3041,2026-10-08T23:06:53
+12522,Money transfer or service,Debt collection,False,200,21408.1,21365.86,3042,2026-10-08T23:07:14
+12582,Money transfer or service,Money transfer or service,True,200,13308.8,13191.97,3043,2026-10-08T23:07:27
+12602,Mortgage,Credit card,False,200,15160.6,15096.8,3044,2026-10-08T23:07:43
+12609,Mortgage,Mortgage,True,200,15247.7,15208.66,3045,2026-10-08T23:07:58
+12670,Mortgage,Mortgage,True,200,17955.8,17915.45,3046,2026-10-08T23:08:16
+12780,Mortgage,Mortgage,True,200,10592.1,10528.23,3047,2026-10-08T23:08:26
+12164,Mortgage,Debt collection,False,200,20596.9,20557.62,3048,2026-10-08T23:08:47
+12779,Mortgage,(error),False,502,60069.8,,,2026-10-08T23:09:47
+12556,Mortgage,Credit reporting,False,200,31832.6,31793.83,3049,2026-10-08T23:10:19
+12566,Mortgage,Mortgage,True,200,10890.2,10845.23,3050,2026-10-08T23:10:30
+12102,Mortgage,Credit card,False,200,14838.7,14797.54,3051,2026-10-08T23:10:45
+12096,Mortgage,Mortgage,True,200,17081.1,17016.16,3052,2026-10-08T23:11:02
+12103,Mortgage,Debt collection,False,200,20220.1,20174.03,3053,2026-10-08T23:11:22
+12083,Mortgage,Bank account or service,False,200,31888.4,31821.71,3054,2026-10-08T23:11:54
+12066,Mortgage,Money transfer or service,False,200,16014.8,15949.46,3055,2026-10-08T23:12:10
+12259,Mortgage,Mortgage,True,200,17732.5,17661.76,3056,2026-10-08T23:12:28
+12306,Mortgage,Debt collection,False,200,50331.1,50274.82,3057,2026-10-08T23:13:18
+12496,Mortgage,Credit card,False,200,17632.5,17572.11,3058,2026-10-08T23:13:36
+12735,Mortgage,Mortgage,True,200,25499.2,25426.81,3059,2026-10-08T23:14:01
+12917,Mortgage,Consumer loan,False,200,19360.7,19311.47,3060,2026-10-08T23:14:20
+12453,Mortgage,Debt collection,False,200,16319.2,16270.96,3061,2026-10-08T23:14:37
+12668,Mortgage,Credit reporting,False,200,18474.6,18391.87,3062,2026-10-08T23:14:55
+12524,Mortgage,Bank account or service,False,200,29612.8,29568.32,3063,2026-10-08T23:15:25
+12836,Mortgage,Mortgage,True,200,26528.8,26475.46,3064,2026-10-08T23:15:51
+12214,Mortgage,Money transfer or service,False,200,41123.5,41073.22,3065,2026-10-08T23:16:32
+12458,Mortgage,Mortgage,True,200,12527.0,12448.51,3066,2026-10-08T23:16:45
+12330,Mortgage,Mortgage,True,200,15554.9,15499.1,3067,2026-10-08T23:17:01
+12205,Mortgage,Debt collection,False,200,34323.6,34272.9,3068,2026-10-08T23:17:35
+12143,Mortgage,Debt collection,False,200,30216.8,30145.11,3069,2026-10-08T23:18:05
+12891,Mortgage,Mortgage,True,200,17273.2,17188.6,3070,2026-10-08T23:18:22

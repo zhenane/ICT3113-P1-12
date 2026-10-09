@@ -1,0 +1,4 @@
+model,rate_per_min,rep,samples,successes,errors,error_rate,arrival_rps,throughput_rps,lat_mean_ms,lat_p50_ms,lat_p90_ms,lat_p95_ms,lat_p99_ms,lat_max_ms,server_p50_ms,server_p95_ms,overhead_p50_ms,error_breakdown,stats_delta,stats_matches_jmeter,jtl
+qwen3:1.7b,8,1,240,28,212,0.8833,0.1336,0.0156,47925.0714,50381.0000,58539.4000,59177.7000,59817.8600,60029.0000,50326.8950,59124.6335,48.6650,502 x204; Socket closed x8,31,False,results\qwen3-1.7b\qwen3-1.7b_r8_rep1.jtl
+qwen3:1.7b,8,2,240,41,199,0.8292,0.1332,0.0228,51233.0976,54674.0000,59158.0000,59251.0000,59727.8000,59757.0000,54625.8300,59203.9400,45.4200,502 x189; Socket closed x10,42,False,results\qwen3-1.7b\qwen3-1.7b_r8_rep2.jtl
+qwen3:1.7b,8,3,240,37,203,0.8458,0.1330,0.0206,46484.6486,49417.0000,58922.0000,59351.8000,59808.6000,59895.0000,49371.6900,59306.6860,46.9000,502 x195; Socket closed x8,39,False,results\qwen3-1.7b\qwen3-1.7b_r8_rep3.jtl

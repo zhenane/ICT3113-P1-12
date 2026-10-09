@@ -1,0 +1,2 @@
+model,rate_per_min,duration_min,rep,started_at,jtl,jmeter_exit,stats_before,stats_after,stats_delta,jmeter_successes,jmeter_samples,stats_matches_jmeter,p95_ms,error_rate,window_start_epoch,window_end_epoch
+qwen3:4b,3,3,1,2026-10-08T13:26:16,qwen3-4b_r3_rep1.jtl,0,2479,2479,0,0,9,True,nan,1.0000,1791437176.717,1791437433.492

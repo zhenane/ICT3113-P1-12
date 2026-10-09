@@ -1,0 +1,4 @@
+model,rate_per_min,rep,jtl,jmeter_samples,log_entries_in_window,jmeter_codes,log_codes,jmeter_timeouts,ids_matched,ids_missing_in_log,log_200_not_success_in_jmeter,log_models,overhead_p50_ms,clock_offset_s,verdict
+qwen3:1.7b,8,1,qwen3-1.7b_r8_rep1.jtl,240,240,200 x28; 502 x204; no-response x8,200 x31; 502 x209,8,28,0,3,qwen3:1.7b x28,25.8,-0.311,RECONCILED
+qwen3:1.7b,8,2,qwen3-1.7b_r8_rep2.jtl,240,240,200 x41; 502 x189; no-response x10,200 x42; 502 x198,10,41,0,1,qwen3:1.7b x41,23.0,-0.305,RECONCILED
+qwen3:1.7b,8,3,qwen3-1.7b_r8_rep3.jtl,240,240,200 x37; 502 x195; no-response x8,200 x39; 502 x201,8,37,0,2,qwen3:1.7b x37,27.3,-0.305,RECONCILED

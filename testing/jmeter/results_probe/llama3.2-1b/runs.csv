@@ -1,0 +1,2 @@
+model,rate_per_min,duration_min,rep,started_at,jtl,jmeter_exit,stats_before,stats_after,stats_delta,jmeter_successes,jmeter_samples,stats_matches_jmeter,p95_ms,error_rate,window_start_epoch,window_end_epoch
+llama3.2:1b,3,3,1,2026-10-07T12:42:38,llama3.2-1b_r3_rep1.jtl,0,20,29,9,9,9,True,4403,0.0000,1791348158.916,1791348417.198

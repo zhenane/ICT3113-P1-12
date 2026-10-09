@@ -1,0 +1,4 @@
+model,rate_per_min,rep,jtl,jmeter_samples,log_entries_in_window,jmeter_codes,log_codes,jmeter_timeouts,ids_matched,ids_missing_in_log,log_200_not_success_in_jmeter,log_models,overhead_p50_ms,clock_offset_s,verdict
+qwen3:4b,8,1,qwen3-4b_r8_rep1.jtl,240,240,502 x232; no-response x8,502 x240,8,n/a (no ticket_id in log),,,qwen3:4b x240,,0.0,RECONCILED
+qwen3:4b,8,2,qwen3-4b_r8_rep2.jtl,240,240,502 x230; no-response x10,502 x240,10,n/a (no ticket_id in log),,,qwen3:4b x240,,0.0,RECONCILED
+qwen3:4b,8,3,qwen3-4b_r8_rep3.jtl,240,240,502 x232; no-response x8,502 x240,8,n/a (no ticket_id in log),,,qwen3:4b x240,,0.0,RECONCILED

@@ -1,0 +1,6 @@
+model,rate_per_min,rep,jtl,jmeter_samples,log_entries_in_window,jmeter_codes,log_codes,jmeter_timeouts,ids_matched,ids_missing_in_log,log_200_not_success_in_jmeter,log_models,overhead_p50_ms,clock_offset_s,verdict
+llama3.2:3b,8,1,llama3.2-3b_r8_rep1.jtl,240,240,200 x238; no-response x2,200 x240,2,238,0,2,llama3.2:3b x238,25.1,-0.306,RECONCILED
+llama3.2:3b,8,2,llama3.2-3b_r8_rep2.jtl,240,240,200 x240,200 x240,0,240,0,0,llama3.2:3b x240,23.9,-0.305,RECONCILED
+llama3.2:3b,8,1,llama3.2-3b_r8_rep1_20261008_111606.jtl,240,242,200 x238; no-response x2,200 x242,2,238,0,4,llama3.2:3b x238,22.4,0.991,CHECK: 2 logged 200s not explained by JMeter timeouts | log window has 2 more POSTs than JMeter sent (warm-ups or other clients? try --tol-s smaller / check clock offset)
+llama3.2:3b,8,2,llama3.2-3b_r8_rep2_20261008_114804.jtl,240,240,200 x240,200 x240,0,240,0,0,llama3.2:3b x240,23.6,0.99,RECONCILED
+llama3.2:3b,8,3,llama3.2-3b_r8_rep3_20261008_121955.jtl,240,240,200 x239; no-response x1,200 x240,1,239,0,1,llama3.2:3b x239,25.4,0.989,RECONCILED

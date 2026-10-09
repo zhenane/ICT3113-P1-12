@@ -1,0 +1,105 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect,"server_latency_ms","category","ticket_id"
+1791478958393,1261,POST /tickets,200,OK,Open-loop arrivals 1-1,text,true,,194,453,2,2,http://192.168.0.10:8000/tickets,1261,0,21,1204.64,Bank account or service,3180
+1791478958631,2037,POST /tickets,200,OK,Open-loop arrivals 1-2,text,true,,193,452,2,2,http://192.168.0.10:8000/tickets,2037,0,8,1998.5,Bank account or service,3181
+1791478960003,1953,POST /tickets,200,OK,Open-loop arrivals 1-3,text,true,,186,484,1,1,http://192.168.0.10:8000/tickets,1953,0,16,1908.96,Debt collection,3182
+1791478968293,5141,POST /tickets,200,OK,Open-loop arrivals 1-4,text,true,,194,1742,1,1,http://192.168.0.10:8000/tickets,5141,0,11,5086.52,Bank account or service,3183
+1791478991590,7548,POST /tickets,200,OK,Open-loop arrivals 1-5,text,true,,193,2206,3,3,http://192.168.0.10:8000/tickets,7548,0,9,7488.6,Bank account or service,3184
+1791478992761,10314,POST /tickets,200,OK,Open-loop arrivals 1-6,text,true,,194,1353,3,3,http://192.168.0.10:8000/tickets,10314,0,7,10265.4,Bank account or service,3185
+1791478998732,10805,POST /tickets,200,OK,Open-loop arrivals 1-7,text,true,,195,2165,6,6,http://192.168.0.10:8000/tickets,10805,0,11,10759.05,Bank account or service,3186
+1791478999409,13214,POST /tickets,200,OK,Open-loop arrivals 1-8,text,true,,188,1058,7,7,http://192.168.0.10:8000/tickets,13214,0,15,13163.92,Credit reporting,3187
+1791479003818,11145,POST /tickets,200,OK,Open-loop arrivals 1-9,text,true,,195,956,6,6,http://192.168.0.10:8000/tickets,11145,0,8,11109.11,Bank account or service,3188
+1791479005123,11120,POST /tickets,200,OK,Open-loop arrivals 1-10,text,true,,195,533,5,5,http://192.168.0.10:8000/tickets,11120,0,9,11073.58,Bank account or service,3189
+1791479005729,14718,POST /tickets,200,OK,Open-loop arrivals 1-11,text,true,,195,1334,9,9,http://192.168.0.10:8000/tickets,14718,0,17,14652.84,Bank account or service,3190
+1791479008591,14449,POST /tickets,200,OK,Open-loop arrivals 1-12,text,true,,195,933,9,9,http://192.168.0.10:8000/tickets,14449,0,7,14413.58,Bank account or service,3191
+1791479010211,14670,POST /tickets,200,OK,Open-loop arrivals 1-13,text,true,,195,666,9,9,http://192.168.0.10:8000/tickets,14670,0,11,14625.43,Bank account or service,3192
+1791479012238,14515,POST /tickets,200,OK,Open-loop arrivals 1-14,text,true,,194,703,9,9,http://192.168.0.10:8000/tickets,14515,0,8,14477.3,Bank account or service,3193
+1791479018198,11003,POST /tickets,200,OK,Open-loop arrivals 1-15,text,true,,195,975,8,8,http://192.168.0.10:8000/tickets,11003,0,8,10952.12,Bank account or service,3194
+1791479018276,15934,POST /tickets,200,OK,Open-loop arrivals 1-16,text,true,,180,1647,9,9,http://192.168.0.10:8000/tickets,15934,0,7,15896.62,Mortgage,3195
+1791479018824,18522,POST /tickets,200,OK,Open-loop arrivals 1-17,text,true,,195,1123,8,8,http://192.168.0.10:8000/tickets,18522,0,10,18464.43,Bank account or service,3196
+1791479019118,21412,POST /tickets,200,OK,Open-loop arrivals 1-18,text,true,,195,1104,7,7,http://192.168.0.10:8000/tickets,21412,0,10,21374.66,Bank account or service,3197
+1791479019650,27568,POST /tickets,200,OK,Open-loop arrivals 1-19,text,true,,195,2197,7,7,http://192.168.0.10:8000/tickets,27568,0,9,27506.59,Bank account or service,3198
+1791479022095,27275,POST /tickets,200,OK,Open-loop arrivals 1-20,text,true,,194,851,7,7,http://192.168.0.10:8000/tickets,27275,0,7,27231.1,Bank account or service,3199
+1791479024304,26521,POST /tickets,200,OK,Open-loop arrivals 1-21,text,true,,195,555,6,6,http://192.168.0.10:8000/tickets,26521,0,10,26475.08,Bank account or service,3200
+1791479026743,27962,POST /tickets,200,OK,Open-loop arrivals 1-22,text,true,,195,1402,5,5,http://192.168.0.10:8000/tickets,27962,0,16,27912.95,Bank account or service,3201
+1791479030424,26884,POST /tickets,200,OK,Open-loop arrivals 1-23,text,true,,195,860,6,6,http://192.168.0.10:8000/tickets,26884,0,8,26843.55,Bank account or service,3202
+1791479033272,26334,POST /tickets,200,OK,Open-loop arrivals 1-24,text,true,,195,852,5,5,http://192.168.0.10:8000/tickets,26334,0,7,26286.21,Bank account or service,3203
+1791479045017,18289,POST /tickets,200,OK,Open-loop arrivals 1-25,text,true,,195,1170,5,5,http://192.168.0.10:8000/tickets,18289,0,8,18236.37,Bank account or service,3204
+1791479049225,19375,POST /tickets,200,OK,Open-loop arrivals 1-26,text,true,,195,1635,4,4,http://192.168.0.10:8000/tickets,19375,0,9,19333.38,Bank account or service,3205
+1791479056621,13658,POST /tickets,200,OK,Open-loop arrivals 1-27,text,true,,195,640,5,5,http://192.168.0.10:8000/tickets,13658,0,14,13610.37,Bank account or service,3206
+1791479056888,17908,POST /tickets,200,OK,Open-loop arrivals 1-28,text,true,,195,1580,4,4,http://192.168.0.10:8000/tickets,17908,0,6,17868.48,Bank account or service,3207
+1791479061063,16801,POST /tickets,200,OK,Open-loop arrivals 1-29,text,true,,180,1180,5,5,http://192.168.0.10:8000/tickets,16801,0,7,16764.92,Mortgage,3208
+1791479069193,10198,POST /tickets,200,OK,Open-loop arrivals 1-30,text,true,,195,614,4,4,http://192.168.0.10:8000/tickets,10198,0,15,10141.75,Bank account or service,3209
+1791479070257,12308,POST /tickets,200,OK,Open-loop arrivals 1-31,text,true,,194,1299,4,4,http://192.168.0.10:8000/tickets,12308,0,12,12259.9,Bank account or service,3210
+1791479075158,9106,POST /tickets,200,OK,Open-loop arrivals 1-32,text,true,,194,722,3,3,http://192.168.0.10:8000/tickets,9106,0,15,9057.53,Bank account or service,3211
+1791479075956,9282,POST /tickets,200,OK,Open-loop arrivals 1-33,text,true,,186,472,2,2,http://192.168.0.10:8000/tickets,9282,0,7,9238.51,Debt collection,3212
+1791479079823,10443,POST /tickets,200,OK,Open-loop arrivals 1-34,text,true,,195,1804,4,4,http://192.168.0.10:8000/tickets,10443,0,10,10369.57,Bank account or service,3213
+1791479085443,6601,POST /tickets,200,OK,Open-loop arrivals 1-35,text,true,,193,588,3,3,http://192.168.0.10:8000/tickets,6601,0,11,6549.8,Bank account or service,3214
+1791479086405,7906,POST /tickets,200,OK,Open-loop arrivals 1-36,text,true,,194,832,2,2,http://192.168.0.10:8000/tickets,7906,0,8,7871.11,Bank account or service,3215
+1791479089761,5751,POST /tickets,200,OK,Open-loop arrivals 1-37,text,true,,186,471,1,1,http://192.168.0.10:8000/tickets,5751,0,14,5696.55,Debt collection,3216
+1791479095807,1665,POST /tickets,200,OK,Open-loop arrivals 1-38,text,true,,182,630,1,1,http://192.168.0.10:8000/tickets,1665,0,8,1622.46,Credit card,3217
+1791479101317,2425,POST /tickets,200,OK,Open-loop arrivals 1-39,text,true,,194,901,1,1,http://192.168.0.10:8000/tickets,2425,0,7,2371.62,Bank account or service,3218
+1791479104227,2932,POST /tickets,200,OK,Open-loop arrivals 1-40,text,true,,194,1011,1,1,http://192.168.0.10:8000/tickets,2932,0,14,2880.46,Bank account or service,3219
+1791479108037,1934,POST /tickets,200,OK,Open-loop arrivals 1-41,text,true,,186,710,3,3,http://192.168.0.10:8000/tickets,1934,0,9,1885.46,Debt collection,3220
+1791479108753,2735,POST /tickets,200,OK,Open-loop arrivals 1-42,text,true,,194,555,2,2,http://192.168.0.10:8000/tickets,2735,0,15,2680.67,Bank account or service,3221
+1791479109098,6240,POST /tickets,200,OK,Open-loop arrivals 1-43,text,true,,194,1409,2,2,http://192.168.0.10:8000/tickets,6239,0,10,6181.62,Bank account or service,3222
+1791479113748,4978,POST /tickets,200,OK,Open-loop arrivals 1-44,text,true,,178,1134,1,1,http://192.168.0.10:8000/tickets,4978,0,8,4937.3,Mortgage,3223
+1791479118926,1208,POST /tickets,200,OK,Open-loop arrivals 1-45,text,true,,193,461,1,1,http://192.168.0.10:8000/tickets,1208,0,108,1061.2,Bank account or service,3224
+1791479120163,5977,POST /tickets,200,OK,Open-loop arrivals 1-46,text,true,,194,1994,3,3,http://192.168.0.10:8000/tickets,5977,0,7,5916.84,Bank account or service,3225
+1791479121493,6988,POST /tickets,200,OK,Open-loop arrivals 1-47,text,true,,194,896,2,2,http://192.168.0.10:8000/tickets,6988,0,7,6952.42,Bank account or service,3226
+1791479123441,9762,POST /tickets,200,OK,Open-loop arrivals 1-48,text,true,,194,1593,3,3,http://192.168.0.10:8000/tickets,9762,0,7,9700.72,Bank account or service,3227
+1791479129934,6887,POST /tickets,200,OK,Open-loop arrivals 1-49,text,true,,194,1225,3,3,http://192.168.0.10:8000/tickets,6887,0,16,6837.15,Bank account or service,3228
+1791479133140,6458,POST /tickets,200,OK,Open-loop arrivals 1-50,text,true,,194,1049,2,2,http://192.168.0.10:8000/tickets,6458,0,17,6413.41,Bank account or service,3229
+1791479134524,8803,POST /tickets,200,OK,Open-loop arrivals 1-51,text,true,,194,1336,1,1,http://192.168.0.10:8000/tickets,8803,0,13,8731.02,Bank account or service,3230
+1791479143820,1539,POST /tickets,200,OK,Open-loop arrivals 1-52,text,true,,194,574,1,1,http://192.168.0.10:8000/tickets,1539,0,11,1497.83,Bank account or service,3231
+1791479145928,3996,POST /tickets,200,OK,Open-loop arrivals 1-53,text,true,,194,1396,2,2,http://192.168.0.10:8000/tickets,3996,0,11,3952.44,Bank account or service,3232
+1791479148047,6190,POST /tickets,200,OK,Open-loop arrivals 1-54,text,true,,194,1428,3,3,http://192.168.0.10:8000/tickets,6190,0,8,6136.87,Bank account or service,3233
+1791479152548,7100,POST /tickets,200,OK,Open-loop arrivals 1-55,text,true,,194,1822,3,3,http://192.168.0.10:8000/tickets,7100,0,16,7042.98,Bank account or service,3234
+1791479153347,9797,POST /tickets,200,OK,Open-loop arrivals 1-56,text,true,,194,1285,2,2,http://192.168.0.10:8000/tickets,9797,0,17,9740.72,Bank account or service,3235
+1791479154775,10654,POST /tickets,200,OK,Open-loop arrivals 1-57,text,true,,195,884,2,2,http://192.168.0.10:8000/tickets,10654,0,14,10568.75,Bank account or service,3236
+1791479165307,4113,POST /tickets,200,OK,Open-loop arrivals 1-58,text,true,,194,1384,2,2,http://192.168.0.10:8000/tickets,4113,0,16,4061.22,Bank account or service,3237
+1791479166508,7516,POST /tickets,200,OK,Open-loop arrivals 1-59,text,true,,194,1659,2,2,http://192.168.0.10:8000/tickets,7516,0,16,7462.47,Bank account or service,3238
+1791479171993,3573,POST /tickets,200,OK,Open-loop arrivals 1-60,text,true,,194,748,1,1,http://192.168.0.10:8000/tickets,3573,0,6,3537.19,Bank account or service,3239
+1791479176069,2174,POST /tickets,200,OK,Open-loop arrivals 1-61,text,true,,194,825,1,1,http://192.168.0.10:8000/tickets,2174,0,8,2123.19,Bank account or service,3240
+1791479179991,6586,POST /tickets,200,OK,Open-loop arrivals 1-62,text,true,,194,2040,1,1,http://192.168.0.10:8000/tickets,6586,0,10,6537.68,Bank account or service,3241
+1791479187963,5599,POST /tickets,200,OK,Open-loop arrivals 1-63,text,true,,178,2045,2,2,http://192.168.0.10:8000/tickets,5599,0,10,5536.5,Mortgage,3242
+1791479190177,4473,POST /tickets,200,OK,Open-loop arrivals 1-64,text,true,,187,436,2,2,http://192.168.0.10:8000/tickets,4473,0,11,4423.36,Credit reporting,3243
+1791479193565,4684,POST /tickets,200,OK,Open-loop arrivals 1-65,text,true,,193,1135,2,2,http://192.168.0.10:8000/tickets,4684,0,8,4642.5,Bank account or service,3244
+1791479197892,4694,POST /tickets,200,OK,Open-loop arrivals 1-66,text,true,,194,1439,2,2,http://192.168.0.10:8000/tickets,4694,0,7,4637.33,Bank account or service,3245
+1791479198363,10169,POST /tickets,200,OK,Open-loop arrivals 1-67,text,true,,195,2013,2,2,http://192.168.0.10:8000/tickets,10169,0,7,10125.71,Bank account or service,3246
+1791479207710,4531,POST /tickets,200,OK,Open-loop arrivals 1-68,text,true,,193,1233,1,1,http://192.168.0.10:8000/tickets,4531,0,10,4469.3,Bank account or service,3247
+1791479223766,4586,POST /tickets,200,OK,Open-loop arrivals 1-69,text,true,,194,1401,1,1,http://192.168.0.10:8000/tickets,4586,0,8,4537.65,Bank account or service,3248
+1791479229672,3093,POST /tickets,200,OK,Open-loop arrivals 1-70,text,true,,194,1155,1,1,http://192.168.0.10:8000/tickets,3093,0,14,3045.08,Bank account or service,3249
+1791479237931,1064,POST /tickets,200,OK,Open-loop arrivals 1-71,text,true,,194,436,2,2,http://192.168.0.10:8000/tickets,1064,0,7,1016.05,Bank account or service,3250
+1791479238765,3990,POST /tickets,200,OK,Open-loop arrivals 1-72,text,true,,194,1624,2,2,http://192.168.0.10:8000/tickets,3990,0,15,3935.82,Bank account or service,3251
+1791479240957,8051,POST /tickets,200,OK,Open-loop arrivals 1-73,text,true,,194,1973,5,5,http://192.168.0.10:8000/tickets,8051,0,7,7995.26,Bank account or service,3252
+1791479245519,5897,POST /tickets,200,OK,Open-loop arrivals 1-74,text,true,,194,920,4,4,http://192.168.0.10:8000/tickets,5897,0,7,5859.02,Bank account or service,3253
+1791479245914,7729,POST /tickets,200,OK,Open-loop arrivals 1-75,text,true,,194,824,5,5,http://192.168.0.10:8000/tickets,7729,0,13,7678.39,Bank account or service,3254
+1791479247128,9172,POST /tickets,200,OK,Open-loop arrivals 1-76,text,true,,184,883,4,4,http://192.168.0.10:8000/tickets,9172,0,12,9114.03,Consumer loan,3255
+1791479251737,5061,POST /tickets,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,Open-loop arrivals 1-78,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketException]]]
+
+****** comparison: [[[200                                             ]]]
+
+/",3167,0,4,4,http://192.168.0.10:8000/tickets,0,0,11,-1,NONE,-1
+1791479248949,7848,POST /tickets,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,Open-loop arrivals 1-77,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketException]]]
+
+****** comparison: [[[200                                             ]]]
+
+/",3167,0,4,4,http://192.168.0.10:8000/tickets,0,0,15,-1,NONE,-1
+1791479252096,4700,POST /tickets,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,Open-loop arrivals 1-79,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketException]]]
+
+****** comparison: [[[200                                             ]]]
+
+/",3167,0,4,4,http://192.168.0.10:8000/tickets,0,0,9,-1,NONE,-1
+1791479256497,303,POST /tickets,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,Open-loop arrivals 1-80,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketException]]]
+
+****** comparison: [[[200                                             ]]]
+
+/",3167,0,4,4,http://192.168.0.10:8000/tickets,0,0,8,-1,NONE,-1

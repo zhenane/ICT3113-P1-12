@@ -1,0 +1,1435 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect,"server_latency_ms","category","ticket_id"
+1791386027319,8071,POST /tickets,200,OK,Open-loop arrivals 1-1,text,true,,181,453,3,3,http://192.168.0.10:8000/tickets,8071,0,40,7996.07,Credit card,991
+1791386028279,25337,POST /tickets,200,OK,Open-loop arrivals 1-2,text,true,,194,452,4,4,http://192.168.0.10:8000/tickets,25337,0,9,25270.22,Bank account or service,992
+1791386031577,47274,POST /tickets,200,OK,Open-loop arrivals 1-3,text,true,,186,484,8,8,http://192.168.0.10:8000/tickets,47274,0,8,47240.54,Debt collection,993
+1791386035715,60059,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1742,11,11,http://192.168.0.10:8000/tickets,60059,0,8,-1,NONE,-1
+1791386050543,60093,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,2206,13,13,http://192.168.0.10:8000/tickets,60093,0,8,-1,NONE,-1
+1791386054006,60096,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1353,12,12,http://192.168.0.10:8000/tickets,60096,0,8,-1,NONE,-1
+1791386055504,60093,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,2165,12,12,http://192.168.0.10:8000/tickets,60093,0,11,-1,NONE,-1
+1791386064701,60093,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1058,12,12,http://192.168.0.10:8000/tickets,60093,0,7,-1,NONE,-1
+1791386073091,60106,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,956,14,14,http://192.168.0.10:8000/tickets,60106,0,8,-1,NONE,-1
+1791386078092,60093,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,533,13,13,http://192.168.0.10:8000/tickets,60093,0,9,-1,NONE,-1
+1791386081465,60091,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-11,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1334,12,12,http://192.168.0.10:8000/tickets,60091,0,9,-1,NONE,-1
+1791386085520,60102,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-12,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,933,11,11,http://192.168.0.10:8000/tickets,60102,0,11,-1,NONE,-1
+1791386091080,60100,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-13,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,666,11,11,http://192.168.0.10:8000/tickets,60100,0,8,-1,NONE,-1
+1791386092830,60060,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-14,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,703,10,10,http://192.168.0.10:8000/tickets,60060,0,10,-1,NONE,-1
+1791386096353,60094,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-15,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,975,10,10,http://192.168.0.10:8000/tickets,60094,0,14,-1,NONE,-1
+1791386097429,60097,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-16,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1647,9,9,http://192.168.0.10:8000/tickets,60097,0,13,-1,NONE,-1
+1791386100282,60105,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-17,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1123,10,10,http://192.168.0.10:8000/tickets,60105,0,8,-1,NONE,-1
+1791386115484,60041,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-18,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1104,12,12,http://192.168.0.10:8000/tickets,60041,0,8,-1,NONE,-1
+1791386117671,60043,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-19,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,2197,11,11,http://192.168.0.10:8000/tickets,60043,0,11,-1,NONE,-1
+1791386125883,60105,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-20,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,851,11,11,http://192.168.0.10:8000/tickets,60104,0,12,-1,NONE,-1
+1791386128699,60087,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-21,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,555,10,10,http://192.168.0.10:8000/tickets,60087,0,10,-1,NONE,-1
+1791386130806,60071,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-22,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1402,9,9,http://192.168.0.10:8000/tickets,60071,0,14,-1,NONE,-1
+1791386150702,56633,POST /tickets,200,OK,Open-loop arrivals 1-23,text,true,,194,860,10,10,http://192.168.0.10:8000/tickets,56633,0,8,56595.21,Bank account or service,994
+1791386156420,60093,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-24,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,852,11,11,http://192.168.0.10:8000/tickets,60093,0,8,-1,NONE,-1
+1791386159058,60108,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-25,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1170,11,11,http://192.168.0.10:8000/tickets,60108,0,7,-1,NONE,-1
+1791386160296,60044,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-26,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1635,11,11,http://192.168.0.10:8000/tickets,60044,0,8,-1,NONE,-1
+1791386161179,60098,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-27,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,640,10,10,http://192.168.0.10:8000/tickets,60098,0,14,-1,NONE,-1
+1791386161758,60083,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-28,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1580,10,10,http://192.168.0.10:8000/tickets,60083,0,8,-1,NONE,-1
+1791386169869,60087,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-29,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1180,10,10,http://192.168.0.10:8000/tickets,60086,0,7,-1,NONE,-1
+1791386180730,60087,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-30,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,614,10,10,http://192.168.0.10:8000/tickets,60087,0,8,-1,NONE,-1
+1791386201713,59098,POST /tickets,200,OK,Open-loop arrivals 1-31,text,true,,187,1299,12,12,http://192.168.0.10:8000/tickets,59098,0,7,59051.91,Credit reporting,995
+1791386201772,60097,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-32,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,722,11,11,http://192.168.0.10:8000/tickets,60097,0,7,-1,NONE,-1
+1791386207463,60102,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-33,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,472,11,11,http://192.168.0.10:8000/tickets,60102,0,21,-1,NONE,-1
+1791386209700,60097,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-34,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1804,10,10,http://192.168.0.10:8000/tickets,60097,0,10,-1,NONE,-1
+1791386218303,60100,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-35,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,588,9,9,http://192.168.0.10:8000/tickets,60100,0,15,-1,NONE,-1
+1791386220180,60101,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-36,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,832,9,9,http://192.168.0.10:8000/tickets,60101,0,11,-1,NONE,-1
+1791386221804,60046,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-37,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,471,8,8,http://192.168.0.10:8000/tickets,60046,0,9,-1,NONE,-1
+1791386227032,60218,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-38,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,630,8,8,http://192.168.0.10:8000/tickets,60218,0,11,-1,NONE,-1
+1791386230917,60089,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-39,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,901,7,7,http://192.168.0.10:8000/tickets,60089,0,13,-1,NONE,-1
+1791386243738,57207,POST /tickets,200,OK,Open-loop arrivals 1-40,text,true,,186,1011,6,6,http://192.168.0.10:8000/tickets,57207,0,10,57157.83,Debt collection,996
+1791386246617,60060,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-41,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,710,9,9,http://192.168.0.10:8000/tickets,60060,0,8,-1,NONE,-1
+1791386249246,60095,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-42,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,555,10,10,http://192.168.0.10:8000/tickets,60095,0,11,-1,NONE,-1
+1791386262218,60088,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-43,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1409,11,11,http://192.168.0.10:8000/tickets,60088,0,8,-1,NONE,-1
+1791386279441,57132,POST /tickets,200,OK,Open-loop arrivals 1-44,text,true,,179,1134,11,11,http://192.168.0.10:8000/tickets,57132,0,8,57095.28,Mortgage,997
+1791386283700,59251,POST /tickets,200,OK,Open-loop arrivals 1-45,text,true,,187,461,13,13,http://192.168.0.10:8000/tickets,59251,0,9,59203.94,Credit reporting,998
+1791386302235,60090,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-46,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1994,13,13,http://192.168.0.10:8000/tickets,60090,0,7,-1,NONE,-1
+1791386302273,60096,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-47,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,896,12,12,http://192.168.0.10:8000/tickets,60096,0,14,-1,NONE,-1
+1791386302424,60043,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-48,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1593,11,11,http://192.168.0.10:8000/tickets,60043,0,14,-1,NONE,-1
+1791386304054,60098,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-49,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1225,10,10,http://192.168.0.10:8000/tickets,60098,0,11,-1,NONE,-1
+1791386307850,60100,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-50,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1049,9,9,http://192.168.0.10:8000/tickets,60100,0,7,-1,NONE,-1
+1791386308273,60087,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-51,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1336,8,8,http://192.168.0.10:8000/tickets,60087,0,7,-1,NONE,-1
+1791386314317,60087,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-52,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,574,7,7,http://192.168.0.10:8000/tickets,60087,0,7,-1,NONE,-1
+1791386316787,60097,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-53,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1396,6,6,http://192.168.0.10:8000/tickets,60097,0,7,-1,NONE,-1
+1791386330343,60107,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-54,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1428,7,7,http://192.168.0.10:8000/tickets,60107,0,12,-1,NONE,-1
+1791386339155,60080,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-55,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1822,7,7,http://192.168.0.10:8000/tickets,60079,0,9,-1,NONE,-1
+1791386340352,60066,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-56,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1285,6,6,http://192.168.0.10:8000/tickets,60066,0,8,-1,NONE,-1
+1791386340491,60094,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-57,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,884,5,5,http://192.168.0.10:8000/tickets,60094,0,10,-1,NONE,-1
+1791386346914,60130,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-58,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1384,4,4,http://192.168.0.10:8000/tickets,60130,0,23,-1,NONE,-1
+1791386382089,50152,POST /tickets,200,OK,Open-loop arrivals 1-59,text,true,,182,1659,7,7,http://192.168.0.10:8000/tickets,50152,0,10,50084.79,Credit card,999
+1791386383447,60098,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-60,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,748,9,9,http://192.168.0.10:8000/tickets,60097,0,10,-1,NONE,-1
+1791386398076,58773,POST /tickets,200,OK,Open-loop arrivals 1-61,text,true,,187,825,10,10,http://192.168.0.10:8000/tickets,58773,0,9,58737.32,Debt collection,1000
+1791386415654,55518,POST /tickets,200,OK,Open-loop arrivals 1-62,text,true,,195,2040,9,9,http://192.168.0.10:8000/tickets,55518,0,17,55457.38,Bank account or service,1001
+1791386416684,60111,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-63,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,2045,11,11,http://192.168.0.10:8000/tickets,60111,0,10,-1,NONE,-1
+1791386423305,60116,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-64,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,436,11,11,http://192.168.0.10:8000/tickets,60116,0,11,-1,NONE,-1
+1791386427732,60038,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-65,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1135,10,10,http://192.168.0.10:8000/tickets,60038,0,16,-1,NONE,-1
+1791386435621,60099,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-66,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1439,11,11,http://192.168.0.10:8000/tickets,60099,0,9,-1,NONE,-1
+1791386437232,60102,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-67,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,2013,10,10,http://192.168.0.10:8000/tickets,60102,0,20,-1,NONE,-1
+1791386438160,60091,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-68,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1233,9,9,http://192.168.0.10:8000/tickets,60091,0,8,-1,NONE,-1
+1791386445267,60108,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-69,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1401,9,9,http://192.168.0.10:8000/tickets,60108,0,13,-1,NONE,-1
+1791386451634,60098,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-70,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1155,11,11,http://192.168.0.10:8000/tickets,60098,0,8,-1,NONE,-1
+1791386472253,50517,POST /tickets,200,OK,Open-loop arrivals 1-71,text,true,,195,436,11,11,http://192.168.0.10:8000/tickets,50517,0,8,50474.76,Bank account or service,1002
+1791386474580,60102,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-72,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1624,10,10,http://192.168.0.10:8000/tickets,60102,0,9,-1,NONE,-1
+1791386475111,60068,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-73,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1973,10,10,http://192.168.0.10:8000/tickets,60068,0,10,-1,NONE,-1
+1791386482149,60087,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-74,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,920,10,10,http://192.168.0.10:8000/tickets,60087,0,10,-1,NONE,-1
+1791386489506,60104,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-75,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,824,9,9,http://192.168.0.10:8000/tickets,60104,0,12,-1,NONE,-1
+1791386492392,60059,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-76,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,883,8,8,http://192.168.0.10:8000/tickets,60059,0,8,-1,NONE,-1
+1791386505082,60102,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-77,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,972,7,7,http://192.168.0.10:8000/tickets,60102,0,14,-1,NONE,-1
+1791386506808,60090,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-78,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1910,7,7,http://192.168.0.10:8000/tickets,60090,0,8,-1,NONE,-1
+1791386506827,60071,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-79,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,727,7,7,http://192.168.0.10:8000/tickets,60071,0,8,-1,NONE,-1
+1791386510780,60111,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-80,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,655,6,6,http://192.168.0.10:8000/tickets,60111,0,15,-1,NONE,-1
+1791386512202,60085,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-81,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1047,5,5,http://192.168.0.10:8000/tickets,60085,0,7,-1,NONE,-1
+1791386534972,48505,POST /tickets,200,OK,Open-loop arrivals 1-82,text,true,,183,1077,6,6,http://192.168.0.10:8000/tickets,48505,0,10,48454.08,Credit card,1003
+1791386539635,60098,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-83,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,756,6,6,http://192.168.0.10:8000/tickets,60098,0,9,-1,NONE,-1
+1791386565251,60109,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-84,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,2195,10,10,http://192.168.0.10:8000/tickets,60109,0,16,-1,NONE,-1
+1791386569445,60112,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-85,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,885,9,9,http://192.168.0.10:8000/tickets,60112,0,6,-1,NONE,-1
+1791386576012,60095,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-86,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,929,9,9,http://192.168.0.10:8000/tickets,60095,0,12,-1,NONE,-1
+1791386580099,60111,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-87,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,2048,8,8,http://192.168.0.10:8000/tickets,60111,0,11,-1,NONE,-1
+1791386588840,60094,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-88,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1056,10,10,http://192.168.0.10:8000/tickets,60094,0,12,-1,NONE,-1
+1791386601098,59684,POST /tickets,200,OK,Open-loop arrivals 1-89,text,true,,183,870,9,9,http://192.168.0.10:8000/tickets,59684,0,14,59632.11,Credit card,1004
+1791386603736,60068,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-90,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,435,9,9,http://192.168.0.10:8000/tickets,60068,0,21,-1,NONE,-1
+1791386608623,60091,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-91,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,616,8,8,http://192.168.0.10:8000/tickets,60091,0,7,-1,NONE,-1
+1791386615718,60097,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-92,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,882,9,9,http://192.168.0.10:8000/tickets,60097,0,9,-1,NONE,-1
+1791386619512,60070,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-93,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,853,8,8,http://192.168.0.10:8000/tickets,60070,0,14,-1,NONE,-1
+1791386631143,60050,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-94,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1274,7,7,http://192.168.0.10:8000/tickets,60050,0,10,-1,NONE,-1
+1791386643084,60101,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-95,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1137,8,8,http://192.168.0.10:8000/tickets,60101,0,10,-1,NONE,-1
+1791386645628,60095,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-96,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,437,7,7,http://192.168.0.10:8000/tickets,60095,0,12,-1,NONE,-1
+1791386648069,60095,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-97,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1050,6,6,http://192.168.0.10:8000/tickets,60095,0,8,-1,NONE,-1
+1791386660841,60100,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-98,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,496,6,6,http://192.168.0.10:8000/tickets,60100,0,8,-1,NONE,-1
+1791386673426,60104,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-99,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1039,7,7,http://192.168.0.10:8000/tickets,60104,0,10,-1,NONE,-1
+1791386674744,60086,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-100,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1473,6,6,http://192.168.0.10:8000/tickets,60086,0,7,-1,NONE,-1
+1791386699833,53202,POST /tickets,200,OK,Open-loop arrivals 1-101,text,true,,180,1541,8,8,http://192.168.0.10:8000/tickets,53202,0,8,53155.35,Mortgage,1005
+1791386702434,60088,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-102,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,618,10,10,http://192.168.0.10:8000/tickets,60088,0,10,-1,NONE,-1
+1791386720289,56699,POST /tickets,200,OK,Open-loop arrivals 1-103,text,true,,183,1748,10,10,http://192.168.0.10:8000/tickets,56699,0,15,56625.68,Credit card,1006
+1791386726531,60090,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-104,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1114,10,10,http://192.168.0.10:8000/tickets,60090,0,7,-1,NONE,-1
+1791386731439,60083,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-105,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,613,10,10,http://192.168.0.10:8000/tickets,60083,0,8,-1,NONE,-1
+1791386736764,60088,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-106,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,748,11,11,http://192.168.0.10:8000/tickets,60088,0,8,-1,NONE,-1
+1791386739468,60090,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-107,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1003,10,10,http://192.168.0.10:8000/tickets,60090,0,7,-1,NONE,-1
+1791386742364,60089,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-108,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1038,9,9,http://192.168.0.10:8000/tickets,60089,0,7,-1,NONE,-1
+1791386753556,60079,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-109,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1591,9,9,http://192.168.0.10:8000/tickets,60079,0,7,-1,NONE,-1
+1791386761450,60091,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-110,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,838,8,8,http://192.168.0.10:8000/tickets,60091,0,11,-1,NONE,-1
+1791386762398,60103,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-111,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1274,7,7,http://192.168.0.10:8000/tickets,60103,0,15,-1,NONE,-1
+1791386771688,60153,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-112,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1126,6,6,http://192.168.0.10:8000/tickets,60153,0,9,-1,NONE,-1
+1791386779555,60101,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-113,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1125,6,6,http://192.168.0.10:8000/tickets,60101,0,11,-1,NONE,-1
+1791386787180,60036,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-114,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1125,6,6,http://192.168.0.10:8000/tickets,60036,0,7,-1,NONE,-1
+1791386793972,60094,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-115,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,926,5,5,http://192.168.0.10:8000/tickets,60094,0,10,-1,NONE,-1
+1791386795046,60108,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-116,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1156,5,5,http://192.168.0.10:8000/tickets,60108,0,13,-1,NONE,-1
+1791386811967,57376,POST /tickets,200,OK,Open-loop arrivals 1-117,text,true,,182,1540,7,7,http://192.168.0.10:8000/tickets,57376,0,8,57320.9,Credit card,1007
+1791386834281,60231,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-118,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1325,7,7,http://192.168.0.10:8000/tickets,60231,0,74,-1,NONE,-1
+1791386847001,57410,POST /tickets,200,OK,Open-loop arrivals 1-119,text,true,,188,901,6,6,http://192.168.0.10:8000/tickets,57410,0,10,57365.08,Credit reporting,1008
+1791386855097,59158,POST /tickets,200,OK,Open-loop arrivals 1-120,text,true,,195,424,10,10,http://192.168.0.10:8000/tickets,59158,0,8,59124.01,Bank account or service,1009
+1791386855583,60059,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-121,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1764,9,9,http://192.168.0.10:8000/tickets,60059,0,8,-1,NONE,-1
+1791386864153,60086,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-122,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,767,10,10,http://192.168.0.10:8000/tickets,60086,0,7,-1,NONE,-1
+1791386868854,60092,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-123,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1094,10,10,http://192.168.0.10:8000/tickets,60092,0,6,-1,NONE,-1
+1791386883313,56560,POST /tickets,200,OK,Open-loop arrivals 1-124,text,true,,195,1491,10,10,http://192.168.0.10:8000/tickets,56560,0,10,56522.67,Bank account or service,1010
+1791386905583,50787,POST /tickets,200,OK,Open-loop arrivals 1-125,text,true,,188,1121,11,11,http://192.168.0.10:8000/tickets,50787,0,7,50743.28,Credit reporting,1011
+1791386907748,60101,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-126,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,884,10,10,http://192.168.0.10:8000/tickets,60101,0,13,-1,NONE,-1
+1791386911387,60103,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-127,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,857,10,10,http://192.168.0.10:8000/tickets,60103,0,8,-1,NONE,-1
+1791386911967,60091,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-128,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,839,9,9,http://192.168.0.10:8000/tickets,60091,0,13,-1,NONE,-1
+1791386912265,60097,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-129,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,852,8,8,http://192.168.0.10:8000/tickets,60097,0,10,-1,NONE,-1
+1791386918229,60101,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-130,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1192,9,9,http://192.168.0.10:8000/tickets,60101,0,13,-1,NONE,-1
+1791386920825,60095,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-131,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,885,8,8,http://192.168.0.10:8000/tickets,60095,0,8,-1,NONE,-1
+1791386924362,60039,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-132,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1780,10,10,http://192.168.0.10:8000/tickets,60038,0,11,-1,NONE,-1
+1791386931248,60091,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-133,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,661,9,9,http://192.168.0.10:8000/tickets,60091,0,8,-1,NONE,-1
+1791386944136,60090,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-134,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1023,8,8,http://192.168.0.10:8000/tickets,60090,0,9,-1,NONE,-1
+1791386955690,60041,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-135,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,584,7,7,http://192.168.0.10:8000/tickets,60041,0,11,-1,NONE,-1
+1791386971152,60088,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-136,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,929,9,9,http://192.168.0.10:8000/tickets,60088,0,7,-1,NONE,-1
+1791386974091,60081,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-137,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1543,9,9,http://192.168.0.10:8000/tickets,60081,0,8,-1,NONE,-1
+1791386976889,60117,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-138,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,969,9,9,http://192.168.0.10:8000/tickets,60116,0,22,-1,NONE,-1
+1791386983224,60088,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-139,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1391,11,11,http://192.168.0.10:8000/tickets,60088,0,9,-1,NONE,-1
+1791386983268,60075,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-140,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1356,10,10,http://192.168.0.10:8000/tickets,60074,0,18,-1,NONE,-1
+1791386984046,60035,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-141,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,518,9,9,http://192.168.0.10:8000/tickets,60035,0,8,-1,NONE,-1
+1791387020306,44040,POST /tickets,200,OK,Open-loop arrivals 1-142,text,true,,188,1445,10,10,http://192.168.0.10:8000/tickets,44040,0,10,43987.34,Credit reporting,1012
+1791387024474,60092,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-143,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,488,11,11,http://192.168.0.10:8000/tickets,60092,0,10,-1,NONE,-1
+1791387028598,60041,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-144,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1110,10,10,http://192.168.0.10:8000/tickets,60041,0,10,-1,NONE,-1
+1791387033642,60089,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-145,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1694,10,10,http://192.168.0.10:8000/tickets,60089,0,8,-1,NONE,-1
+1791387036383,60076,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-146,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1164,9,9,http://192.168.0.10:8000/tickets,60075,0,7,-1,NONE,-1
+1791387037805,60090,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-147,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,798,8,8,http://192.168.0.10:8000/tickets,60090,0,8,-1,NONE,-1
+1791387038041,60097,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-148,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1333,7,7,http://192.168.0.10:8000/tickets,60097,0,8,-1,NONE,-1
+1791387040678,60087,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-149,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1553,6,6,http://192.168.0.10:8000/tickets,60087,0,7,-1,NONE,-1
+1791387047559,60114,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-150,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1000,6,6,http://192.168.0.10:8000/tickets,60114,0,6,-1,NONE,-1
+1791387049760,60103,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-151,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,2100,5,5,http://192.168.0.10:8000/tickets,60103,0,10,-1,NONE,-1
+1791387074630,57828,POST /tickets,200,OK,Open-loop arrivals 1-152,text,true,,188,425,6,6,http://192.168.0.10:8000/tickets,57828,0,9,57783.22,Credit reporting,1013
+1791387078258,60125,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-153,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1447,7,7,http://192.168.0.10:8000/tickets,60125,0,7,-1,NONE,-1
+1791387090422,55975,POST /tickets,200,OK,Open-loop arrivals 1-154,text,true,,188,1427,6,6,http://192.168.0.10:8000/tickets,55975,0,9,55930.13,Credit reporting,1014
+1791387101901,57587,POST /tickets,200,OK,Open-loop arrivals 1-155,text,true,,187,523,6,6,http://192.168.0.10:8000/tickets,57587,0,9,57534.06,Debt collection,1015
+1791387122552,60094,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-156,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1159,7,7,http://192.168.0.10:8000/tickets,60094,0,6,-1,NONE,-1
+1791387127883,60087,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-157,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,763,6,6,http://192.168.0.10:8000/tickets,60087,0,7,-1,NONE,-1
+1791387136494,60106,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-158,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,922,7,7,http://192.168.0.10:8000/tickets,60106,0,16,-1,NONE,-1
+1791387137486,60063,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-159,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1271,6,6,http://192.168.0.10:8000/tickets,60063,0,19,-1,NONE,-1
+1791387151436,60095,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-160,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1252,7,7,http://192.168.0.10:8000/tickets,60095,0,6,-1,NONE,-1
+1791387159992,60096,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-161,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1583,7,7,http://192.168.0.10:8000/tickets,60096,0,14,-1,NONE,-1
+1791387167731,60098,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-162,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1060,7,7,http://192.168.0.10:8000/tickets,60098,0,6,-1,NONE,-1
+1791387191729,49956,POST /tickets,200,OK,Open-loop arrivals 1-163,text,true,,188,905,9,9,http://192.168.0.10:8000/tickets,49956,0,9,49913.02,Credit reporting,1016
+1791387191990,60100,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-164,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,473,10,10,http://192.168.0.10:8000/tickets,60100,0,13,-1,NONE,-1
+1791387199910,60095,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-165,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1124,9,9,http://192.168.0.10:8000/tickets,60095,0,7,-1,NONE,-1
+1791387206774,60081,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-166,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,614,9,9,http://192.168.0.10:8000/tickets,60081,0,8,-1,NONE,-1
+1791387216889,60052,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-167,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1026,9,9,http://192.168.0.10:8000/tickets,60052,0,17,-1,NONE,-1
+1791387221443,60035,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-168,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,434,8,8,http://192.168.0.10:8000/tickets,60035,0,8,-1,NONE,-1
+1791387228564,60102,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-169,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1151,7,7,http://192.168.0.10:8000/tickets,60102,0,10,-1,NONE,-1
+1791387237466,60104,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-170,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1492,7,7,http://192.168.0.10:8000/tickets,60104,0,20,-1,NONE,-1
+1791387241532,60095,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-171,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1078,6,6,http://192.168.0.10:8000/tickets,60095,0,14,-1,NONE,-1
+1791387243700,60095,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-172,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,2062,6,6,http://192.168.0.10:8000/tickets,60095,0,8,-1,NONE,-1
+1791387245849,60085,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-173,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,610,5,5,http://192.168.0.10:8000/tickets,60085,0,7,-1,NONE,-1
+1791387266733,54004,POST /tickets,200,OK,Open-loop arrivals 1-174,text,true,,187,1681,4,4,http://192.168.0.10:8000/tickets,54004,0,7,53957.82,Debt collection,1017
+1791387271521,60083,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-175,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,655,5,5,http://192.168.0.10:8000/tickets,60083,0,8,-1,NONE,-1
+1791387295638,60118,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-176,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,2212,7,7,http://192.168.0.10:8000/tickets,60118,0,23,-1,NONE,-1
+1791387302239,60095,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-177,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,844,8,8,http://192.168.0.10:8000/tickets,60095,0,7,-1,NONE,-1
+1791387329791,39111,POST /tickets,200,OK,Open-loop arrivals 1-178,text,true,,188,481,9,9,http://192.168.0.10:8000/tickets,39111,0,7,39066.57,Credit reporting,1018
+1791387330796,50282,POST /tickets,200,OK,Open-loop arrivals 1-179,text,true,,188,931,11,11,http://192.168.0.10:8000/tickets,50282,0,9,50239.61,Credit reporting,1019
+1791387342602,50098,POST /tickets,200,OK,Open-loop arrivals 1-180,text,true,,195,839,10,10,http://192.168.0.10:8000/tickets,50098,0,10,50052.58,Bank account or service,1020
+1791387345088,60114,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-181,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1349,9,9,http://192.168.0.10:8000/tickets,60114,0,9,-1,NONE,-1
+1791387353025,60101,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-182,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1452,8,8,http://192.168.0.10:8000/tickets,60101,0,8,-1,NONE,-1
+1791387357120,60080,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-183,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1963,8,8,http://192.168.0.10:8000/tickets,60080,0,15,-1,NONE,-1
+1791387359077,60102,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-184,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,836,7,7,http://192.168.0.10:8000/tickets,60102,0,8,-1,NONE,-1
+1791387364224,60037,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-185,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,867,6,6,http://192.168.0.10:8000/tickets,60037,0,10,-1,NONE,-1
+1791387366911,60095,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-186,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,694,5,5,http://192.168.0.10:8000/tickets,60095,0,12,-1,NONE,-1
+1791387375008,60096,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-187,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,650,4,4,http://192.168.0.10:8000/tickets,60096,0,9,-1,NONE,-1
+1791387378394,60112,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-188,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,729,3,3,http://192.168.0.10:8000/tickets,60112,0,15,-1,NONE,-1
+1791387378604,60042,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-189,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1953,2,2,http://192.168.0.10:8000/tickets,60042,0,8,-1,NONE,-1
+1791387416017,38274,POST /tickets,200,OK,Open-loop arrivals 1-190,text,true,,187,680,3,3,http://192.168.0.10:8000/tickets,38274,0,9,38237.74,Debt collection,1021
+1791387444850,50681,POST /tickets,200,OK,Open-loop arrivals 1-191,text,true,,195,888,10,10,http://192.168.0.10:8000/tickets,50681,0,9,50636.68,Bank account or service,1022
+1791387447358,60096,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-192,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,746,10,10,http://192.168.0.10:8000/tickets,60096,0,10,-1,NONE,-1
+1791387462322,60105,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-193,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1956,10,10,http://192.168.0.10:8000/tickets,60105,0,7,-1,NONE,-1
+1791387465924,60101,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-194,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1686,9,9,http://192.168.0.10:8000/tickets,60101,0,8,-1,NONE,-1
+1791387466897,60091,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-195,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1556,8,8,http://192.168.0.10:8000/tickets,60091,0,7,-1,NONE,-1
+1791387477566,60096,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-196,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,731,8,8,http://192.168.0.10:8000/tickets,60096,0,17,-1,NONE,-1
+1791387480966,60082,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-197,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,703,7,7,http://192.168.0.10:8000/tickets,60082,0,6,-1,NONE,-1
+1791387489769,60100,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-198,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1333,6,6,http://192.168.0.10:8000/tickets,60100,0,11,-1,NONE,-1
+1791387490788,60094,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-199,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1981,5,5,http://192.168.0.10:8000/tickets,60094,0,13,-1,NONE,-1
+1791387494725,60090,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-200,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1246,4,4,http://192.168.0.10:8000/tickets,60090,0,9,-1,NONE,-1
+1791387507340,59757,POST /tickets,200,OK,Open-loop arrivals 1-201,text,true,,187,1097,5,5,http://192.168.0.10:8000/tickets,59757,0,7,59721.4,Credit reporting,1023
+1791387520914,57175,POST /tickets,200,OK,Open-loop arrivals 1-202,text,true,,196,594,6,6,http://192.168.0.10:8000/tickets,57175,0,9,57127.8,Money transfer or service,1024
+1791387537388,54674,POST /tickets,200,OK,Open-loop arrivals 1-203,text,true,,188,848,6,6,http://192.168.0.10:8000/tickets,54674,0,8,54635.52,Credit reporting,1025
+1791387558777,50067,POST /tickets,200,OK,Open-loop arrivals 1-204,text,true,,188,752,8,8,http://192.168.0.10:8000/tickets,50067,0,7,50028.72,Credit reporting,1026
+1791387559582,60095,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-205,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,675,10,10,http://192.168.0.10:8000/tickets,60095,0,10,-1,NONE,-1
+1791387569363,60115,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-206,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,2174,10,10,http://192.168.0.10:8000/tickets,60115,0,10,-1,NONE,-1
+1791387577633,60094,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-207,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1188,9,9,http://192.168.0.10:8000/tickets,60094,0,9,-1,NONE,-1
+1791387585202,60113,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-208,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,644,9,9,http://192.168.0.10:8000/tickets,60113,0,11,-1,NONE,-1
+1791387592560,60097,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-209,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,565,9,9,http://192.168.0.10:8000/tickets,60097,0,9,-1,NONE,-1
+1791387593181,60092,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-210,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,742,8,8,http://192.168.0.10:8000/tickets,60092,0,8,-1,NONE,-1
+1791387597775,60098,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-211,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1032,10,10,http://192.168.0.10:8000/tickets,60098,0,7,-1,NONE,-1
+1791387617615,54676,POST /tickets,200,OK,Open-loop arrivals 1-212,text,true,,187,760,10,10,http://192.168.0.10:8000/tickets,54676,0,14,54625.83,Debt collection,1027
+1791387618249,60114,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-213,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1858,9,9,http://192.168.0.10:8000/tickets,60114,0,8,-1,NONE,-1
+1791387618472,60099,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-214,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1966,8,8,http://192.168.0.10:8000/tickets,60099,0,7,-1,NONE,-1
+1791387628756,60076,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-215,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1334,7,7,http://192.168.0.10:8000/tickets,60076,0,15,-1,NONE,-1
+1791387645066,60087,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-216,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,2131,7,7,http://192.168.0.10:8000/tickets,60087,0,15,-1,NONE,-1
+1791387649147,60105,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-217,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1273,7,7,http://192.168.0.10:8000/tickets,60105,0,19,-1,NONE,-1
+1791387653635,60090,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-218,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,754,6,6,http://192.168.0.10:8000/tickets,60090,0,8,-1,NONE,-1
+1791387656071,60032,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-219,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1798,5,5,http://192.168.0.10:8000/tickets,60032,0,9,-1,NONE,-1
+1791387657077,60093,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-220,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1294,4,4,http://192.168.0.10:8000/tickets,60093,0,7,-1,NONE,-1
+1791387664456,60100,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-221,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1524,3,3,http://192.168.0.10:8000/tickets,60100,0,13,-1,NONE,-1
+1791387701282,36124,POST /tickets,200,OK,Open-loop arrivals 1-222,text,true,,183,1195,4,4,http://192.168.0.10:8000/tickets,36124,0,10,36077.68,Credit card,1028
+1791387705335,60092,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-223,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1620,8,8,http://192.168.0.10:8000/tickets,60092,0,8,-1,NONE,-1
+1791387735790,42544,POST /tickets,200,OK,Open-loop arrivals 1-224,text,true,,187,2085,7,7,http://192.168.0.10:8000/tickets,42544,0,9,42497.06,Debt collection,1029
+1791387735899,54150,POST /tickets,200,OK,Open-loop arrivals 1-225,text,true,,195,798,8,8,http://192.168.0.10:8000/tickets,54150,0,7,54111.45,Bank account or service,1030
+1791387737435,60074,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-226,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1710,8,8,http://192.168.0.10:8000/tickets,60074,0,7,-1,NONE,-1
+1791387738379,60090,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-227,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,598,7,7,http://192.168.0.10:8000/tickets,60090,0,8,-1,NONE,-1
+1791387738795,60100,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-228,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,808,7,7,http://192.168.0.10:8000/tickets,60100,0,9,-1,NONE,-1
+1791387753785,59210,POST /tickets,200,OK,Open-loop arrivals 1-229,text,true,,180,1297,10,10,http://192.168.0.10:8000/tickets,59210,0,12,59147.98,Mortgage,1031
+1791387761601,60045,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-230,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,576,10,10,http://192.168.0.10:8000/tickets,60045,0,10,-1,NONE,-1
+1791387815174,11366,POST /tickets,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,Open-loop arrivals 1-239,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketException]]]
+
+****** comparison: [[[200                                             ]]]
+
+/",3167,0,10,10,http://192.168.0.10:8000/tickets,0,0,9,-1,NONE,-1
+1791387785687,40855,POST /tickets,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,Open-loop arrivals 1-231,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketException]]]
+
+****** comparison: [[[200                                             ]]]
+
+/",3167,0,10,10,http://192.168.0.10:8000/tickets,0,0,20,-1,NONE,-1
+1791387808992,17548,POST /tickets,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,Open-loop arrivals 1-237,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketException]]]
+
+****** comparison: [[[200                                             ]]]
+
+/",3167,0,10,10,http://192.168.0.10:8000/tickets,0,0,9,-1,NONE,-1
+1791387795568,30974,POST /tickets,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,Open-loop arrivals 1-233,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketException]]]
+
+****** comparison: [[[200                                             ]]]
+
+/",3167,0,10,10,http://192.168.0.10:8000/tickets,0,0,7,-1,NONE,-1
+1791387821794,4748,POST /tickets,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,Open-loop arrivals 1-240,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketException]]]
+
+****** comparison: [[[200                                             ]]]
+
+/",3167,0,10,10,http://192.168.0.10:8000/tickets,0,0,22,-1,NONE,-1
+1791387812637,13906,POST /tickets,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,Open-loop arrivals 1-238,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketException]]]
+
+****** comparison: [[[200                                             ]]]
+
+/",3167,0,10,10,http://192.168.0.10:8000/tickets,0,0,9,-1,NONE,-1
+1791387798797,27745,POST /tickets,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,Open-loop arrivals 1-234,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketException]]]
+
+****** comparison: [[[200                                             ]]]
+
+/",3167,0,10,10,http://192.168.0.10:8000/tickets,0,0,8,-1,NONE,-1
+1791387803897,22644,POST /tickets,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,Open-loop arrivals 1-236,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketException]]]
+
+****** comparison: [[[200                                             ]]]
+
+/",3167,0,10,10,http://192.168.0.10:8000/tickets,0,0,15,-1,NONE,-1
+1791387790047,36495,POST /tickets,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,Open-loop arrivals 1-232,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketException]]]
+
+****** comparison: [[[200                                             ]]]
+
+/",3167,0,10,10,http://192.168.0.10:8000/tickets,0,0,9,-1,NONE,-1
+1791387801116,25427,POST /tickets,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,Open-loop arrivals 1-235,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketException]]]
+
+****** comparison: [[[200                                             ]]]
+
+/",3167,0,9,9,http://192.168.0.10:8000/tickets,0,0,9,-1,NONE,-1

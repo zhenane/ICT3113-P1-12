@@ -1,0 +1,12 @@
+model,rate_per_min,rep,jtl,jmeter_samples,log_entries_in_window,jmeter_codes,log_codes,jmeter_timeouts,ids_matched,ids_missing_in_log,log_200_not_success_in_jmeter,log_models,overhead_p50_ms,clock_offset_s,verdict
+llama3.2:3b,16,1,llama3.2-3b_r16_rep1.jtl,80,80,200 x80,200 x80,0,80,0,0,llama3.2:3b x80,25.6,0.185,RECONCILED
+llama3.2:3b,20,1,llama3.2-3b_r20_rep1.jtl,100,100,200 x100,200 x100,0,100,0,0,llama3.2:3b x100,24.2,0.176,RECONCILED
+llama3.2:3b,24,1,llama3.2-3b_r24_rep1.jtl,120,120,200 x102; 502 x18,200 x102; 502 x18,0,102,0,0,llama3.2:3b x102,25.6,0.169,RECONCILED
+llama3.2:3b,20,1,llama3.2-3b_r20_rep1_20261009_112030.jtl,100,100,200 x100,200 x100,0,100,0,0,llama3.2:3b x100,23.8,2.287,RECONCILED
+llama3.2:3b,20,2,llama3.2-3b_r20_rep2.jtl,100,100,200 x80; 502 x20,200 x80; 502 x20,0,80,0,0,llama3.2:3b x80,24.9,0.332,RECONCILED
+llama3.2:3b,20,3,llama3.2-3b_r20_rep3.jtl,100,100,200 x100,200 x100,0,100,0,0,llama3.2:3b x100,24.7,0.27,RECONCILED
+llama3.2:3b,24,1,llama3.2-3b_r24_rep1_20261009_115319.jtl,120,120,200 x104; 502 x16,200 x104; 502 x16,0,104,0,0,llama3.2:3b x104,23.4,0.22,RECONCILED
+llama3.2:3b,24,2,llama3.2-3b_r24_rep2.jtl,120,120,200 x120,200 x120,0,120,0,0,llama3.2:3b x120,24.5,0.177,RECONCILED
+llama3.2:3b,16,1,llama3.2-3b_r16_rep1_20261009_123442.jtl,80,80,200 x80,200 x80,0,80,0,0,llama3.2:3b x80,26.0,-0.449,RECONCILED
+llama3.2:3b,16,2,llama3.2-3b_r16_rep2.jtl,80,80,200 x80,200 x80,0,80,0,0,llama3.2:3b x80,25.7,-0.469,RECONCILED
+llama3.2:3b,16,3,llama3.2-3b_r16_rep3.jtl,80,80,200 x80,200 x80,0,80,0,0,llama3.2:3b x80,24.7,-0.484,RECONCILED

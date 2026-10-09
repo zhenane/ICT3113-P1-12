@@ -1,0 +1,3 @@
+model,rate_per_min,rep,jtl,jmeter_samples,log_entries_in_window,jmeter_codes,log_codes,jmeter_timeouts,ids_matched,ids_missing_in_log,log_200_not_success_in_jmeter,log_models,overhead_p50_ms,clock_offset_s,verdict
+llama3.2:3b,8,1,llama3.2-3b_r8_rep1.jtl,40,40,200 x40,200 x40,0,40,0,0,llama3.2:3b x40,27.2,0.516,RECONCILED
+llama3.2:3b,12,1,llama3.2-3b_r12_rep1.jtl,60,60,200 x56; no-response x4,200 x60,4,56,0,4,llama3.2:3b x56,24.7,0.516,RECONCILED

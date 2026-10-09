@@ -1,0 +1,4 @@
+model,rate_per_min,duration_min,rep,started_at,jtl,jmeter_exit,stats_before,stats_after,stats_delta,jmeter_successes,jmeter_samples,stats_matches_jmeter,p95_ms,error_rate,window_start_epoch,window_end_epoch
+qwen3:1.7b,8,30,1,2026-10-07T22:41:21,qwen3-1.7b_r8_rep1.jtl,0,956,987,31,28,240,False,59178,0.8833,1791384081.956,1791385958.681
+qwen3:1.7b,8,30,2,2026-10-07T23:13:45,qwen3-1.7b_r8_rep2.jtl,0,990,1032,42,41,240,False,59251,0.8292,1791386025.021,1791387902.080
+qwen3:1.7b,8,30,3,2026-10-07T23:46:08,qwen3-1.7b_r8_rep3.jtl,0,1035,1074,39,37,240,False,59352,0.8458,1791387968.150,1791389845.209

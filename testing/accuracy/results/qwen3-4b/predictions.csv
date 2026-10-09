@@ -1,0 +1,197 @@
+row,human_label,predicted,correct,http_status,client_latency_ms,server_latency_ms,ticket_id,timestamp
+12630,Bank account or service,(error),False,502,60102.1,,,2026-10-08T16:25:01
+12658,Bank account or service,(error),False,502,60100.7,,,2026-10-08T16:26:02
+12876,Bank account or service,(error),False,502,60101.1,,,2026-10-08T16:27:02
+12363,Bank account or service,(error),False,502,60088.8,,,2026-10-08T16:28:02
+12579,Bank account or service,(error),False,502,60061.9,,,2026-10-08T16:29:02
+12190,Bank account or service,(error),False,502,60072.9,,,2026-10-08T16:30:02
+12604,Bank account or service,(error),False,502,60061.9,,,2026-10-08T16:31:02
+12344,Bank account or service,(error),False,502,60077.7,,,2026-10-08T16:32:02
+12597,Bank account or service,(error),False,502,60091.2,,,2026-10-08T16:33:02
+12877,Bank account or service,(error),False,502,60133.2,,,2026-10-08T16:34:02
+12138,Bank account or service,(error),False,502,60114.6,,,2026-10-08T16:35:02
+12538,Bank account or service,(error),False,502,60108.3,,,2026-10-08T16:36:02
+12115,Bank account or service,(error),False,502,60088.2,,,2026-10-08T16:37:03
+12424,Bank account or service,(error),False,502,60066.1,,,2026-10-08T16:38:03
+12168,Money transfer or service,(error),False,502,60121.4,,,2026-10-08T16:39:03
+12191,Bank account or service,(error),False,502,60047.1,,,2026-10-08T16:40:03
+12797,Debt collection,(error),False,502,60082.4,,,2026-10-08T16:41:03
+12915,Bank account or service,(error),False,502,60096.6,,,2026-10-08T16:42:03
+12591,Bank account or service,(error),False,502,60120.8,,,2026-10-08T16:43:03
+12123,Bank account or service,(error),False,502,60058.8,,,2026-10-08T16:44:03
+12486,Money transfer or service,(error),False,502,60114.0,,,2026-10-08T16:45:03
+12133,Bank account or service,(error),False,502,60071.1,,,2026-10-08T16:46:03
+12090,Bank account or service,(error),False,502,60119.6,,,2026-10-08T16:47:03
+12059,Bank account or service,(error),False,502,60072.7,,,2026-10-08T16:48:04
+12194,Bank account or service,(error),False,502,60056.1,,,2026-10-08T16:49:04
+12943,Bank account or service,(error),False,502,60042.5,,,2026-10-08T16:50:04
+12589,Bank account or service,(error),False,502,60119.0,,,2026-10-08T16:51:04
+12364,Bank account or service,(error),False,502,60112.9,,,2026-10-08T16:52:04
+12488,Consumer loan,(error),False,502,60111.3,,,2026-10-08T16:53:05
+12733,Consumer loan,(error),False,502,60064.4,,,2026-10-08T16:54:05
+12257,Consumer loan,(error),False,502,60110.9,,,2026-10-08T16:55:05
+12396,Credit reporting,(error),False,502,60084.1,,,2026-10-08T16:56:06
+12647,Consumer loan,(error),False,502,60122.4,,,2026-10-08T16:57:06
+12946,Consumer loan,(error),False,502,60114.8,,,2026-10-08T16:58:06
+12567,Consumer loan,(error),False,502,60126.0,,,2026-10-08T16:59:06
+12818,Debt collection,(error),False,502,60099.2,,,2026-10-08T17:00:06
+12931,Consumer loan,(error),False,502,60083.6,,,2026-10-08T17:01:06
+12086,Consumer loan,(error),False,502,60096.1,,,2026-10-08T17:02:06
+12209,Debt collection,(error),False,502,60086.9,,,2026-10-08T17:03:06
+12318,Debt collection,(error),False,502,60109.0,,,2026-10-08T17:04:06
+12136,Consumer loan,(error),False,502,60130.3,,,2026-10-08T17:05:07
+12720,Consumer loan,(error),False,502,60101.2,,,2026-10-08T17:06:07
+12778,Consumer loan,(error),False,502,60076.7,,,2026-10-08T17:07:07
+12967,Credit reporting,(error),False,502,60068.7,,,2026-10-08T17:08:07
+12208,Debt collection,(error),False,502,60108.7,,,2026-10-08T17:09:07
+12944,Consumer loan,(error),False,502,60082.8,,,2026-10-08T17:10:07
+12085,Consumer loan,(error),False,502,60095.8,,,2026-10-08T17:11:07
+12856,Consumer loan,(error),False,502,60061.4,,,2026-10-08T17:12:07
+12487,Consumer loan,(error),False,502,60066.2,,,2026-10-08T17:13:07
+12640,Mortgage,(error),False,502,60073.0,,,2026-10-08T17:14:07
+12846,Consumer loan,(error),False,502,60119.1,,,2026-10-08T17:15:07
+12739,Consumer loan,(error),False,502,60064.0,,,2026-10-08T17:16:07
+12474,Consumer loan,(error),False,502,60067.8,,,2026-10-08T17:17:08
+12045,Consumer loan,(error),False,502,60129.3,,,2026-10-08T17:18:08
+12440,Out-of-scope,(error),False,502,60092.9,,,2026-10-08T17:19:08
+12309,Consumer loan,(error),False,502,60080.0,,,2026-10-08T17:20:08
+12834,Credit card,(error),False,502,60098.1,,,2026-10-08T17:21:08
+12516,Credit card,(error),False,502,60131.4,,,2026-10-08T17:22:08
+12226,Credit card,(error),False,502,60111.9,,,2026-10-08T17:23:08
+12909,Credit card,(error),False,502,60068.9,,,2026-10-08T17:24:08
+12326,Credit card,(error),False,502,60088.7,,,2026-10-08T17:25:08
+12061,Credit card,(error),False,502,60117.5,,,2026-10-08T17:26:08
+12639,Credit reporting,(error),False,502,60122.0,,,2026-10-08T17:27:09
+12532,Credit card,(error),False,502,60050.9,,,2026-10-08T17:28:09
+12815,Credit card,(error),False,502,60104.8,,,2026-10-08T17:29:09
+12837,Credit reporting,(error),False,502,60109.9,,,2026-10-08T17:30:09
+12865,Credit card,(error),False,502,60083.1,,,2026-10-08T17:31:09
+12463,Credit card,(error),False,502,60061.4,,,2026-10-08T17:32:09
+12507,Credit card,(error),False,502,60092.6,,,2026-10-08T17:33:09
+12106,Credit card,(error),False,502,60110.7,,,2026-10-08T17:34:09
+12981,Credit card,(error),False,502,60098.0,,,2026-10-08T17:35:09
+12603,Credit card,(error),False,502,60057.3,,,2026-10-08T17:36:09
+12053,Credit card,(error),False,502,60048.8,,,2026-10-08T17:37:09
+12195,Credit card,(error),False,502,60072.4,,,2026-10-08T17:38:09
+12963,Credit card,(error),False,502,60096.5,,,2026-10-08T17:39:10
+12844,Credit card,(error),False,502,60101.4,,,2026-10-08T17:40:10
+12283,Credit card,(error),False,502,60094.5,,,2026-10-08T17:41:10
+12906,Credit card,(error),False,502,60096.4,,,2026-10-08T17:42:10
+12484,Credit card,(error),False,502,60118.6,,,2026-10-08T17:43:10
+12017,Credit card,(error),False,502,60076.5,,,2026-10-08T17:44:10
+12980,Bank account or service,(error),False,502,60129.3,,,2026-10-08T17:45:10
+12187,Credit reporting,(error),False,502,60058.5,,,2026-10-08T17:46:10
+12997,Credit card,(error),False,502,60085.5,,,2026-10-08T17:47:10
+12727,Credit card,(error),False,502,60055.1,,,2026-10-08T17:48:10
+12649,Credit reporting,(error),False,502,60099.7,,,2026-10-08T17:49:10
+12743,Credit reporting,(error),False,502,60102.7,,,2026-10-08T17:50:11
+12110,Credit reporting,(error),False,502,60122.6,,,2026-10-08T17:51:11
+12172,Credit reporting,(error),False,502,60126.6,,,2026-10-08T17:52:11
+12415,Credit reporting,(error),False,502,60114.4,,,2026-10-08T17:53:11
+12423,Credit reporting,(error),False,502,60061.7,,,2026-10-08T17:54:11
+12420,Credit reporting,(error),False,502,60106.6,,,2026-10-08T17:55:11
+12812,Credit reporting,(error),False,502,60055.2,,,2026-10-08T17:56:11
+12750,Credit reporting,(error),False,502,60100.8,,,2026-10-08T17:57:11
+12478,Credit reporting,(error),False,502,60093.4,,,2026-10-08T17:58:11
+12617,Credit reporting,(error),False,502,60101.2,,,2026-10-08T17:59:11
+12285,Credit reporting,(error),False,502,60047.0,,,2026-10-08T18:00:12
+12526,Credit reporting,(error),False,502,60128.7,,,2026-10-08T18:01:12
+12436,Credit reporting,(error),False,502,60108.9,,,2026-10-08T18:02:12
+12188,Credit reporting,(error),False,502,60106.6,,,2026-10-08T18:03:12
+12261,Credit reporting,(error),False,502,60103.4,,,2026-10-08T18:04:12
+12178,Credit reporting,(error),False,502,60092.3,,,2026-10-08T18:05:12
+12139,Credit reporting,(error),False,502,60095.5,,,2026-10-08T18:06:12
+12622,Credit reporting,(error),False,502,60138.1,,,2026-10-08T18:07:12
+12361,Credit reporting,(error),False,502,60086.1,,,2026-10-08T18:08:12
+12757,Credit reporting,(error),False,502,60077.2,,,2026-10-08T18:09:12
+12047,Credit reporting,(error),False,502,60100.5,,,2026-10-08T18:10:13
+12765,Credit reporting,(error),False,502,60054.0,,,2026-10-08T18:11:13
+12219,Credit reporting,(error),False,502,60092.0,,,2026-10-08T18:12:13
+12742,Credit reporting,(error),False,502,60086.1,,,2026-10-08T18:13:13
+12975,Credit reporting,(error),False,502,60078.8,,,2026-10-08T18:14:13
+12125,Credit reporting,(error),False,502,60093.5,,,2026-10-08T18:15:13
+12127,Credit reporting,(error),False,502,60049.0,,,2026-10-08T18:16:13
+12758,Debt collection,(error),False,502,60054.2,,,2026-10-08T18:17:13
+12446,Debt collection,(error),False,502,60125.2,,,2026-10-08T18:18:13
+12240,Credit reporting,(error),False,502,60073.2,,,2026-10-08T18:19:13
+12814,Debt collection,(error),False,502,60102.4,,,2026-10-08T18:20:13
+12314,Debt collection,(error),False,502,60063.0,,,2026-10-08T18:21:13
+12064,Debt collection,(error),False,502,60151.9,,,2026-10-08T18:22:14
+12564,Debt collection,(error),False,502,60060.4,,,2026-10-08T18:23:14
+12456,Debt collection,(error),False,502,61073.3,,,2026-10-08T18:24:15
+12726,Debt collection,(error),False,502,60094.0,,,2026-10-08T18:25:15
+12760,Debt collection,(error),False,502,60071.6,,,2026-10-08T18:26:15
+12788,Debt collection,(error),False,502,60107.2,,,2026-10-08T18:27:15
+12401,Debt collection,(error),False,502,60041.3,,,2026-10-08T18:28:15
+12439,Debt collection,(error),False,502,60109.3,,,2026-10-08T18:29:15
+12154,Debt collection,(error),False,502,60120.8,,,2026-10-08T18:30:15
+12895,Credit reporting,(error),False,502,60075.7,,,2026-10-08T18:31:15
+12534,Credit reporting,(error),False,502,60059.9,,,2026-10-08T18:32:15
+12063,Debt collection,(error),False,502,60090.1,,,2026-10-08T18:33:15
+12221,Debt collection,(error),False,502,60127.8,,,2026-10-08T18:34:16
+12880,Debt collection,(error),False,502,60071.1,,,2026-10-08T18:35:16
+12767,Debt collection,(error),False,502,60090.8,,,2026-10-08T18:36:16
+12255,Debt collection,(error),False,502,60058.2,,,2026-10-08T18:37:16
+12807,Debt collection,(error),False,502,60094.6,,,2026-10-08T18:38:16
+12414,Debt collection,(error),False,502,60046.8,,,2026-10-08T18:39:16
+12032,Debt collection,(error),False,502,60055.7,,,2026-10-08T18:40:16
+12894,Debt collection,(error),False,502,60048.8,,,2026-10-08T18:41:16
+12216,Debt collection,(error),False,502,60113.5,,,2026-10-08T18:42:16
+12969,Debt collection,(error),False,502,60047.2,,,2026-10-08T18:43:16
+12656,Debt collection,(error),False,502,60100.3,,,2026-10-08T18:44:16
+12434,Bank account or service,(error),False,502,60054.5,,,2026-10-08T18:45:16
+12339,Money transfer or service,(error),False,502,60049.4,,,2026-10-08T18:46:16
+12167,Money transfer or service,(error),False,502,60117.8,,,2026-10-08T18:47:17
+12263,Money transfer or service,(error),False,502,60109.9,,,2026-10-08T18:48:17
+12756,Money transfer or service,(error),False,502,60053.5,,,2026-10-08T18:49:17
+12438,Money transfer or service,(error),False,502,60121.0,,,2026-10-08T18:50:17
+12521,Money transfer or service,(error),False,502,60108.7,,,2026-10-08T18:51:17
+12819,Money transfer or service,(error),False,502,60129.2,,,2026-10-08T18:52:17
+12598,Money transfer or service,(error),False,502,60115.2,,,2026-10-08T18:53:17
+12245,Money transfer or service,(error),False,502,60065.1,,,2026-10-08T18:54:17
+12738,Bank account or service,(error),False,502,60083.3,,,2026-10-08T18:55:17
+12248,Money transfer or service,(error),False,502,60088.3,,,2026-10-08T18:56:17
+12481,Money transfer or service,(error),False,502,60089.4,,,2026-10-08T18:57:18
+12041,Money transfer or service,(error),False,502,60058.0,,,2026-10-08T18:58:18
+12744,Money transfer or service,(error),False,502,60113.4,,,2026-10-08T18:59:18
+12892,Bank account or service,(error),False,502,60083.2,,,2026-10-08T19:00:18
+12280,Money transfer or service,(error),False,502,60069.0,,,2026-10-08T19:01:18
+12594,Money transfer or service,(error),False,502,60060.5,,,2026-10-08T19:02:18
+12984,Bank account or service,(error),False,502,60098.9,,,2026-10-08T19:03:18
+12644,Money transfer or service,(error),False,502,60106.7,,,2026-10-08T19:04:18
+12166,Money transfer or service,(error),False,502,60103.2,,,2026-10-08T19:05:18
+12092,Money transfer or service,(error),False,502,60114.4,,,2026-10-08T19:06:18
+12923,Money transfer or service,(error),False,502,60115.2,,,2026-10-08T19:07:18
+12119,Money transfer or service,(error),False,502,60057.0,,,2026-10-08T19:08:19
+12822,Money transfer or service,(error),False,502,60101.3,,,2026-10-08T19:09:19
+12375,Money transfer or service,(error),False,502,60059.0,,,2026-10-08T19:10:19
+12522,Money transfer or service,(error),False,502,60043.3,,,2026-10-08T19:11:19
+12582,Money transfer or service,(error),False,502,60105.3,,,2026-10-08T19:12:19
+12602,Mortgage,(error),False,502,60083.7,,,2026-10-08T19:13:19
+12609,Mortgage,(error),False,502,60106.2,,,2026-10-08T19:14:19
+12670,Mortgage,(error),False,502,60102.9,,,2026-10-08T19:15:19
+12780,Mortgage,(error),False,502,60067.7,,,2026-10-08T19:16:19
+12164,Mortgage,(error),False,502,60091.6,,,2026-10-08T19:17:19
+12779,Mortgage,(error),False,502,60091.0,,,2026-10-08T19:18:19
+12556,Mortgage,(error),False,502,60084.3,,,2026-10-08T19:19:19
+12566,Mortgage,(error),False,502,60097.6,,,2026-10-08T19:20:20
+12102,Mortgage,(error),False,502,60110.0,,,2026-10-08T19:21:20
+12096,Mortgage,(error),False,502,60098.7,,,2026-10-08T19:22:20
+12103,Mortgage,(error),False,502,60053.7,,,2026-10-08T19:23:20
+12083,Mortgage,(error),False,502,60058.5,,,2026-10-08T19:24:20
+12066,Mortgage,(error),False,502,60068.2,,,2026-10-08T19:25:20
+12259,Mortgage,(error),False,502,60072.3,,,2026-10-08T19:26:20
+12306,Mortgage,(error),False,502,60078.8,,,2026-10-08T19:27:20
+12496,Mortgage,(error),False,502,60090.3,,,2026-10-08T19:28:20
+12735,Mortgage,(error),False,502,60082.3,,,2026-10-08T19:29:20
+12917,Mortgage,(error),False,502,60037.4,,,2026-10-08T19:30:20
+12453,Mortgage,(error),False,502,60112.9,,,2026-10-08T19:31:20
+12668,Mortgage,(error),False,502,60081.5,,,2026-10-08T19:32:21
+12524,Mortgage,(error),False,502,60121.9,,,2026-10-08T19:33:21
+12836,Mortgage,(error),False,502,60096.7,,,2026-10-08T19:34:21
+12214,Mortgage,(error),False,502,60077.3,,,2026-10-08T19:35:21
+12458,Mortgage,(error),False,502,60058.4,,,2026-10-08T19:36:21
+12330,Mortgage,(error),False,502,60117.5,,,2026-10-08T19:37:21
+12205,Mortgage,(error),False,502,60049.7,,,2026-10-08T19:38:21
+12143,Mortgage,(error),False,502,60071.3,,,2026-10-08T19:39:21
+12891,Mortgage,(error),False,502,60052.2,,,2026-10-08T19:40:21

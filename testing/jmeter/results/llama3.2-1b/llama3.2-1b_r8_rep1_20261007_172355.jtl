@@ -1,0 +1,253 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect,"server_latency_ms","category","ticket_id"
+1791365052191,704,POST /tickets,200,OK,Open-loop arrivals 1-1,text,true,,184,453,1,1,http://192.168.0.10:8000/tickets,704,0,25,637.46,Credit reporting,83
+1791365054060,536,POST /tickets,200,OK,Open-loop arrivals 1-2,text,true,,183,452,1,1,http://192.168.0.10:8000/tickets,536,0,9,499.05,Debt collection,84
+1791365058818,772,POST /tickets,200,OK,Open-loop arrivals 1-3,text,true,,184,484,1,1,http://192.168.0.10:8000/tickets,772,0,9,723.16,Credit reporting,85
+1791365062287,2971,POST /tickets,200,OK,Open-loop arrivals 1-4,text,true,,194,1742,1,1,http://192.168.0.10:8000/tickets,2971,0,8,2932.54,Money transfer or service,86
+1791365087097,4262,POST /tickets,200,OK,Open-loop arrivals 1-5,text,true,,193,2206,1,1,http://192.168.0.10:8000/tickets,4262,0,10,4216.7,Money transfer or service,87
+1791365093664,2125,POST /tickets,200,OK,Open-loop arrivals 1-6,text,true,,184,1353,1,1,http://192.168.0.10:8000/tickets,2125,0,11,2081.58,Debt collection,88
+1791365096387,3542,POST /tickets,200,OK,Open-loop arrivals 1-7,text,true,,184,2165,3,3,http://192.168.0.10:8000/tickets,3542,0,9,3494.01,Debt collection,89
+1791365096690,4877,POST /tickets,200,OK,Open-loop arrivals 1-8,text,true,,184,1058,4,4,http://192.168.0.10:8000/tickets,4877,0,8,4828.24,Debt collection,90
+1791365097172,5593,POST /tickets,200,OK,Open-loop arrivals 1-9,text,true,,184,956,3,3,http://192.168.0.10:8000/tickets,5593,0,13,5528.33,Debt collection,91
+1791365100281,3123,POST /tickets,200,OK,Open-loop arrivals 1-10,text,true,,185,533,2,2,http://192.168.0.10:8000/tickets,3123,0,9,3085.75,Credit reporting,92
+1791365101321,4363,POST /tickets,200,OK,Open-loop arrivals 1-11,text,true,,194,1334,1,1,http://192.168.0.10:8000/tickets,4363,0,9,4323.68,Money transfer or service,93
+1791365112036,1509,POST /tickets,200,OK,Open-loop arrivals 1-12,text,true,,185,933,1,1,http://192.168.0.10:8000/tickets,1509,0,9,1467.97,Credit reporting,94
+1791365118971,1097,POST /tickets,200,OK,Open-loop arrivals 1-13,text,true,,184,666,1,1,http://192.168.0.10:8000/tickets,1097,0,24,1044.86,Debt collection,95
+1791365121713,1058,POST /tickets,200,OK,Open-loop arrivals 1-14,text,true,,185,703,1,1,http://192.168.0.10:8000/tickets,1058,0,16,1010.71,Credit reporting,96
+1791365138616,1340,POST /tickets,200,OK,Open-loop arrivals 1-15,text,true,,185,975,1,1,http://192.168.0.10:8000/tickets,1340,0,8,1296.52,Credit reporting,97
+1791365154474,2832,POST /tickets,200,OK,Open-loop arrivals 1-16,text,true,,177,1647,2,2,http://192.168.0.10:8000/tickets,2832,0,9,2789.85,Mortgage,98
+1791365155529,3427,POST /tickets,200,OK,Open-loop arrivals 1-17,text,true,,184,1123,1,1,http://192.168.0.10:8000/tickets,3427,0,9,3385.16,Debt collection,99
+1791365160763,1809,POST /tickets,200,OK,Open-loop arrivals 1-18,text,true,,185,1104,1,1,http://192.168.0.10:8000/tickets,1809,0,13,1748.37,Debt collection,100
+1791365174498,3774,POST /tickets,200,OK,Open-loop arrivals 1-19,text,true,,195,2197,3,3,http://192.168.0.10:8000/tickets,3774,0,11,3727.72,Money transfer or service,101
+1791365176335,3130,POST /tickets,200,OK,Open-loop arrivals 1-20,text,true,,186,851,2,2,http://192.168.0.10:8000/tickets,3130,0,9,3085.27,Credit reporting,102
+1791365176899,3294,POST /tickets,200,OK,Open-loop arrivals 1-21,text,true,,186,555,1,1,http://192.168.0.10:8000/tickets,3294,0,9,3256.65,Credit reporting,103
+1791365222597,2325,POST /tickets,200,OK,Open-loop arrivals 1-22,text,true,,195,1402,1,1,http://192.168.0.10:8000/tickets,2325,0,22,2269.91,Money transfer or service,104
+1791365241542,1510,POST /tickets,200,OK,Open-loop arrivals 1-23,text,true,,186,860,2,2,http://192.168.0.10:8000/tickets,1510,0,11,1456.98,Credit reporting,105
+1791365241931,2315,POST /tickets,200,OK,Open-loop arrivals 1-24,text,true,,185,852,1,1,http://192.168.0.10:8000/tickets,2315,0,8,2278.96,Debt collection,106
+1791365251467,1983,POST /tickets,200,OK,Open-loop arrivals 1-25,text,true,,185,1170,2,2,http://192.168.0.10:8000/tickets,1983,0,8,1943.56,Debt collection,107
+1791365251790,4563,POST /tickets,200,OK,Open-loop arrivals 1-26,text,true,,185,1635,1,1,http://192.168.0.10:8000/tickets,4563,0,10,4517.68,Debt collection,108
+1791365258756,998,POST /tickets,200,OK,Open-loop arrivals 1-27,text,true,,185,640,1,1,http://192.168.0.10:8000/tickets,998,0,11,945.18,Credit reporting,109
+1791365265655,2637,POST /tickets,200,OK,Open-loop arrivals 1-28,text,true,,195,1580,1,1,http://192.168.0.10:8000/tickets,2637,0,14,2574.61,Money transfer or service,110
+1791365277447,1707,POST /tickets,200,OK,Open-loop arrivals 1-29,text,true,,195,1180,2,2,http://192.168.0.10:8000/tickets,1707,0,9,1668.54,Money transfer or service,111
+1791365279150,919,POST /tickets,200,OK,Open-loop arrivals 1-30,text,true,,184,614,1,1,http://192.168.0.10:8000/tickets,919,0,10,880.7,Credit reporting,112
+1791365294621,1730,POST /tickets,200,OK,Open-loop arrivals 1-31,text,true,,185,1299,1,1,http://192.168.0.10:8000/tickets,1730,0,9,1688.82,Debt collection,113
+1791365298688,1068,POST /tickets,200,OK,Open-loop arrivals 1-32,text,true,,186,722,1,1,http://192.168.0.10:8000/tickets,1068,0,7,1034.05,Credit reporting,114
+1791365318905,589,POST /tickets,200,OK,Open-loop arrivals 1-33,text,true,,184,472,1,1,http://192.168.0.10:8000/tickets,589,0,9,550.92,Debt collection,115
+1791365323088,2953,POST /tickets,200,OK,Open-loop arrivals 1-34,text,true,,195,1804,2,2,http://192.168.0.10:8000/tickets,2953,0,8,2912.47,Money transfer or service,116
+1791365325191,1782,POST /tickets,200,OK,Open-loop arrivals 1-35,text,true,,185,588,2,2,http://192.168.0.10:8000/tickets,1782,0,9,1731.68,Debt collection,117
+1791365326781,1383,POST /tickets,200,OK,Open-loop arrivals 1-36,text,true,,186,832,1,1,http://192.168.0.10:8000/tickets,1383,0,12,1341.57,Credit reporting,118
+1791365332926,696,POST /tickets,200,OK,Open-loop arrivals 1-37,text,true,,185,471,1,1,http://192.168.0.10:8000/tickets,696,0,8,660.58,Credit reporting,119
+1791365336634,986,POST /tickets,200,OK,Open-loop arrivals 1-38,text,true,,184,630,1,1,http://192.168.0.10:8000/tickets,986,0,9,946.31,Debt collection,120
+1791365344741,1425,POST /tickets,200,OK,Open-loop arrivals 1-39,text,true,,195,901,1,1,http://192.168.0.10:8000/tickets,1425,0,11,1370.74,Money transfer or service,121
+1791365353815,1727,POST /tickets,200,OK,Open-loop arrivals 1-40,text,true,,185,1011,1,1,http://192.168.0.10:8000/tickets,1727,0,24,1635.69,Debt collection,122
+1791365359311,1058,POST /tickets,200,OK,Open-loop arrivals 1-41,text,true,,185,710,1,1,http://192.168.0.10:8000/tickets,1058,0,9,1018.22,Debt collection,123
+1791365362084,886,POST /tickets,200,OK,Open-loop arrivals 1-42,text,true,,185,555,1,1,http://192.168.0.10:8000/tickets,886,0,8,839.58,Credit reporting,124
+1791365363546,2219,POST /tickets,200,OK,Open-loop arrivals 1-43,text,true,,185,1409,2,2,http://192.168.0.10:8000/tickets,2219,0,10,2166.71,Debt collection,125
+1791365364642,3054,POST /tickets,200,OK,Open-loop arrivals 1-44,text,true,,195,1134,1,1,http://192.168.0.10:8000/tickets,3054,0,9,3005.07,Money transfer or service,126
+1791365375521,576,POST /tickets,200,OK,Open-loop arrivals 1-45,text,true,,184,461,1,1,http://192.168.0.10:8000/tickets,576,0,9,536.68,Debt collection,127
+1791365397088,3531,POST /tickets,200,OK,Open-loop arrivals 1-46,text,true,,195,1994,1,1,http://192.168.0.10:8000/tickets,3531,0,9,3473.64,Money transfer or service,128
+1791365411392,1345,POST /tickets,200,OK,Open-loop arrivals 1-47,text,true,,185,896,2,2,http://192.168.0.10:8000/tickets,1345,0,16,1300.45,Debt collection,129
+1791365411893,3575,POST /tickets,200,OK,Open-loop arrivals 1-48,text,true,,178,1593,2,2,http://192.168.0.10:8000/tickets,3575,0,9,3522.22,Mortgage,130
+1791365415174,2281,POST /tickets,200,OK,Open-loop arrivals 1-49,text,true,,178,1225,3,3,http://192.168.0.10:8000/tickets,2281,0,10,2225.39,Mortgage,131
+1791365416935,2030,POST /tickets,200,OK,Open-loop arrivals 1-50,text,true,,185,1049,2,2,http://192.168.0.10:8000/tickets,2030,0,7,1993.91,Debt collection,132
+1791365417406,3525,POST /tickets,200,OK,Open-loop arrivals 1-51,text,true,,195,1336,2,2,http://192.168.0.10:8000/tickets,3525,0,8,3468.72,Money transfer or service,133
+1791365420133,1558,POST /tickets,200,OK,Open-loop arrivals 1-52,text,true,,186,574,1,1,http://192.168.0.10:8000/tickets,1558,0,7,1516.94,Credit reporting,134
+1791365434732,2249,POST /tickets,200,OK,Open-loop arrivals 1-53,text,true,,185,1396,1,1,http://192.168.0.10:8000/tickets,2249,0,8,2208.48,Debt collection,135
+1791365447281,2491,POST /tickets,200,OK,Open-loop arrivals 1-54,text,true,,195,1428,2,2,http://192.168.0.10:8000/tickets,2491,0,11,2444.04,Money transfer or service,136
+1791365448088,4679,POST /tickets,200,OK,Open-loop arrivals 1-55,text,true,,185,1822,1,1,http://192.168.0.10:8000/tickets,4679,0,8,4642.95,Debt collection,137
+1791365453691,2011,POST /tickets,200,OK,Open-loop arrivals 1-56,text,true,,195,1285,2,2,http://192.168.0.10:8000/tickets,2011,0,20,1952.67,Money transfer or service,138
+1791365455554,1285,POST /tickets,200,OK,Open-loop arrivals 1-57,text,true,,185,884,1,1,http://192.168.0.10:8000/tickets,1285,0,12,1242.26,Debt collection,139
+1791365462728,2221,POST /tickets,200,OK,Open-loop arrivals 1-58,text,true,,186,1384,1,1,http://192.168.0.10:8000/tickets,2221,0,8,2188.27,Credit reporting,140
+1791365465103,2554,POST /tickets,200,OK,Open-loop arrivals 1-59,text,true,,195,1659,1,1,http://192.168.0.10:8000/tickets,2554,0,10,2519.03,Money transfer or service,141
+1791365473440,938,POST /tickets,200,OK,Open-loop arrivals 1-60,text,true,,183,748,1,1,http://192.168.0.10:8000/tickets,938,0,10,890.7,Debt collection,142
+1791365479143,1237,POST /tickets,200,OK,Open-loop arrivals 1-61,text,true,,184,825,1,1,http://192.168.0.10:8000/tickets,1236,0,7,1192.2,Debt collection,143
+1791365484819,3510,POST /tickets,200,OK,Open-loop arrivals 1-62,text,true,,195,2040,2,2,http://192.168.0.10:8000/tickets,3510,0,18,3456.09,Money transfer or service,144
+1791365486725,4515,POST /tickets,200,OK,Open-loop arrivals 1-63,text,true,,195,2045,2,2,http://192.168.0.10:8000/tickets,4515,0,15,4471.89,Money transfer or service,145
+1791365490332,1487,POST /tickets,200,OK,Open-loop arrivals 1-64,text,true,,185,436,1,1,http://192.168.0.10:8000/tickets,1487,0,10,1442.25,Debt collection,146
+1791365493581,2127,POST /tickets,200,OK,Open-loop arrivals 1-65,text,true,,195,1135,1,1,http://192.168.0.10:8000/tickets,2127,0,8,2081.64,Money transfer or service,147
+1791365501883,2488,POST /tickets,200,OK,Open-loop arrivals 1-66,text,true,,195,1439,1,1,http://192.168.0.10:8000/tickets,2488,0,8,2445.31,Money transfer or service,148
+1791365520490,3376,POST /tickets,200,OK,Open-loop arrivals 1-67,text,true,,178,2013,2,2,http://192.168.0.10:8000/tickets,3376,0,7,3331.97,Mortgage,149
+1791365522600,3361,POST /tickets,200,OK,Open-loop arrivals 1-68,text,true,,185,1233,1,1,http://192.168.0.10:8000/tickets,3361,0,13,3318.29,Debt collection,150
+1791365531377,2507,POST /tickets,200,OK,Open-loop arrivals 1-69,text,true,,185,1401,1,1,http://192.168.0.10:8000/tickets,2507,0,9,2466.34,Debt collection,151
+1791365543047,1736,POST /tickets,200,OK,Open-loop arrivals 1-70,text,true,,185,1155,1,1,http://192.168.0.10:8000/tickets,1735,0,10,1688.69,Debt collection,152
+1791365547057,573,POST /tickets,200,OK,Open-loop arrivals 1-71,text,true,,185,436,1,1,http://192.168.0.10:8000/tickets,573,0,8,537.93,Credit reporting,153
+1791365561628,2139,POST /tickets,200,OK,Open-loop arrivals 1-72,text,true,,185,1624,1,1,http://192.168.0.10:8000/tickets,2139,0,16,2078.49,Debt collection,154
+1791365568817,3634,POST /tickets,200,OK,Open-loop arrivals 1-73,text,true,,195,1973,2,2,http://192.168.0.10:8000/tickets,3634,0,12,3594.32,Money transfer or service,155
+1791365572351,1488,POST /tickets,200,OK,Open-loop arrivals 1-74,text,true,,195,920,1,1,http://192.168.0.10:8000/tickets,1487,0,10,1444.02,Money transfer or service,156
+1791365589107,1296,POST /tickets,200,OK,Open-loop arrivals 1-75,text,true,,185,824,2,2,http://192.168.0.10:8000/tickets,1296,0,8,1248.55,Debt collection,157
+1791365590203,1691,POST /tickets,200,OK,Open-loop arrivals 1-76,text,true,,195,883,1,1,http://192.168.0.10:8000/tickets,1691,0,18,1628.94,Money transfer or service,158
+1791365594725,1522,POST /tickets,200,OK,Open-loop arrivals 1-77,text,true,,195,972,1,1,http://192.168.0.10:8000/tickets,1522,0,9,1472.23,Money transfer or service,159
+1791365597615,2622,POST /tickets,200,OK,Open-loop arrivals 1-78,text,true,,195,1910,1,1,http://192.168.0.10:8000/tickets,2622,0,8,2578.73,Money transfer or service,160
+1791365610808,1139,POST /tickets,200,OK,Open-loop arrivals 1-79,text,true,,185,727,2,2,http://192.168.0.10:8000/tickets,1139,0,9,1092.94,Debt collection,161
+1791365611699,1190,POST /tickets,200,OK,Open-loop arrivals 1-80,text,true,,185,655,1,1,http://192.168.0.10:8000/tickets,1190,0,9,1149.27,Debt collection,162
+1791365612984,1767,POST /tickets,200,OK,Open-loop arrivals 1-81,text,true,,195,1047,1,1,http://192.168.0.10:8000/tickets,1767,0,11,1717.74,Money transfer or service,163
+1791365623851,1597,POST /tickets,200,OK,Open-loop arrivals 1-82,text,true,,195,1077,1,1,http://192.168.0.10:8000/tickets,1597,0,10,1563.29,Money transfer or service,164
+1791365641938,1165,POST /tickets,200,OK,Open-loop arrivals 1-83,text,true,,185,756,1,1,http://192.168.0.10:8000/tickets,1165,0,11,1116.19,Debt collection,165
+1791365643546,3644,POST /tickets,200,OK,Open-loop arrivals 1-84,text,true,,195,2195,1,1,http://192.168.0.10:8000/tickets,3644,0,16,3595.53,Money transfer or service,166
+1791365650945,1159,POST /tickets,200,OK,Open-loop arrivals 1-85,text,true,,195,885,1,1,http://192.168.0.10:8000/tickets,1159,0,8,1115.68,Money transfer or service,167
+1791365668581,1409,POST /tickets,200,OK,Open-loop arrivals 1-86,text,true,,195,929,1,1,http://192.168.0.10:8000/tickets,1409,0,11,1365.97,Money transfer or service,168
+1791365671214,3389,POST /tickets,200,OK,Open-loop arrivals 1-87,text,true,,194,2048,2,2,http://192.168.0.10:8000/tickets,3389,0,12,3343.0,Money transfer or service,169
+1791365671268,4863,POST /tickets,200,OK,Open-loop arrivals 1-88,text,true,,195,1056,1,1,http://192.168.0.10:8000/tickets,4863,0,8,4818.46,Money transfer or service,170
+1791365679931,1440,POST /tickets,200,OK,Open-loop arrivals 1-89,text,true,,195,870,1,1,http://192.168.0.10:8000/tickets,1440,0,49,1363.89,Money transfer or service,171
+1791365700596,610,POST /tickets,200,OK,Open-loop arrivals 1-90,text,true,,184,435,1,1,http://192.168.0.10:8000/tickets,610,0,8,570.28,Debt collection,172
+1791365707496,894,POST /tickets,200,OK,Open-loop arrivals 1-91,text,true,,185,616,1,1,http://192.168.0.10:8000/tickets,894,0,10,856.94,Credit reporting,173
+1791365708600,1279,POST /tickets,200,OK,Open-loop arrivals 1-92,text,true,,195,882,1,1,http://192.168.0.10:8000/tickets,1279,0,15,1224.38,Money transfer or service,174
+1791365712538,1368,POST /tickets,200,OK,Open-loop arrivals 1-93,text,true,,186,853,1,1,http://192.168.0.10:8000/tickets,1368,0,8,1326.63,Credit reporting,175
+1791365717418,2108,POST /tickets,200,OK,Open-loop arrivals 1-94,text,true,,194,1274,2,2,http://192.168.0.10:8000/tickets,2108,0,12,2065.8,Money transfer or service,176
+1791365719501,2004,POST /tickets,200,OK,Open-loop arrivals 1-95,text,true,,185,1137,1,1,http://192.168.0.10:8000/tickets,2004,0,10,1956.06,Debt collection,177
+1791365723811,508,POST /tickets,200,OK,Open-loop arrivals 1-96,text,true,,183,437,1,1,http://192.168.0.10:8000/tickets,508,0,9,470.3,Debt collection,178
+1791365724568,1791,POST /tickets,200,OK,Open-loop arrivals 1-97,text,true,,195,1050,1,1,http://192.168.0.10:8000/tickets,1790,0,10,1743.78,Money transfer or service,179
+1791365742759,742,POST /tickets,200,OK,Open-loop arrivals 1-98,text,true,,184,496,1,1,http://192.168.0.10:8000/tickets,742,0,9,700.1,Credit reporting,180
+1791365753185,1843,POST /tickets,200,OK,Open-loop arrivals 1-99,text,true,,184,1039,1,1,http://192.168.0.10:8000/tickets,1843,0,8,1794.9,Debt collection,181
+1791365757963,2276,POST /tickets,200,OK,Open-loop arrivals 1-100,text,true,,185,1473,1,1,http://192.168.0.10:8000/tickets,2276,0,10,2237.35,Debt collection,182
+1791365764050,2485,POST /tickets,200,OK,Open-loop arrivals 1-101,text,true,,195,1541,1,1,http://192.168.0.10:8000/tickets,2485,0,9,2431.03,Money transfer or service,183
+1791365781193,1027,POST /tickets,200,OK,Open-loop arrivals 1-102,text,true,,184,618,1,1,http://192.168.0.10:8000/tickets,1027,0,8,990.09,Debt collection,184
+1791365804878,3271,POST /tickets,200,OK,Open-loop arrivals 1-103,text,true,,195,1748,1,1,http://192.168.0.10:8000/tickets,3271,0,9,3225.97,Money transfer or service,185
+1791365810646,2054,POST /tickets,200,OK,Open-loop arrivals 1-104,text,true,,184,1114,1,1,http://192.168.0.10:8000/tickets,2054,0,10,2014.3,Debt collection,186
+1791365812909,815,POST /tickets,200,OK,Open-loop arrivals 1-105,text,true,,194,613,1,1,http://192.168.0.10:8000/tickets,815,0,8,780.06,Money transfer or service,187
+1791365814860,1228,POST /tickets,200,OK,Open-loop arrivals 1-106,text,true,,185,748,1,1,http://192.168.0.10:8000/tickets,1228,0,8,1193.15,Debt collection,188
+1791365820660,1725,POST /tickets,200,OK,Open-loop arrivals 1-107,text,true,,185,1003,1,1,http://192.168.0.10:8000/tickets,1725,0,9,1680.09,Debt collection,189
+1791365840828,1702,POST /tickets,200,OK,Open-loop arrivals 1-108,text,true,,195,1038,1,1,http://192.168.0.10:8000/tickets,1702,0,9,1668.33,Money transfer or service,190
+1791365843070,2671,POST /tickets,200,OK,Open-loop arrivals 1-109,text,true,,195,1591,4,4,http://192.168.0.10:8000/tickets,2671,0,9,2619.59,Money transfer or service,191
+1791365843328,3650,POST /tickets,200,OK,Open-loop arrivals 1-110,text,true,,185,838,3,3,http://192.168.0.10:8000/tickets,3650,0,8,3610.1,Credit reporting,192
+1791365843679,5376,POST /tickets,200,OK,Open-loop arrivals 1-111,text,true,,185,1274,2,2,http://192.168.0.10:8000/tickets,5376,0,9,5332.35,Debt collection,193
+1791365844375,6487,POST /tickets,200,OK,Open-loop arrivals 1-112,text,true,,195,1126,1,1,http://192.168.0.10:8000/tickets,6487,0,9,6440.66,Money transfer or service,194
+1791365854863,2021,POST /tickets,200,OK,Open-loop arrivals 1-113,text,true,,178,1125,1,1,http://192.168.0.10:8000/tickets,2021,0,11,1983.86,Mortgage,195
+1791365866907,1910,POST /tickets,200,OK,Open-loop arrivals 1-114,text,true,,186,1125,1,1,http://192.168.0.10:8000/tickets,1910,0,11,1871.72,Credit reporting,196
+1791365877076,1726,POST /tickets,200,OK,Open-loop arrivals 1-115,text,true,,185,926,2,2,http://192.168.0.10:8000/tickets,1726,0,8,1679.21,Debt collection,197
+1791365877953,2855,POST /tickets,200,OK,Open-loop arrivals 1-116,text,true,,186,1156,1,1,http://192.168.0.10:8000/tickets,2855,0,8,2819.83,Credit reporting,198
+1791365904663,2315,POST /tickets,200,OK,Open-loop arrivals 1-117,text,true,,195,1540,1,1,http://192.168.0.10:8000/tickets,2315,0,6,2277.02,Money transfer or service,199
+1791365910159,2341,POST /tickets,200,OK,Open-loop arrivals 1-118,text,true,,185,1325,2,2,http://192.168.0.10:8000/tickets,2341,0,9,2294.97,Debt collection,200
+1791365910410,3443,POST /tickets,200,OK,Open-loop arrivals 1-119,text,true,,185,901,1,1,http://192.168.0.10:8000/tickets,3443,0,11,3405.94,Debt collection,201
+1791365927668,482,POST /tickets,200,OK,Open-loop arrivals 1-120,text,true,,185,424,1,1,http://192.168.0.10:8000/tickets,482,0,15,440.43,Credit reporting,202
+1791365950496,2931,POST /tickets,200,OK,Open-loop arrivals 1-121,text,true,,195,1764,1,1,http://192.168.0.10:8000/tickets,2930,0,15,2863.85,Money transfer or service,203
+1791365954727,1199,POST /tickets,200,OK,Open-loop arrivals 1-122,text,true,,185,767,1,1,http://192.168.0.10:8000/tickets,1199,0,15,1157.84,Debt collection,204
+1791365956840,1510,POST /tickets,200,OK,Open-loop arrivals 1-123,text,true,,186,1094,1,1,http://192.168.0.10:8000/tickets,1510,0,10,1464.99,Credit reporting,205
+1791365960141,2492,POST /tickets,200,OK,Open-loop arrivals 1-124,text,true,,195,1491,1,1,http://192.168.0.10:8000/tickets,2492,0,9,2448.23,Money transfer or service,206
+1791365965955,1992,POST /tickets,200,OK,Open-loop arrivals 1-125,text,true,,186,1121,1,1,http://192.168.0.10:8000/tickets,1992,0,13,1931.86,Credit reporting,207
+1791365969923,1176,POST /tickets,200,OK,Open-loop arrivals 1-126,text,true,,186,884,1,1,http://192.168.0.10:8000/tickets,1176,0,8,1140.84,Credit reporting,208
+1791365984695,1542,POST /tickets,200,OK,Open-loop arrivals 1-127,text,true,,186,857,1,1,http://192.168.0.10:8000/tickets,1541,0,10,1504.05,Credit reporting,209
+1791366015770,1513,POST /tickets,200,OK,Open-loop arrivals 1-128,text,true,,184,839,1,1,http://192.168.0.10:8000/tickets,1513,0,16,1324.3,Debt collection,210
+1791366023246,1436,POST /tickets,200,OK,Open-loop arrivals 1-129,text,true,,195,852,1,1,http://192.168.0.10:8000/tickets,1436,0,29,1377.05,Money transfer or service,211
+1791366031172,2142,POST /tickets,200,OK,Open-loop arrivals 1-130,text,true,,195,1192,1,1,http://192.168.0.10:8000/tickets,2142,0,10,2093.28,Money transfer or service,212
+1791366042899,1569,POST /tickets,200,OK,Open-loop arrivals 1-131,text,true,,186,885,2,2,http://192.168.0.10:8000/tickets,1569,0,8,1525.55,Credit reporting,213
+1791366043791,3213,POST /tickets,200,OK,Open-loop arrivals 1-132,text,true,,185,1780,1,1,http://192.168.0.10:8000/tickets,3213,0,11,3168.14,Debt collection,214
+1791366064184,1004,POST /tickets,200,OK,Open-loop arrivals 1-133,text,true,,185,661,1,1,http://192.168.0.10:8000/tickets,1004,0,9,965.96,Credit reporting,215
+1791366073070,1571,POST /tickets,200,OK,Open-loop arrivals 1-134,text,true,,195,1023,1,1,http://192.168.0.10:8000/tickets,1571,0,9,1527.74,Money transfer or service,216
+1791366081830,853,POST /tickets,200,OK,Open-loop arrivals 1-135,text,true,,194,584,1,1,http://192.168.0.10:8000/tickets,853,0,18,800.96,Money transfer or service,217
+1791366093795,1522,POST /tickets,200,OK,Open-loop arrivals 1-136,text,true,,186,929,1,1,http://192.168.0.10:8000/tickets,1522,0,9,1465.55,Credit reporting,218
+1791366098436,2670,POST /tickets,200,OK,Open-loop arrivals 1-137,text,true,,194,1543,1,1,http://192.168.0.10:8000/tickets,2670,0,8,2626.7,Money transfer or service,219
+1791366101128,1490,POST /tickets,200,OK,Open-loop arrivals 1-138,text,true,,185,969,1,1,http://192.168.0.10:8000/tickets,1489,0,12,1445.53,Debt collection,220
+1791366104862,2421,POST /tickets,200,OK,Open-loop arrivals 1-139,text,true,,185,1391,1,1,http://192.168.0.10:8000/tickets,2421,0,8,2370.09,Debt collection,221
+1791366107643,2131,POST /tickets,200,OK,Open-loop arrivals 1-140,text,true,,185,1356,2,2,http://192.168.0.10:8000/tickets,2131,0,15,2086.39,Debt collection,222
+1791366109338,1186,POST /tickets,200,OK,Open-loop arrivals 1-141,text,true,,186,518,1,1,http://192.168.0.10:8000/tickets,1186,0,8,1141.68,Credit reporting,223
+1791366113391,2397,POST /tickets,200,OK,Open-loop arrivals 1-142,text,true,,195,1445,1,1,http://192.168.0.10:8000/tickets,2397,0,9,2352.28,Money transfer or service,224
+1791366120592,589,POST /tickets,200,OK,Open-loop arrivals 1-143,text,true,,185,488,1,1,http://192.168.0.10:8000/tickets,589,0,9,547.99,Credit reporting,225
+1791366126506,1843,POST /tickets,200,OK,Open-loop arrivals 1-144,text,true,,185,1110,1,1,http://192.168.0.10:8000/tickets,1843,0,10,1796.49,Debt collection,226
+1791366130232,2535,POST /tickets,200,OK,Open-loop arrivals 1-145,text,true,,195,1694,1,1,http://192.168.0.10:8000/tickets,2535,0,10,2476.26,Money transfer or service,227
+1791366134189,2107,POST /tickets,200,OK,Open-loop arrivals 1-146,text,true,,185,1164,2,2,http://192.168.0.10:8000/tickets,2107,0,8,2052.26,Debt collection,228
+1791366136263,1181,POST /tickets,200,OK,Open-loop arrivals 1-147,text,true,,186,798,1,1,http://192.168.0.10:8000/tickets,1181,0,33,1116.11,Credit reporting,229
+1791366139508,2123,POST /tickets,200,OK,Open-loop arrivals 1-148,text,true,,195,1333,1,1,http://192.168.0.10:8000/tickets,2123,0,7,2074.34,Money transfer or service,230
+1791366153564,2308,POST /tickets,200,OK,Open-loop arrivals 1-149,text,true,,195,1553,2,2,http://192.168.0.10:8000/tickets,2308,0,9,2257.77,Money transfer or service,231
+1791366153921,3385,POST /tickets,200,OK,Open-loop arrivals 1-150,text,true,,186,1000,1,1,http://192.168.0.10:8000/tickets,3385,0,12,3343.59,Credit reporting,232
+1791366165108,3416,POST /tickets,200,OK,Open-loop arrivals 1-151,text,true,,185,2100,1,1,http://192.168.0.10:8000/tickets,3415,0,11,3372.52,Debt collection,233
+1791366177778,2018,POST /tickets,200,OK,Open-loop arrivals 1-153,text,true,,195,1447,3,3,http://192.168.0.10:8000/tickets,2018,0,10,1968.42,Money transfer or service,234
+1791366177776,2529,POST /tickets,200,OK,Open-loop arrivals 1-152,text,true,,185,425,2,2,http://192.168.0.10:8000/tickets,2529,0,11,2488.56,Debt collection,235
+1791366179195,3266,POST /tickets,200,OK,Open-loop arrivals 1-154,text,true,,185,1427,1,1,http://192.168.0.10:8000/tickets,3266,0,9,3227.47,Debt collection,236
+1791366190551,844,POST /tickets,200,OK,Open-loop arrivals 1-155,text,true,,185,523,2,2,http://192.168.0.10:8000/tickets,844,0,9,808.07,Credit reporting,237
+1791366191363,1935,POST /tickets,200,OK,Open-loop arrivals 1-156,text,true,,186,1159,1,1,http://192.168.0.10:8000/tickets,1934,0,13,1881.49,Credit reporting,238
+1791366202282,953,POST /tickets,200,OK,Open-loop arrivals 1-157,text,true,,184,763,1,1,http://192.168.0.10:8000/tickets,953,0,20,906.14,Debt collection,239
+1791366217511,1485,POST /tickets,200,OK,Open-loop arrivals 1-158,text,true,,186,922,1,1,http://192.168.0.10:8000/tickets,1485,0,10,1447.64,Credit reporting,240
+1791366222366,2295,POST /tickets,200,OK,Open-loop arrivals 1-159,text,true,,185,1271,2,2,http://192.168.0.10:8000/tickets,2294,0,10,2255.77,Debt collection,241
+1791366224008,2564,POST /tickets,200,OK,Open-loop arrivals 1-160,text,true,,185,1252,1,1,http://192.168.0.10:8000/tickets,2564,0,11,2518.02,Debt collection,242
+1791366229057,2891,POST /tickets,200,OK,Open-loop arrivals 1-161,text,true,,185,1583,2,2,http://192.168.0.10:8000/tickets,2891,0,10,2840.16,Debt collection,243
+1791366230855,3083,POST /tickets,200,OK,Open-loop arrivals 1-162,text,true,,195,1060,1,1,http://192.168.0.10:8000/tickets,3083,0,9,3039.47,Money transfer or service,244
+1791366234700,1271,POST /tickets,200,OK,Open-loop arrivals 1-163,text,true,,185,905,1,1,http://192.168.0.10:8000/tickets,1271,0,7,1235.33,Debt collection,245
+1791366243818,676,POST /tickets,200,OK,Open-loop arrivals 1-164,text,true,,185,473,1,1,http://192.168.0.10:8000/tickets,676,0,9,635.89,Credit reporting,246
+1791366248668,1939,POST /tickets,200,OK,Open-loop arrivals 1-165,text,true,,185,1124,1,1,http://192.168.0.10:8000/tickets,1939,0,9,1892.45,Debt collection,247
+1791366260072,817,POST /tickets,200,OK,Open-loop arrivals 1-166,text,true,,184,614,1,1,http://192.168.0.10:8000/tickets,817,0,26,765.1,Credit reporting,248
+1791366266941,1716,POST /tickets,200,OK,Open-loop arrivals 1-167,text,true,,186,1026,1,1,http://192.168.0.10:8000/tickets,1716,0,8,1680.54,Credit reporting,249
+1791366269798,592,POST /tickets,200,OK,Open-loop arrivals 1-168,text,true,,185,434,1,1,http://192.168.0.10:8000/tickets,592,0,11,552.88,Credit reporting,250
+1791366278634,1685,POST /tickets,200,OK,Open-loop arrivals 1-169,text,true,,194,1151,1,1,http://192.168.0.10:8000/tickets,1685,0,9,1647.6,Money transfer or service,251
+1791366287261,2605,POST /tickets,200,OK,Open-loop arrivals 1-170,text,true,,185,1492,2,2,http://192.168.0.10:8000/tickets,2605,0,9,2558.44,Debt collection,252
+1791366287796,3709,POST /tickets,200,OK,Open-loop arrivals 1-171,text,true,,195,1078,1,1,http://192.168.0.10:8000/tickets,3709,0,9,3666.44,Money transfer or service,253
+1791366293965,3692,POST /tickets,200,OK,Open-loop arrivals 1-172,text,true,,185,2062,1,1,http://192.168.0.10:8000/tickets,3691,0,10,3626.03,Debt collection,254
+1791366301269,886,POST /tickets,200,OK,Open-loop arrivals 1-173,text,true,,185,610,1,1,http://192.168.0.10:8000/tickets,886,0,13,608.98,Credit reporting,255
+1791366315401,3160,POST /tickets,200,OK,Open-loop arrivals 1-174,text,true,,195,1681,4,4,http://192.168.0.10:8000/tickets,3160,0,16,3107.74,Money transfer or service,256
+1791366315730,3699,POST /tickets,200,OK,Open-loop arrivals 1-175,text,true,,194,655,3,3,http://192.168.0.10:8000/tickets,3699,0,7,3652.7,Money transfer or service,257
+1791366316765,6379,POST /tickets,200,OK,Open-loop arrivals 1-176,text,true,,195,2212,3,3,http://192.168.0.10:8000/tickets,6379,0,17,6318.52,Money transfer or service,258
+1791366317725,6704,POST /tickets,200,OK,Open-loop arrivals 1-177,text,true,,195,844,2,2,http://192.168.0.10:8000/tickets,6704,0,10,6654.82,Money transfer or service,259
+1791366322086,2960,POST /tickets,200,OK,Open-loop arrivals 1-178,text,true,,186,481,1,1,http://192.168.0.10:8000/tickets,2960,0,9,2923.92,Credit reporting,260
+1791366326002,1574,POST /tickets,200,OK,Open-loop arrivals 1-179,text,true,,186,931,1,1,http://192.168.0.10:8000/tickets,1574,0,8,1521.42,Credit reporting,261
+1791366331092,1470,POST /tickets,200,OK,Open-loop arrivals 1-180,text,true,,185,839,1,1,http://192.168.0.10:8000/tickets,1470,0,8,1420.5,Credit reporting,262
+1791366334239,1726,POST /tickets,200,OK,Open-loop arrivals 1-181,text,true,,195,1349,1,1,http://192.168.0.10:8000/tickets,1726,0,10,1680.57,Money transfer or service,263
+1791366337385,2595,POST /tickets,200,OK,Open-loop arrivals 1-182,text,true,,195,1452,1,1,http://192.168.0.10:8000/tickets,2595,0,8,2558.19,Money transfer or service,264
+1791366345118,3557,POST /tickets,200,OK,Open-loop arrivals 1-183,text,true,,178,1963,2,2,http://192.168.0.10:8000/tickets,3557,0,10,3511.18,Mortgage,265
+1791366345801,4359,POST /tickets,200,OK,Open-loop arrivals 1-184,text,true,,195,836,1,1,http://192.168.0.10:8000/tickets,4359,0,15,4307.66,Money transfer or service,266
+1791366356730,1260,POST /tickets,200,OK,Open-loop arrivals 1-185,text,true,,184,867,1,1,http://192.168.0.10:8000/tickets,1260,0,8,1219.3,Debt collection,267
+1791366358627,1132,POST /tickets,200,OK,Open-loop arrivals 1-186,text,true,,186,694,1,1,http://192.168.0.10:8000/tickets,1132,0,15,1078.04,Credit reporting,268
+1791366381122,915,POST /tickets,200,OK,Open-loop arrivals 1-187,text,true,,185,650,2,2,http://192.168.0.10:8000/tickets,915,0,7,871.48,Credit reporting,269
+1791366381832,1297,POST /tickets,200,OK,Open-loop arrivals 1-188,text,true,,186,729,3,3,http://192.168.0.10:8000/tickets,1297,0,8,1242.44,Credit reporting,270
+1791366382232,4152,POST /tickets,200,OK,Open-loop arrivals 1-189,text,true,,195,1953,2,2,http://192.168.0.10:8000/tickets,4152,0,9,4092.18,Money transfer or service,271
+1791366382698,4533,POST /tickets,200,OK,Open-loop arrivals 1-190,text,true,,185,680,1,1,http://192.168.0.10:8000/tickets,4533,0,8,4495.78,Debt collection,272
+1791366401418,1310,POST /tickets,200,OK,Open-loop arrivals 1-191,text,true,,185,888,1,1,http://192.168.0.10:8000/tickets,1310,0,12,1266.33,Debt collection,273
+1791366414897,927,POST /tickets,200,OK,Open-loop arrivals 1-192,text,true,,183,746,1,1,http://192.168.0.10:8000/tickets,927,0,13,879.6,Debt collection,274
+1791366417808,3497,POST /tickets,200,OK,Open-loop arrivals 1-193,text,true,,178,1956,2,2,http://192.168.0.10:8000/tickets,3497,0,12,3439.65,Mortgage,275
+1791366417930,6035,POST /tickets,200,OK,Open-loop arrivals 1-194,text,true,,185,1686,1,1,http://192.168.0.10:8000/tickets,6035,0,9,5980.52,Debt collection,276
+1791366430020,2425,POST /tickets,200,OK,Open-loop arrivals 1-195,text,true,,195,1556,1,1,http://192.168.0.10:8000/tickets,2425,0,8,2262.19,Money transfer or service,277
+1791366437337,1138,POST /tickets,200,OK,Open-loop arrivals 1-196,text,true,,186,731,1,1,http://192.168.0.10:8000/tickets,1138,0,12,1084.14,Credit reporting,278
+1791366441633,1041,POST /tickets,200,OK,Open-loop arrivals 1-197,text,true,,186,703,1,1,http://192.168.0.10:8000/tickets,1041,0,8,1000.56,Credit reporting,279
+1791366443301,2373,POST /tickets,200,OK,Open-loop arrivals 1-198,text,true,,185,1333,2,2,http://192.168.0.10:8000/tickets,2372,0,11,2323.79,Debt collection,280
+1791366443365,5282,POST /tickets,200,OK,Open-loop arrivals 1-199,text,true,,194,1981,1,1,http://192.168.0.10:8000/tickets,5282,0,7,5240.5,Money transfer or service,281
+1791366449499,1739,POST /tickets,200,OK,Open-loop arrivals 1-200,text,true,,195,1246,1,1,http://192.168.0.10:8000/tickets,1739,0,8,1695.75,Money transfer or service,282
+1791366458947,1545,POST /tickets,200,OK,Open-loop arrivals 1-201,text,true,,186,1097,1,1,http://192.168.0.10:8000/tickets,1545,0,9,1502.35,Credit reporting,283
+1791366463601,839,POST /tickets,200,OK,Open-loop arrivals 1-202,text,true,,185,594,1,1,http://192.168.0.10:8000/tickets,839,0,9,791.68,Credit reporting,284
+1791366489559,1660,POST /tickets,200,OK,Open-loop arrivals 1-203,text,true,,195,848,1,1,http://192.168.0.10:8000/tickets,1660,0,10,1614.23,Money transfer or service,285
+1791366492470,980,POST /tickets,200,OK,Open-loop arrivals 1-204,text,true,,185,752,1,1,http://192.168.0.10:8000/tickets,980,0,8,934.36,Credit reporting,286
+1791366495791,965,POST /tickets,200,OK,Open-loop arrivals 1-205,text,true,,184,675,1,1,http://192.168.0.10:8000/tickets,965,0,9,896.43,Debt collection,287
+1791366500852,3848,POST /tickets,200,OK,Open-loop arrivals 1-206,text,true,,185,2174,1,1,http://192.168.0.10:8000/tickets,3848,0,10,3799.53,Debt collection,288
+1791366511443,2020,POST /tickets,200,OK,Open-loop arrivals 1-207,text,true,,195,1188,1,1,http://192.168.0.10:8000/tickets,2020,0,9,1979.03,Money transfer or service,289
+1791366526216,1004,POST /tickets,200,OK,Open-loop arrivals 1-208,text,true,,185,644,1,1,http://192.168.0.10:8000/tickets,1004,0,9,963.76,Credit reporting,290
+1791366536499,847,POST /tickets,200,OK,Open-loop arrivals 1-209,text,true,,185,565,1,1,http://192.168.0.10:8000/tickets,847,0,10,809.37,Credit reporting,291
+1791366548429,1014,POST /tickets,200,OK,Open-loop arrivals 1-210,text,true,,184,742,1,1,http://192.168.0.10:8000/tickets,1014,0,8,976.61,Debt collection,292
+1791366572414,1430,POST /tickets,200,OK,Open-loop arrivals 1-211,text,true,,195,1032,1,1,http://192.168.0.10:8000/tickets,1430,0,37,1343.35,Money transfer or service,293
+1791366585877,1061,POST /tickets,200,OK,Open-loop arrivals 1-212,text,true,,186,760,1,1,http://192.168.0.10:8000/tickets,1061,0,9,1018.59,Credit reporting,294
+1791366595464,3114,POST /tickets,200,OK,Open-loop arrivals 1-213,text,true,,195,1858,1,1,http://192.168.0.10:8000/tickets,3113,0,10,3065.93,Money transfer or service,295
+1791366620644,3368,POST /tickets,200,OK,Open-loop arrivals 1-214,text,true,,195,1966,1,1,http://192.168.0.10:8000/tickets,3368,0,10,3316.47,Money transfer or service,296
+1791366627688,1944,POST /tickets,200,OK,Open-loop arrivals 1-215,text,true,,185,1334,2,2,http://192.168.0.10:8000/tickets,1944,0,8,1907.02,Debt collection,297
+1791366628123,5034,POST /tickets,200,OK,Open-loop arrivals 1-216,text,true,,185,2131,1,1,http://192.168.0.10:8000/tickets,5034,0,8,4994.52,Debt collection,298
+1791366639187,1739,POST /tickets,200,OK,Open-loop arrivals 1-217,text,true,,195,1273,1,1,http://192.168.0.10:8000/tickets,1739,0,11,1690.18,Money transfer or service,299
+1791366644883,1065,POST /tickets,200,OK,Open-loop arrivals 1-218,text,true,,185,754,1,1,http://192.168.0.10:8000/tickets,1065,0,11,1024.16,Debt collection,300
+1791366666526,2839,POST /tickets,200,OK,Open-loop arrivals 1-219,text,true,,185,1798,1,1,http://192.168.0.10:8000/tickets,2839,0,14,2792.53,Debt collection,301
+1791366676154,2234,POST /tickets,200,OK,Open-loop arrivals 1-220,text,true,,195,1294,1,1,http://192.168.0.10:8000/tickets,2233,0,10,2176.21,Money transfer or service,302
+1791366680298,2516,POST /tickets,200,OK,Open-loop arrivals 1-221,text,true,,195,1524,1,1,http://192.168.0.10:8000/tickets,2516,0,8,2471.62,Money transfer or service,303
+1791366699553,2014,POST /tickets,200,OK,Open-loop arrivals 1-222,text,true,,185,1195,1,1,http://192.168.0.10:8000/tickets,2014,0,12,1960.17,Debt collection,304
+1791366715058,2778,POST /tickets,200,OK,Open-loop arrivals 1-223,text,true,,194,1620,2,2,http://192.168.0.10:8000/tickets,2778,0,9,2729.7,Money transfer or service,305
+1791366715431,6324,POST /tickets,200,OK,Open-loop arrivals 1-224,text,true,,195,2085,1,1,http://192.168.0.10:8000/tickets,6324,0,8,6281.19,Money transfer or service,306
+1791366729796,1341,POST /tickets,200,OK,Open-loop arrivals 1-225,text,true,,185,798,1,1,http://192.168.0.10:8000/tickets,1341,0,9,1303.3,Credit reporting,307
+1791366731503,2771,POST /tickets,200,OK,Open-loop arrivals 1-226,text,true,,185,1710,1,1,http://192.168.0.10:8000/tickets,2771,0,8,2729.23,Debt collection,308
+1791366734805,832,POST /tickets,200,OK,Open-loop arrivals 1-227,text,true,,184,598,1,1,http://192.168.0.10:8000/tickets,832,0,8,793.08,Debt collection,309
+1791366745832,1338,POST /tickets,200,OK,Open-loop arrivals 1-228,text,true,,186,808,1,1,http://192.168.0.10:8000/tickets,1338,0,9,1296.04,Credit reporting,310
+1791366747997,2173,POST /tickets,200,OK,Open-loop arrivals 1-229,text,true,,185,1297,1,1,http://192.168.0.10:8000/tickets,2173,0,7,2124.66,Debt collection,311
+1791366775394,821,POST /tickets,200,OK,Open-loop arrivals 1-230,text,true,,185,576,1,1,http://192.168.0.10:8000/tickets,821,0,8,776.69,Credit reporting,312
+1791366777717,2340,POST /tickets,200,OK,Open-loop arrivals 1-231,text,true,,194,1485,1,1,http://192.168.0.10:8000/tickets,2340,0,9,2297.1,Money transfer or service,313
+1791366782304,1851,POST /tickets,200,OK,Open-loop arrivals 1-232,text,true,,195,1092,1,1,http://192.168.0.10:8000/tickets,1851,0,9,1809.27,Money transfer or service,314
+1791366785007,2827,POST /tickets,200,OK,Open-loop arrivals 1-233,text,true,,185,1689,1,1,http://192.168.0.10:8000/tickets,2827,0,10,2778.82,Debt collection,315
+1791366795947,1422,POST /tickets,200,OK,Open-loop arrivals 1-234,text,true,,185,978,1,1,http://192.168.0.10:8000/tickets,1422,0,8,1381.98,Debt collection,316
+1791366812632,3470,POST /tickets,200,OK,Open-loop arrivals 1-235,text,true,,195,2094,2,2,http://192.168.0.10:8000/tickets,3470,0,9,3417.31,Money transfer or service,317
+1791366814836,3691,POST /tickets,200,OK,Open-loop arrivals 1-236,text,true,,195,1530,1,1,http://192.168.0.10:8000/tickets,3691,0,9,3647.06,Money transfer or service,318
+1791366819838,752,POST /tickets,200,OK,Open-loop arrivals 1-237,text,true,,185,535,1,1,http://192.168.0.10:8000/tickets,752,0,10,709.13,Credit reporting,319
+1791366836788,605,POST /tickets,200,OK,Open-loop arrivals 1-238,text,true,,185,433,1,1,http://192.168.0.10:8000/tickets,605,0,7,571.77,Credit reporting,320
+1791366841577,1473,POST /tickets,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,Open-loop arrivals 1-240,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketException]]]
+
+****** comparison: [[[200                                             ]]]
+
+/",3167,0,2,2,http://192.168.0.10:8000/tickets,0,0,10,-1,NONE,-1
+1791366841213,1838,POST /tickets,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,Open-loop arrivals 1-239,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketException]]]
+
+****** comparison: [[[200                                             ]]]
+
+/",3167,0,2,2,http://192.168.0.10:8000/tickets,0,0,9,-1,NONE,-1

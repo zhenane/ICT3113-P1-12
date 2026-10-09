@@ -1,0 +1,6 @@
+model,rate_per_min,rep,samples,successes,errors,error_rate,arrival_rps,throughput_rps,lat_mean_ms,lat_p50_ms,lat_p90_ms,lat_p95_ms,lat_p99_ms,lat_max_ms,server_p50_ms,server_p95_ms,overhead_p50_ms,error_breakdown,stats_delta,stats_matches_jmeter,jtl
+llama3.2:1b,2,1,2,2,0,0.0000,0.0528,0.1015,806.0000,806.0000,858.0000,864.5000,869.7000,871.0000,631.6450,680.6365,174.3550,,2,True,results\llama3.2-1b\llama3.2-1b_r2_rep1.jtl
+llama3.2:1b,2,1,2,2,0,0.0000,0.0523,0.1014,655.5000,655.5000,706.3000,712.6500,717.7300,719.0000,604.1250,655.2585,51.3750,,2,True,results\llama3.2-1b\llama3.2-1b_r2_rep1_20261007_165516.jtl
+llama3.2:1b,8,1,240,238,2,0.0083,0.1336,0.1329,2189.6261,1937.0000,3691.3000,4580.4000,6358.6500,6704.0000,1886.9700,4536.4705,44.5050,Socket closed x2,240,False,results\llama3.2-1b\llama3.2-1b_r8_rep1_20261007_172355.jtl
+llama3.2:1b,8,2,240,240,0,0.0000,0.1332,0.1336,1164.7958,978.5000,2414.5000,2856.7000,4647.7000,5056.0000,941.1100,2806.9025,41.4350,,240,True,results\llama3.2-1b\llama3.2-1b_r8_rep2.jtl
+llama3.2:1b,8,3,240,240,0,0.0000,0.1330,0.1334,921.4333,755.5000,2104.7000,2465.1500,3557.0300,3868.0000,716.0250,2415.0300,41.4250,,240,True,results\llama3.2-1b\llama3.2-1b_r8_rep3.jtl

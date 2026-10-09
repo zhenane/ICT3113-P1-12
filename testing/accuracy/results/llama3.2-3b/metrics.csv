@@ -1,0 +1,14 @@
+category,support,predicted,correct,precision,recall,f1,gated
+Credit reporting,36,9,8,0.8889,0.2222,0.3556,True
+Bank account or service,30,161,30,0.1863,1.0000,0.3141,True
+Debt collection,30,13,11,0.8462,0.3667,0.5116,True
+Mortgage,29,8,6,0.7500,0.2069,0.3243,True
+Money transfer or service,26,0,0,0.0000,0.0000,0.0000,True
+Credit card,24,3,3,1.0000,0.1250,0.2222,True
+Consumer loan,20,2,2,1.0000,0.1000,0.1818,True
+Out-of-scope,1,0,0,0.0000,0.0000,0.0000,False
+
+overall_accuracy,0.3061
+macro_f1 (categories with >= 20 examples),0.2728
+macro_f1 (all categories),0.2387
+failed_requests,0

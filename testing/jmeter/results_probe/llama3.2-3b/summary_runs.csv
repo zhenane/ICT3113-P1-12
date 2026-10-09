@@ -1,0 +1,2 @@
+model,rate_per_min,rep,samples,successes,errors,error_rate,arrival_rps,throughput_rps,lat_mean_ms,lat_p50_ms,lat_p90_ms,lat_p95_ms,lat_p99_ms,lat_max_ms,server_p50_ms,server_p95_ms,overhead_p50_ms,error_breakdown,stats_delta,stats_matches_jmeter,jtl
+llama3.2:3b,3,1,9,7,2,0.2222,0.0462,0.0392,4195.4286,4106.0000,8089.0000,8638.0000,9077.2000,9187.0000,3911.4700,8580.1190,53.0400,Socket closed x2,9,False,results_probe\llama3.2-3b\llama3.2-3b_r3_rep1.jtl

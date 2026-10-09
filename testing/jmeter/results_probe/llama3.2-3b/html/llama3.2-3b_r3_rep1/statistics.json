@@ -1,0 +1,34 @@
+{
+  "POST /tickets" : {
+    "transaction" : "POST /tickets",
+    "sampleCount" : 9,
+    "errorCount" : 2,
+    "errorPct" : 22.222221,
+    "meanResTime" : 4635.555555555556,
+    "medianResTime" : 5103.0,
+    "minResTime" : 1054.0,
+    "maxResTime" : 9187.0,
+    "pct1ResTime" : 9187.0,
+    "pct2ResTime" : 9187.0,
+    "pct3ResTime" : 9187.0,
+    "throughput" : 0.05033669657039307,
+    "receivedKBytesPerSec" : 0.041930861498579386,
+    "sentKBytesPerSec" : 0.048364957479473815
+  },
+  "Total" : {
+    "transaction" : "Total",
+    "sampleCount" : 9,
+    "errorCount" : 2,
+    "errorPct" : 22.222221,
+    "meanResTime" : 4635.555555555556,
+    "medianResTime" : 5103.0,
+    "minResTime" : 1054.0,
+    "maxResTime" : 9187.0,
+    "pct1ResTime" : 9187.0,
+    "pct2ResTime" : 9187.0,
+    "pct3ResTime" : 9187.0,
+    "throughput" : 0.05033669657039307,
+    "receivedKBytesPerSec" : 0.041930861498579386,
+    "sentKBytesPerSec" : 0.048364957479473815
+  }
+}
