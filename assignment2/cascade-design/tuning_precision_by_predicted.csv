@@ -1,0 +1,9 @@
+small_model,predicted,n,right,precision
+llama3.2-3b,Credit card,2,2,1.0
+llama3.2-3b,Credit reporting,7,6,0.8571428571428571
+llama3.2-3b,Debt collection,5,4,0.8
+llama3.2-3b,Bank account or service,77,13,0.16883116883116883
+llama3.2-1b,Credit reporting,14,4,0.2857142857142857
+llama3.2-1b,Debt collection,40,8,0.2
+llama3.2-1b,Mortgage,5,1,0.2
+llama3.2-1b,Money transfer or service,32,3,0.09375

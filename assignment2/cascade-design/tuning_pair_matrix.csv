@@ -1,0 +1,7 @@
+small,large,small_median_s,large_median_s,small_right,large_right,large_successful_responses,ceiling_perfect_rule,best_small_precision,safe_set_ge_80pct,category_rule_escalation,category_rule_right,disk_gb_together
+llama3.2:1b,qwen3:1.7b,1.9,15.2,16,55,90,61,0.29,,1.0,55,2.7
+llama3.2:1b,llama3.2:3b,1.9,3.5,16,25,91,37,0.29,,1.0,25,3.3
+llama3.2:1b,qwen3:4b,1.9,inf,16,0,0,16,0.29,,1.0,0,3.8
+llama3.2:3b,qwen3:1.7b,3.5,15.2,25,55,90,58,1.0,"Credit card, Credit reporting, Debt collection",0.846,55,3.4
+qwen3:1.7b,qwen3:4b,15.2,inf,55,0,0,55,1.0,"Credit reporting, Money transfer or service, Mortgage",0.67,27,3.9
+llama3.2:3b,qwen3:4b,3.5,inf,25,0,0,25,1.0,"Credit card, Credit reporting, Debt collection",0.846,12,4.5
