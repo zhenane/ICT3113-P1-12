@@ -1,0 +1,9 @@
+top_model,scope,n,top_correct,top_accuracy,limit,min_correct_to_pass,points_per_ticket,small_sample
+qwen3-1.7b,OVERALL,105,58,55.2%,45.2%,48,1.0,False
+qwen3-1.7b,Credit reporting,15,12,80.0%,65.0%,10,6.7,False
+qwen3-1.7b,Debt collection,20,16,80.0%,65.0%,13,5.0,False
+qwen3-1.7b,Mortgage,18,8,44.4%,29.4%,6,5.6,False
+qwen3-1.7b,Credit card,9,2,22.2%,7.2%,1,11.1,True
+qwen3-1.7b,Bank account or service,17,11,64.7%,49.7%,9,5.9,False
+qwen3-1.7b,Consumer loan,10,2,20.0%,5.0%,1,10.0,True
+qwen3-1.7b,Money transfer or service,15,7,46.7%,31.7%,5,6.7,False
