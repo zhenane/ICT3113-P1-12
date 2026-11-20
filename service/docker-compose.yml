@@ -38,7 +38,10 @@ services:
       - "8000:8000"
     environment:
       OLLAMA_HOST: http://ollama:11434
-      OLLAMA_MODEL: ${OLLAMA_MODEL:-llama3.2:1b}
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-llama3.2:3b}
+      OLLAMA_MODEL_LARGE: ${OLLAMA_MODEL_LARGE:-qwen3:1.7b}
+      CASCADE_ENABLED: ${CASCADE_ENABLED:-false}
+      CASCADE_SHORT_WORDS: ${CASCADE_SHORT_WORDS:-0}
       DB_PATH: /app/data/tickets.db
       LOG_DIR: /app/logs
     volumes:
