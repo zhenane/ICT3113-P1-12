@@ -1,0 +1,3 @@
+﻿CONTAINER ID   NAME                       CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O   PIDS
+ecf8a90b6f90   service-triage-service-1   0.22%     41.81MiB / 15.46GiB   0.26%     11.6kB / 6.77kB   0B / 0B     6
+8b731c76c3bb   service-ollama-1           0.01%     4.561GiB / 15.46GiB   29.50%    51.5kB / 18.7kB   0B / 0B     71

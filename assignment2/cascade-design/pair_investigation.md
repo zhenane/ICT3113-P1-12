@@ -154,5 +154,41 @@ that also fails, the cascade is not feasible on this machine. Report it with the
 
 ## Result
 
-_To be filled in by A + C after the check: date, Ollama version, `ollama ps` output
-for both models (NAME, SIZE, PROCESSOR, UNTIL), and pass/fail._
+**Date:** 2026-11-20
+**Ollama version:** 0.34.0
+**Docker memory:** 15.46 GiB (CPUs=16)
+
+**Step 1 — clean start:** `ollama ps` shows no models loaded after restart.
+
+**Step 4 — both models loaded:**
+
+```
+NAME           ID              SIZE      PROCESSOR    CONTEXT    UNTIL
+qwen3:1.7b     8f68893c685c    1.9 GB    100% CPU     4096       4 minutes from now
+llama3.2:3b    a80c4f17acd5    2.6 GB    100% CPU     4096       2 minutes from now
+```
+
+**Docker stats:** Ollama container uses 4.561 GiB / 15.46 GiB (29.5%).
+
+**Step 5 — after alternating (small → large → small):**
+
+```
+NAME           ID              SIZE      PROCESSOR    CONTEXT    UNTIL
+llama3.2:3b    a80c4f17acd5    2.6 GB    100% CPU     4096       4 minutes from now
+qwen3:1.7b     8f68893c685c    1.9 GB    100% CPU     4096       3 minutes from now
+```
+
+No eviction, no reload delay on alternation.
+
+**Verdict: PASS.** Both models fit comfortably (4.5 GiB of 15.5 GiB).
+
+Evidence files in `assignment2/cascade-design/memory-check/`:
+`00_version.txt`, `00_env.txt`, `01_ps_empty.txt`, `02_ps_both.txt`,
+`03_docker_stats.txt`, `04_ps_after_alternating.txt`.
+
+**Settings fixed for all A2 configurations:**
+
+- `OLLAMA_KEEP_ALIVE=30m` (set on the `ollama` service in `docker-compose.yml`).
+  Prevents idle unloading during test runs.
+- `OLLAMA_MAX_LOADED_MODELS` and `OLLAMA_NUM_PARALLEL`: not set (Ollama defaults).
+  Unchanged between configurations, as the brief requires.

@@ -3,6 +3,8 @@ services:
     image: ollama/ollama:latest
     ports:
       - "11434:11434"
+    environment:
+      OLLAMA_KEEP_ALIVE: 30m
     volumes:
       - ollama_data:/root/.ollama
     # CPU only, intentionally: no GPU passthrough, per the client's hardware constraint.
