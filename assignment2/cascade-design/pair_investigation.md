@@ -154,6 +154,16 @@ that also fails, the cascade is not feasible on this machine. Report it with the
 
 ## Result
 
+> **Re-run required.** This check ran on Ollama 0.34.0 because
+> `service/docker-compose.yml` used `ollama/ollama:latest`. Assignment 1 ran on
+> 0.35.0, and the A1 prediction records are reused only if the version is unchanged
+> (see `assignment2/accuracy-limits/README.md`). The image is now pinned to
+> `ollama/ollama:0.35.0`. Repeat Steps 1–5 on the Ryzen 5 3600 service host, overwrite
+> the `memory-check/` files, and update this section. `00_version.txt` must read
+> 0.35.0. Also check that `00_env.txt` reports the A1 host's CPU count: the run below
+> shows CPUs=16, but a Ryzen 5 3600 has 12 threads. The record below is kept as
+> evidence of the 0.34.0 run.
+
 **Date:** 2026-11-20
 **Ollama version:** 0.34.0
 **Docker memory:** 15.46 GiB (CPUs=16)

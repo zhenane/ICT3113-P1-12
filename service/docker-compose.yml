@@ -1,6 +1,6 @@
 services:
   ollama:
-    image: ollama/ollama:latest
+    image: ollama/ollama:0.35.0
     ports:
       - "11434:11434"
     environment:
@@ -10,7 +10,7 @@ services:
     # CPU only, intentionally: no GPU passthrough, per the client's hardware constraint.
 
   ollama-setup:
-    image: ollama/ollama:latest
+    image: ollama/ollama:0.35.0
     environment:
       OLLAMA_HOST: http://ollama:11434
     volumes:
