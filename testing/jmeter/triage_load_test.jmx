@@ -14,7 +14,7 @@
       <OpenModelThreadGroup guiclass="OpenModelThreadGroupGui" testclass="OpenModelThreadGroup" testname="Open-loop arrivals" enabled="true">
         <elementProp name="ThreadGroup.main_controller" elementType="OpenModelThreadGroupController"/>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
-        <stringProp name="OpenModelThreadGroup.schedule">rate(${__P(rate_per_min,6)}/min) random_arrivals(${__P(duration_min,5)} min) pause(${__P(tail_min,2)} min)</stringProp>
+        <stringProp name="OpenModelThreadGroup.schedule">rate(${__P(rate_per_min,6)}/${__P(rate_unit,min)}) random_arrivals(${__P(duration_min,5)} min) pause(${__P(tail_min,2)} min)</stringProp>
         <stringProp name="OpenModelThreadGroup.random_seed">${__P(seed,42)}</stringProp>
       </OpenModelThreadGroup>
       <hashTree>

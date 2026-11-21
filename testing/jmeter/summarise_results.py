@@ -1,27 +1,31 @@
 """
-Step 5b - Summarise JMeter .jtl results.
+Summarise JMeter .jtl results (Assignment 2 reporting rules).
 
-For every run it computes:
-    samples, successes, error rate, error breakdown (by response code / exception),
-    achieved arrival rate, throughput (successful req/s),
-    end-to-end latency  mean / p50 / p90 / p95 / p99 / max   (successful requests),
-    server latency      p50 / p95   (latency_ms returned by the service = time in classify()),
-    overhead p50        (end-to-end minus server latency ~= queueing + network + DB),
-    /stats cross-check  (server's ticket count increase vs JMeter successes)
-then averages each metric across the repeats of the same (model, rate) config
-and reports the standard deviation.
+Per run (summary_runs.csv):
+    sent        requests JMeter sent
+    completed   successful responses (HTTP 200 with a category)
+    errored     failed with an HTTP response (e.g. 502, 500, 422)
+    unfinished  no HTTP response at all (response timeout, connection cut)
+    error_rate  (errored + unfinished) / sent
+    throughput  completed requests per second over the run
+    p50         median end-to-end latency of the successful requests
+    server p50  latency_ms reported by the service (time inside classify, incl. Ollama queue)
+    overhead p50  end-to-end minus server time (network + FastAPI + SQLite)
+    /stats cross-check (increase in GET /stats total vs completed)
 
-Inputs: the runs.csv manifest written by run_load_tests.py (preferred), or a list
-of .jtl files named <model>_r<rate_per_min>_rep<n>.jtl.
+Per configuration (summary_configs.csv), over its runs:
+    p50 mean, standard deviation, min-max across runs
+    p95 POOLED over all runs' successful requests, with the number it is based on
+      (a ~30-request run is too small for a per-run p95; the brief asks for the
+       pooled figure and says not to report p99, so p99 is not produced)
+    throughput and error rate, mean across runs; totals of sent/completed/errored/unfinished
 
-Outputs (next to the manifest unless --out is given):
-    summary_runs.csv     one row per run
-    summary_configs.csv  one row per (model, rate), mean +/- std over repeats
+Inputs: runs.csv manifest(s) from run_load_tests.py, or .jtl files named
+<model>_r<rate>_rep<n>.jtl.
 
-Usage:
-    python summarise_results.py results/runs.csv
-    python summarise_results.py results/*.jtl --out results
-    python summarise_results.py results/runs.csv --skip-first-s 30   # drop extra warm-up
+    python summarise_results.py results/qwen3-1.7b/runs.csv
+    python summarise_results.py results/*/runs.csv --out results     # all configs in one table
+
 Standard library only.
 """
 
@@ -35,13 +39,6 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 csv.field_size_limit(min(sys.maxsize, 2**31 - 1))
-
-RUN_METRICS = [
-    "samples", "successes", "errors", "error_rate",
-    "arrival_rps", "throughput_rps",
-    "lat_mean_ms", "lat_p50_ms", "lat_p90_ms", "lat_p95_ms", "lat_p99_ms", "lat_max_ms",
-    "server_p50_ms", "server_p95_ms", "overhead_p50_ms",
-]
 
 
 def percentile(values, p):
@@ -58,35 +55,39 @@ def _error_key(row):
     code = (row.get("responseCode") or "").strip()
     if code.isdigit():
         return code
-    # Non-HTTP failures, e.g. "Non HTTP response code: java.net.SocketTimeoutException"
     msg = (row.get("responseMessage") or code or "unknown").split(":")[-1].strip()
     return msg.split(".")[-1] or "unknown"
+
+
+def _has_http_status(row):
+    return (row.get("responseCode") or "").strip().isdigit()
 
 
 def summarise_jtl(path, skip_first_s=0.0):
     rows = []
     with open(path, newline="", encoding="utf-8") as f:
         for row in csv.DictReader(f):
-            if row.get("label") != "POST /tickets":
-                continue
-            rows.append(row)
+            if row.get("label") == "POST /tickets":
+                rows.append(row)
+    empty = {"samples": 0, "successes": 0, "errors": 0, "errored": 0, "unfinished": 0,
+             "error_rate": float("nan"), "error_breakdown": "", "lat_p95_ms": float("nan"), "_lat": []}
     if not rows:
-        return {"samples": 0, "successes": 0, "errors": 0, "error_rate": float("nan"), "error_breakdown": ""}
-
-    start0 = min(int(r["timeStamp"]) for r in rows)
+        return empty
     if skip_first_s:
+        start0 = min(int(r["timeStamp"]) for r in rows)
         rows = [r for r in rows if int(r["timeStamp"]) - start0 >= skip_first_s * 1000]
         if not rows:
-            return {"samples": 0, "successes": 0, "errors": 0, "error_rate": float("nan"), "error_breakdown": ""}
+            return empty
 
     ok = [r for r in rows if r["success"].strip().lower() == "true"]
     bad = [r for r in rows if r["success"].strip().lower() != "true"]
+    errored = sum(1 for r in bad if _has_http_status(r))
+    unfinished = len(bad) - errored
 
     starts = [int(r["timeStamp"]) for r in rows]
     ends = [int(r["timeStamp"]) + int(r["elapsed"]) for r in rows]
-    first, last_start, last_end = min(starts), max(starts), max(ends)
-    window_s = max((last_end - first) / 1000.0, 1e-9)
-    arrival_window_s = max((last_start - first) / 1000.0, 1e-9)
+    window_s = max((max(ends) - min(starts)) / 1000.0, 1e-9)
+    arrival_window_s = max((max(starts) - min(starts)) / 1000.0, 1e-9)
 
     lat = [float(r["elapsed"]) for r in ok]
     server, overhead = [], []
@@ -99,32 +100,27 @@ def summarise_jtl(path, skip_first_s=0.0):
             server.append(s)
             overhead.append(float(r["elapsed"]) - s)
 
-    errors = Counter(_error_key(r) for r in bad)
     return {
-        "samples": len(rows),
-        "successes": len(ok),
-        "errors": len(bad),
+        "samples": len(rows), "successes": len(ok), "errors": len(bad),
+        "errored": errored, "unfinished": unfinished,
         "error_rate": len(bad) / len(rows),
-        "error_breakdown": "; ".join(f"{k} x{v}" for k, v in errors.most_common()),
+        "error_breakdown": "; ".join(f"{k} x{v}" for k, v in Counter(_error_key(r) for r in bad).most_common()),
         "arrival_rps": (len(rows) - 1) / arrival_window_s if len(rows) > 1 else float("nan"),
         "throughput_rps": len(ok) / window_s,
         "lat_mean_ms": statistics.fmean(lat) if lat else float("nan"),
         "lat_p50_ms": percentile(lat, 50),
-        "lat_p90_ms": percentile(lat, 90),
-        "lat_p95_ms": percentile(lat, 95),
-        "lat_p99_ms": percentile(lat, 99),
+        "lat_p95_ms": percentile(lat, 95),     # used internally (stress SLO check); not reported per run
         "lat_max_ms": max(lat) if lat else float("nan"),
         "server_p50_ms": percentile(server, 50),
-        "server_p95_ms": percentile(server, 95),
         "overhead_p50_ms": percentile(overhead, 50),
+        "_lat": lat,
     }
 
 
-NAME_RE = re.compile(r"^(?P<model>.+)_r(?P<rate>[\d.]+)_rep(?P<rep>\d+)\.jtl$")
+NAME_RE = re.compile(r"^(?P<model>.+)_r(?P<rate>[\d.]+)_rep(?P<rep>\d+)(_\d{8}_\d{6})?\.jtl$")
 
 
 def load_runs(inputs):
-    """Return list of dicts with at least model, rate_per_min, rep, jtl."""
     runs = []
     for item in inputs:
         p = Path(item)
@@ -150,9 +146,25 @@ def fmt(x, nd=1):
     return str(x)
 
 
+def mean_sd(vals):
+    vals = [v for v in vals if isinstance(v, (int, float)) and not math.isnan(v)]
+    if not vals:
+        return float("nan"), float("nan")
+    return statistics.fmean(vals), (statistics.stdev(vals) if len(vals) > 1 else 0.0)
+
+
+RUN_FIELDS = ["model", "rate_per_min", "rep", "sent", "completed", "errored", "unfinished", "error_rate",
+              "throughput_rps", "arrival_rps", "p50_ms", "mean_ms", "max_ms", "server_p50_ms", "overhead_p50_ms",
+              "error_breakdown", "stats_delta", "stats_matches_completed", "jtl"]
+CFG_FIELDS = ["model", "rate_per_min", "runs", "sent", "completed", "errored", "unfinished",
+              "p50_mean_ms", "p50_sd_ms", "p50_min_ms", "p50_max_ms", "p50_pooled_ms",
+              "p95_pooled_ms", "p95_pooled_n", "throughput_mean_rps", "throughput_sd_rps",
+              "error_rate_mean", "server_p50_mean_ms", "overhead_p50_mean_ms", "stats_mismatches"]
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("inputs", nargs="+", help="runs.csv manifest and/or .jtl files")
+    ap.add_argument("inputs", nargs="+", help="runs.csv manifest(s) and/or .jtl files")
     ap.add_argument("--out", help="output directory (default: folder of first input)")
     ap.add_argument("--skip-first-s", type=float, default=0.0,
                     help="ignore samples that started in the first N seconds of each run")
@@ -170,16 +182,21 @@ def main():
             print(f"Skipping missing file {r['jtl']}")
             continue
         s = summarise_jtl(r["jtl"], args.skip_first_s)
-        row = {"model": r["model"], "rate_per_min": r["rate_per_min"], "rep": r["rep"], **s}
+        row = {"model": r["model"], "rate_per_min": r["rate_per_min"], "rep": r["rep"],
+               "sent": s["samples"], "completed": s["successes"], "errored": s["errored"],
+               "unfinished": s["unfinished"], "error_rate": s["error_rate"],
+               "throughput_rps": s.get("throughput_rps", float("nan")), "arrival_rps": s.get("arrival_rps", float("nan")),
+               "p50_ms": s.get("lat_p50_ms", float("nan")), "mean_ms": s.get("lat_mean_ms", float("nan")),
+               "max_ms": s.get("lat_max_ms", float("nan")), "server_p50_ms": s.get("server_p50_ms", float("nan")),
+               "overhead_p50_ms": s.get("overhead_p50_ms", float("nan")),
+               "error_breakdown": s["error_breakdown"], "jtl": r["jtl"], "_lat": s["_lat"]}
         if r.get("stats_delta") not in (None, ""):
             row["stats_delta"] = r["stats_delta"]
-            row["stats_matches_jmeter"] = str(int(r["stats_delta"]) == s["successes"])
-        row["jtl"] = r["jtl"]
+            row["stats_matches_completed"] = str(int(r["stats_delta"]) == s["successes"])
         run_rows.append(row)
 
-    run_fields = ["model", "rate_per_min", "rep"] + RUN_METRICS + ["error_breakdown", "stats_delta", "stats_matches_jmeter", "jtl"]
     with (out_dir / "summary_runs.csv").open("w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=run_fields, extrasaction="ignore")
+        w = csv.DictWriter(f, fieldnames=RUN_FIELDS, extrasaction="ignore")
         w.writeheader()
         for row in run_rows:
             w.writerow({k: (fmt(v, 4) if isinstance(v, float) else v) for k, v in row.items()})
@@ -188,36 +205,56 @@ def main():
     for row in run_rows:
         groups[(row["model"], float(row["rate_per_min"]))].append(row)
 
-    cfg_rows = []
+    cfgs = []
     for (model, rate), rows in sorted(groups.items()):
-        cfg = {"model": model, "rate_per_min": rate, "target_rps": rate / 60.0, "runs": len(rows)}
-        for m in RUN_METRICS:
-            vals = [r[m] for r in rows if isinstance(r.get(m), (int, float)) and not math.isnan(r[m])]
-            cfg[f"{m}_mean"] = statistics.fmean(vals) if vals else float("nan")
-            cfg[f"{m}_std"] = statistics.stdev(vals) if len(vals) > 1 else 0.0 if vals else float("nan")
-        cfg["stats_mismatches"] = sum(1 for r in rows if r.get("stats_matches_jmeter") == "False")
-        cfg_rows.append(cfg)
+        p50s = [r["p50_ms"] for r in rows]
+        pooled = [x for r in rows for x in r["_lat"]]
+        p50m, p50sd = mean_sd(p50s)
+        thm, thsd = mean_sd([r["throughput_rps"] for r in rows])
+        valid_p50 = [v for v in p50s if not math.isnan(v)]
+        cfgs.append({
+            "model": model, "rate_per_min": rate, "runs": len(rows),
+            "sent": sum(r["sent"] for r in rows), "completed": sum(r["completed"] for r in rows),
+            "errored": sum(r["errored"] for r in rows), "unfinished": sum(r["unfinished"] for r in rows),
+            "p50_mean_ms": p50m, "p50_sd_ms": p50sd,
+            "p50_min_ms": min(valid_p50) if valid_p50 else float("nan"),
+            "p50_max_ms": max(valid_p50) if valid_p50 else float("nan"),
+            "p50_pooled_ms": percentile(pooled, 50), "p95_pooled_ms": percentile(pooled, 95),
+            "p95_pooled_n": len(pooled),
+            "throughput_mean_rps": thm, "throughput_sd_rps": thsd,
+            "error_rate_mean": mean_sd([r["error_rate"] for r in rows])[0],
+            "server_p50_mean_ms": mean_sd([r["server_p50_ms"] for r in rows])[0],
+            "overhead_p50_mean_ms": mean_sd([r["overhead_p50_ms"] for r in rows])[0],
+            "stats_mismatches": sum(1 for r in rows if r.get("stats_matches_completed") == "False"),
+        })
 
-    cfg_fields = ["model", "rate_per_min", "target_rps", "runs"] + \
-        [f"{m}_{s}" for m in RUN_METRICS for s in ("mean", "std")] + ["stats_mismatches"]
     with (out_dir / "summary_configs.csv").open("w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=cfg_fields)
+        w = csv.DictWriter(f, fieldnames=CFG_FIELDS)
         w.writeheader()
-        for row in cfg_rows:
-            w.writerow({k: (fmt(v, 4) if isinstance(v, float) else v) for k, v in row.items()})
+        for c in cfgs:
+            w.writerow({k: (fmt(v, 4) if isinstance(v, float) else v) for k, v in c.items()})
 
-    # Console table
-    hdr = f"{'model':<22}{'req/min':>8}{'runs':>5}{'err%':>8}{'thru r/s':>10}{'p50 ms':>10}{'p95 ms':>10}{'p99 ms':>10}{'srv p50':>10}{'ovh p50':>10}"
-    print(hdr)
-    print("-" * len(hdr))
-    for c in cfg_rows:
-        print(f"{c['model'][:21]:<22}{fmt(c['rate_per_min'],1):>8}{c['runs']:>5}"
-              f"{fmt(c['error_rate_mean']*100,2):>8}{fmt(c['throughput_rps_mean'],3):>10}"
-              f"{fmt(c['lat_p50_ms_mean'],0):>10}{fmt(c['lat_p95_ms_mean'],0):>10}{fmt(c['lat_p99_ms_mean'],0):>10}"
-              f"{fmt(c['server_p50_ms_mean'],0):>10}{fmt(c['overhead_p50_ms_mean'],0):>10}")
-    mism = sum(c["stats_mismatches"] for c in cfg_rows)
+    print("Per run")
+    hdr = f"{'config':<24}{'rep':>4}{'sent':>6}{'done':>6}{'err':>5}{'unfin':>6}{'p50 s':>9}{'thru r/s':>10}{'srv p50 s':>10}"
+    print(hdr + "\n" + "-" * len(hdr))
+    for r in run_rows:
+        print(f"{r['model'][:23]:<24}{r['rep']:>4}{r['sent']:>6}{r['completed']:>6}{r['errored']:>5}{r['unfinished']:>6}"
+              f"{fmt(r['p50_ms'] / 1000, 2):>9}{fmt(r['throughput_rps'], 4):>10}{fmt(r['server_p50_ms'] / 1000, 2):>10}")
+    print("\nPer configuration (p50: mean ± sd [min-max] across runs; p95 pooled over all runs)")
+    hdr = f"{'config':<24}{'req/min':>8}{'runs':>5}{'p50 mean±sd s':>16}{'[min-max]':>15}{'p95 pooled s (n)':>18}{'thru r/s':>10}{'err%':>7}"
+    print(hdr + "\n" + "-" * len(hdr))
+    for c in cfgs:
+        print(f"{c['model'][:23]:<24}{fmt(c['rate_per_min'], 3):>8}{c['runs']:>5}"
+              f"{fmt(c['p50_mean_ms'] / 1000, 2) + '±' + fmt(c['p50_sd_ms'] / 1000, 2):>16}"
+              f"{'[' + fmt(c['p50_min_ms'] / 1000, 1) + '-' + fmt(c['p50_max_ms'] / 1000, 1) + ']':>15}"
+              f"{fmt(c['p95_pooled_ms'] / 1000, 2) + ' (' + str(c['p95_pooled_n']) + ')':>18}"
+              f"{fmt(c['throughput_mean_rps'], 4):>10}{fmt(c['error_rate_mean'] * 100, 2):>7}")
+    mism = sum(c["stats_mismatches"] for c in cfgs)
+    unfin = sum(c["unfinished"] for c in cfgs)
     if mism:
-        print(f"\nWARNING: {mism} run(s) where /stats increase != JMeter successes (see summary_runs.csv).")
+        print(f"\nWARNING: {mism} run(s) where /stats increase != completed (see summary_runs.csv).")
+    if unfin:
+        print(f"WARNING: {unfin} unfinished request(s) - report them; check the timeout and pause settings.")
     print(f"\nWrote {out_dir / 'summary_runs.csv'} and {out_dir / 'summary_configs.csv'}")
 
 

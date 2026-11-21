@@ -1,0 +1,35 @@
+{
+  "measured_at": "2026-11-21T04:07:44",
+  "model": "qwen3:1.7b",
+  "target": "http://192.168.0.15:8000",
+  "tickets": [
+    {
+      "row": "12623",
+      "seconds": 26.115,
+      "server_ms": 26057.5,
+      "category": "Debt collection"
+    },
+    {
+      "row": "12399",
+      "seconds": 13.864,
+      "server_ms": 13805.17,
+      "category": "Credit reporting"
+    },
+    {
+      "row": "12107",
+      "seconds": 14.382,
+      "server_ms": 14347.79,
+      "category": "Debt collection"
+    }
+  ],
+  "S_seconds": 14.382,
+  "interval_seconds": 28.765,
+  "rate_per_min": 2.0859,
+  "rate_per_hour": 125.15,
+  "rate_per_sec": 0.03476,
+  "run_minutes": 15,
+  "jmeter_response_timeout_s": 300,
+  "open_model_pause_min": 6,
+  "expected_tickets_per_run": 31.3,
+  "client_peak_per_sec_A1": 0.1088
+}

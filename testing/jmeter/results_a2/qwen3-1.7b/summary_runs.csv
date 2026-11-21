@@ -1,0 +1,4 @@
+model,rate_per_min,rep,sent,completed,errored,unfinished,error_rate,throughput_rps,arrival_rps,p50_ms,mean_ms,max_ms,server_p50_ms,overhead_p50_ms,error_breakdown,stats_delta,stats_matches_completed,jtl
+qwen3:1.7b,2.0859,1,31,26,5,0,0.1613,0.0281,0.0346,32248.5000,33686.2308,59605.0000,32185.3200,50.8050,502 x5,26,True,results_a2\qwen3-1.7b\qwen3-1.7b_r2.0859_rep1.jtl
+qwen3:1.7b,2.0859,2,31,30,1,0,0.0323,0.0325,0.0346,19675.0000,26486.1667,57522.0000,19614.5400,46.7650,502 x1,30,True,results_a2\qwen3-1.7b\qwen3-1.7b_r2.0859_rep2.jtl
+qwen3:1.7b,2.0859,3,31,29,2,0,0.0645,0.0312,0.0344,24685.0000,27123.0000,59497.0000,24637.7800,45.4400,502 x2,29,True,results_a2\qwen3-1.7b\qwen3-1.7b_r2.0859_rep3.jtl

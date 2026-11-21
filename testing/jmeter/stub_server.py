@@ -125,7 +125,12 @@ def make_handler(state: State, args):
                 state.counts[category] += 1
                 ticket_id = next(state.ids)
             self._send(200, {"id": ticket_id, "category": category, "latency_ms": round(latency_ms, 2)})
-            self._log(200, t_start, {"model": args.model, "ticket_id": ticket_id, "category": category,
+            extra = {}
+            if args.cascade_escalate is not None:
+                escalated = random.random() < args.cascade_escalate
+                extra = {"initial_model": args.model, "escalated": escalated,
+                         "final_model": args.large_model if escalated else args.model}
+            self._log(200, t_start, {**extra, "model": args.model, "ticket_id": ticket_id, "category": category,
                                      "classification_latency_ms": round(latency_ms, 2),
                                      "narrative_chars": len(narrative)})
 
@@ -146,6 +151,9 @@ def main() -> None:
     ap.add_argument("--fail-rate", type=float, default=0.0, help="fraction of requests returning 502")
     ap.add_argument("--log-file", help="write a JSON-lines request log like the real service's logs/service.log")
     ap.add_argument("--model", default="stub-model", help="model name to put in the log")
+    ap.add_argument("--cascade-escalate", type=float, default=None,
+                    help="simulate a cascade: fraction of tickets escalated (logged as escalated/final_model)")
+    ap.add_argument("--large-model", default="stub-large", help="large model name for --cascade-escalate")
     ap.add_argument("--clock-skew-s", type=float, default=0.0, help=argparse.SUPPRESS)  # for testing reconcile_logs.py
     ap.add_argument("--quiet", action="store_true", help="don't log each request")
     args = ap.parse_args()

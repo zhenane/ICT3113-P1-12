@@ -20,6 +20,11 @@ For every run in a runs.csv manifest this script checks:
 Warm-up requests sent by run_load_tests.py are in the log but deliberately not
 in the .jtl; they fall just before the run window and are excluded.
 
+Cascade runs: if the log lines carry an escalation flag (default field name
+"escalated"; change with --escalation-field), each run also gets its escalation
+fraction = escalated / completed tickets in the run, and the final-model counts.
+The brief requires this figure to come from the service logs.
+
 Usage (copy logs/service.log from the service machine first):
     python reconcile_logs.py results/llama3.2-1b/runs.csv --log results/llama3.2-1b/service.log
     python reconcile_logs.py results/*/runs.csv --log service.log --clock-offset-s 1.5
@@ -94,7 +99,19 @@ def reconcile_run(run, jtl_rows, log, args):
         return out
 
     has_ids = any("ticket_id" in e for e in log)
-    log_by_id = {e["ticket_id"]: e for e in log if e.get("ticket_id") is not None} if has_ids else {}
+    # Ticket ids can repeat in a long-lived service.log (e.g. tickets.db was reset between test
+    # sessions while the log kept the old entries). For each id, use the entry closest in time
+    # to this run, so old entries with the same id are never matched.
+    run_mid = (min(r["_start"] for r in jtl_rows) + max(r["_end"] for r in jtl_rows)) / 2
+    log_by_id = {}
+    if has_ids:
+        for e in log:
+            tid = e.get("ticket_id")
+            if tid is None:
+                continue
+            cur = log_by_id.get(tid)
+            if cur is None or abs(e["timestamp"] - run_mid) < abs(cur["timestamp"] - run_mid):
+                log_by_id[tid] = e
     ok_rows = [r for r in jtl_rows if r["_ok"]]
     ok_ids = [r["_id"] for r in ok_rows if r["_id"] is not None]
 
@@ -170,12 +187,24 @@ def reconcile_run(run, jtl_rows, log, args):
                         f"(warm-ups or other clients? try --tol-s smaller / check clock offset)")
     out["jmeter_timeouts"] = timeouts
 
-    # --- model check ---
+    # --- escalation (cascade): fraction of this run's completed tickets that were escalated ---
+    ok_entries = [e for e in in_window if e.get("status_code") == 200]
+    is_cascade = any(args.escalation_field in e for e in ok_entries)
+    if is_cascade:
+        esc = sum(1 for e in ok_entries if _truthy(e.get(args.escalation_field)))
+        out["escalated"] = esc
+        out["completed_in_log"] = len(ok_entries)
+        out["escalation_fraction"] = round(esc / len(ok_entries), 4) if ok_entries else ""
+        finals = Counter(str(e.get(args.final_model_field, e.get("model"))) for e in ok_entries)
+        out["final_models"] = "; ".join(f"{k} x{v}" for k, v in finals.most_common())
+
+    # --- model check (single-model configs only) ---
     models = Counter(e.get("model") for e in (pairs and [e for _, e in pairs] or in_window) if e.get("model"))
     out["log_models"] = "; ".join(f"{k} x{v}" for k, v in models.items())
-    wrong = [m for m in models if m != run["model"]]
-    if wrong:
-        problems.append(f"log shows model(s) {wrong}, run is labelled '{run['model']}'")
+    if not (args.no_model_check or is_cascade):
+        wrong = [m for m in models if m != run["model"]]
+        if wrong:
+            problems.append(f"log shows model(s) {wrong}, run is labelled '{run['model']}'")
 
     # --- latency overhead ---
     if pairs:
@@ -184,6 +213,14 @@ def reconcile_run(run, jtl_rows, log, args):
 
     out["verdict"] = "RECONCILED" if not problems else "CHECK: " + " | ".join(problems)
     return out
+
+
+def _truthy(v):
+    if isinstance(v, bool):
+        return v
+    if isinstance(v, (int, float)):
+        return v != 0
+    return str(v).strip().lower() in ("true", "yes", "y", "1", "escalated")
 
 
 def main():
@@ -196,6 +233,12 @@ def main():
     ap.add_argument("--late-s", type=float, default=15.0,
                     help="for manifests without recorded windows: extra time after the last sample "
                          "for requests JMeter timed out on (s)")
+    ap.add_argument("--escalation-field", default="escalated",
+                    help="log field that is true when the cascade escalated the ticket")
+    ap.add_argument("--final-model-field", default="final_model",
+                    help="log field naming the model that produced the final answer")
+    ap.add_argument("--no-model-check", action="store_true",
+                    help="don't compare the logged model with the run label")
     args = ap.parse_args()
 
     log, bad = load_log(args.log)
@@ -221,10 +264,13 @@ def main():
             print(f"{flag}{res['jtl']}: JMeter {res.get('jmeter_samples', 0)} samples [{res.get('jmeter_codes', '')}] | "
                   f"log {res.get('log_entries_in_window', 0)} [{res.get('log_codes', '')}] | "
                   f"ids matched {res.get('ids_matched', '-')} | offset {res.get('clock_offset_s', '-')} s | "
-                  f"{res['verdict']}")
+                  f"{res['verdict']}"
+                  + (f" | escalated {res['escalated']}/{res['completed_in_log']} = {res['escalation_fraction']}"
+                     if "escalated" in res else ""))
         fields = ["model", "rate_per_min", "rep", "jtl", "jmeter_samples", "log_entries_in_window",
                   "jmeter_codes", "log_codes", "jmeter_timeouts", "ids_matched", "ids_missing_in_log",
-                  "log_200_not_success_in_jmeter", "log_models", "overhead_p50_ms", "clock_offset_s", "verdict"]
+                  "log_200_not_success_in_jmeter", "log_models", "escalated", "completed_in_log",
+                  "escalation_fraction", "final_models", "overhead_p50_ms", "clock_offset_s", "verdict"]
         out = mpath.parent / "reconciliation.csv"
         with out.open("w", newline="", encoding="utf-8") as f:
             w = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore")

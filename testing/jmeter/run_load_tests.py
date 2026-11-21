@@ -21,6 +21,19 @@ Example (run on the load-generator machine, NOT the service machine):
     python run_load_tests.py --host 192.168.1.50 --model llama3.2:3b \
         --rates 2 4 6 --duration-min 5 --repeats 3
 
+Assignment 2 speed tests: add --a2. That switches to the A2 procedure for
+every run: (1) pause so you can restart the Ollama container on the service
+machine (clears Ollama's prompt cache), (2) wait until the service answers,
+(3) send the 3 FIXED warm-up tickets from data/a2/warmup.tsv (timings discarded),
+(4) with --cascade, pause so you can confirm `ollama ps` lists BOTH models,
+(5) /stats, JMeter on data/a2/workload.tsv (same tickets, same order every run),
+drain, /stats. Get --rates/--duration-min/--timeout-ms from measure_s.py.
+
+    python run_load_tests.py --a2 --host 192.168.0.10 --model qwen3:1.7b \
+        --rates 0.6 --duration-min 50 --timeout-ms 500000
+    python run_load_tests.py --a2 --cascade --host 192.168.0.10 --model cascade-setting1 \
+        --rates 0.6 --duration-min 50 --timeout-ms 500000
+
 Standard library only (plus JMeter >= 5.5 on PATH or --jmeter).
 """
 
@@ -49,6 +62,7 @@ MANIFEST_FIELDS = [
     "stats_before", "stats_after", "stats_delta", "jmeter_successes", "jmeter_samples",
     "stats_matches_jmeter", "p95_ms", "error_rate",
     "window_start_epoch", "window_end_epoch",   # load-generator clock; used by reconcile_logs.py
+    "ollama_restarted", "both_models_confirmed",
 ]
 
 
@@ -61,17 +75,41 @@ def get_stats_total(base: str, timeout: float = 10) -> int:
         return int(json.load(r)["total"])
 
 
-def warm_up(base: str, bodies, n: int) -> None:
+def warm_up(base: str, bodies, n: int, timeout: float = 900, retry_first: bool = False) -> list:
+    """Send n warm-up tickets one at a time (timings are thrown away). With retry_first,
+    keep retrying the first one while Ollama is still starting after a restart."""
+    codes = []
     for i in range(n):
-        req = urllib.request.Request(f"{base}/tickets", data=bodies[i % len(bodies)].encode("ascii"),
-                                     headers={"Content-Type": "application/json"}, method="POST")
-        t0 = time.perf_counter()
+        for attempt in range(12 if (retry_first and i == 0) else 1):
+            req = urllib.request.Request(f"{base}/tickets", data=bodies[i % len(bodies)].encode("ascii"),
+                                         headers={"Content-Type": "application/json"}, method="POST")
+            t0 = time.perf_counter()
+            try:
+                with urllib.request.urlopen(req, timeout=timeout) as r:
+                    code = r.status
+            except urllib.error.HTTPError as e:
+                code = e.code
+            except Exception as e:  # noqa: BLE001
+                code = f"no-response ({type(e).__name__})"
+            if code == 200 or not (retry_first and i == 0):
+                break
+            print(f"    warm-up 1: {code} - Ollama may still be starting, retrying in 10 s")
+            time.sleep(10)
+        codes.append(code)
+        print(f"    warm-up {i + 1}/{n}: HTTP {code} in {time.perf_counter() - t0:.1f}s (discarded)")
+    return codes
+
+
+def wait_for_service(base: str, max_wait_s: float = 300) -> None:
+    t_end = time.time() + max_wait_s
+    while True:
         try:
-            with urllib.request.urlopen(req, timeout=600) as r:
-                code = r.status
-        except urllib.error.HTTPError as e:
-            code = e.code
-        print(f"    warm-up {i + 1}/{n}: HTTP {code} in {time.perf_counter() - t0:.1f}s")
+            get_stats_total(base)
+            return
+        except Exception:  # noqa: BLE001
+            if time.time() > t_end:
+                sys.exit(f"Service at {base} did not come back within {max_wait_s:.0f} s")
+            time.sleep(5)
 
 
 def main(argv=None):
@@ -94,7 +132,24 @@ def main(argv=None):
     ap.add_argument("--slo-p95-ms", type=float, help="p95 latency SLO (enables break check)")
     ap.add_argument("--slo-error-rate", type=float, help="max error rate, e.g. 0.01 (enables break check)")
     ap.add_argument("--stop-on-break", action="store_true", help="stop at the first rate that breaks an SLO")
+    ap.add_argument("--rate-unit", choices=["min", "hour"], default="min",
+                    help="unit JMeter's schedule uses; --rates are always per MINUTE (hour: converted, rounded)")
+    a2 = ap.add_argument_group("Assignment 2")
+    a2.add_argument("--a2", action="store_true",
+                    help="A2 procedure: restart Ollama before each run, fixed warm-up + workload from data/a2/")
+    a2.add_argument("--warmup-file", help="TSV of warm-up bodies (default with --a2: data/a2/warmup.tsv)")
+    a2.add_argument("--cascade", action="store_true",
+                    help="after warm-up, pause to confirm `ollama ps` lists BOTH models")
+    a2.add_argument("--restart-cmd", help="command that restarts Ollama on the service machine "
+                                          "(e.g. via ssh); without it you are prompted to do it by hand")
     args = ap.parse_args(argv)
+    if args.a2:
+        a2dir = HERE / "data" / "a2"
+        if args.data_file == str(HERE / "data" / "tickets_jmeter.tsv"):
+            args.data_file = str(a2dir / "workload.tsv")
+        args.warmup_file = args.warmup_file or str(a2dir / "warmup.tsv")
+        if args.timeout_ms < 300000:
+            sys.exit("A2 requires a JMeter response timeout of max(10*S, 300 s) - use the value from measure_s.py")
 
     jmeter = shutil.which(args.jmeter) or (args.jmeter if Path(args.jmeter).exists() else None)
     if not jmeter:
@@ -103,6 +158,16 @@ def main(argv=None):
     if not data_file.exists():
         sys.exit(f"Data file not found: {data_file}. Run prep_tickets.py first.")
     bodies = data_file.read_text(encoding="ascii").splitlines()[1:]
+    warm_bodies = bodies
+    if args.warmup_file:
+        wf = Path(args.warmup_file)
+        if not wf.exists():
+            sys.exit(f"Warm-up file not found: {wf}. Run select_workload.py first.")
+        warm_bodies = wf.read_text(encoding="ascii").splitlines()[1:]
+        overlap = set(warm_bodies) & set(bodies)
+        if overlap:
+            sys.exit(f"{len(overlap)} warm-up ticket(s) also appear in the workload - they would hit Ollama's "
+                     f"prompt cache. Use separate tickets (select_workload.py does this).")
 
     base = f"http://{args.host}:{args.port}"
     try:
@@ -160,15 +225,36 @@ def main(argv=None):
                 report.parent.mkdir(parents=True, exist_ok=True)
 
                 print(f"[{tag}] {rate:g} req/min for {args.duration_min:g} min")
+                restarted = confirmed = ""
+                if args.a2:
+                    if args.restart_cmd:
+                        print(f"    restarting Ollama: {args.restart_cmd}")
+                        subprocess.run(args.restart_cmd, shell=True, check=False)
+                    else:
+                        input("    On the SERVICE machine run:  docker compose restart ollama\n"
+                              "    (clears Ollama's prompt cache; no model loaded). Press Enter when done... ")
+                    restarted = "yes"
+                    wait_for_service(base)
                 if args.warmup:
-                    warm_up(base, bodies, args.warmup)
+                    codes = warm_up(base, warm_bodies, args.warmup, retry_first=args.a2)
+                    if args.a2 and any(c != 200 for c in codes):
+                        print("    WARNING: a warm-up request failed - check the service before trusting this run")
+                if args.cascade:
+                    ans = input("    On the SERVICE machine run:  docker compose exec ollama ollama ps\n"
+                                "    Are BOTH cascade models listed? [y = start run / n = abort] ").strip().lower()
+                    if ans != "y":
+                        sys.exit("Aborted: both models must be resident before a cascade run. If the large model "
+                                 "is missing, send it one request (e.g. docker compose exec ollama ollama run "
+                                 "<large-model> \"warm up\"), check ollama ps again, and rerun.")
+                    confirmed = "yes"
                 before = get_stats_total(base)
                 started = dt.datetime.now().isoformat(timespec="seconds")
                 window_start = time.time()   # after warm-up: warm-up requests fall before this
 
                 cmd = [jmeter, "-n", "-t", str(Path(args.plan).resolve()), "-l", str(jtl), "-j", str(log),
                        f"-Jhost={args.host}", f"-Jport={args.port}",
-                       f"-Jrate_per_min={rate:g}", f"-Jduration_min={args.duration_min:g}",
+                       f"-Jrate_per_min={(rate if args.rate_unit == 'min' else round(rate * 60)):g}",
+                       f"-Jrate_unit={args.rate_unit}", f"-Jduration_min={args.duration_min:g}",
                        f"-Jtimeout_ms={args.timeout_ms}", f"-Jdata_file={data_file}",
                        # No-arrival tail >= timeout, so requests still in flight when arrivals stop can
                        # finish instead of being cut off ("Socket closed") when JMeter shuts down.
@@ -200,6 +286,7 @@ def main(argv=None):
                     "p95_ms": f"{s.get('lat_p95_ms', float('nan')):.0f}",
                     "error_rate": f"{s.get('error_rate', float('nan')):.4f}",
                     "window_start_epoch": f"{window_start:.3f}", "window_end_epoch": f"{window_end:.3f}",
+                    "ollama_restarted": restarted, "both_models_confirmed": confirmed,
                 }
                 writer.writerow(row)
                 mf.flush()
@@ -211,7 +298,7 @@ def main(argv=None):
                 if exit_code != 0:
                     print(f"    JMeter exited with {exit_code}; see {log}")
 
-                if not (rate == args.rates[-1] and rep == args.repeats):
+                if not args.a2 and not (rate == args.rates[-1] and rep == args.repeats):
                     time.sleep(args.cooldown_s)
 
             if args.slo_p95_ms is not None or args.slo_error_rate is not None:
