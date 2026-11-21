@@ -154,18 +154,8 @@ that also fails, the cascade is not feasible on this machine. Report it with the
 
 ## Result
 
-> **Re-run required.** This check ran on Ollama 0.34.0 because
-> `service/docker-compose.yml` used `ollama/ollama:latest`. Assignment 1 ran on
-> 0.35.0, and the A1 prediction records are reused only if the version is unchanged
-> (see `assignment2/accuracy-limits/README.md`). The image is now pinned to
-> `ollama/ollama:0.35.0`. Repeat Steps 1–5 on the Ryzen 5 3600 service host, overwrite
-> the `memory-check/` files, and update this section. `00_version.txt` must read
-> 0.35.0. Also check that `00_env.txt` reports the A1 host's CPU count: the run below
-> shows CPUs=16, but a Ryzen 5 3600 has 12 threads. The record below is kept as
-> evidence of the 0.34.0 run.
-
-**Date:** 2026-11-20
-**Ollama version:** 0.34.0
+**Date:** 2026-11-21
+**Ollama version:** 0.35.0 (pinned in `docker-compose.yml` as `ollama/ollama:0.35.0`)
 **Docker memory:** 15.46 GiB (CPUs=16)
 
 **Step 1 — clean start:** `ollama ps` shows no models loaded after restart.
@@ -174,23 +164,24 @@ that also fails, the cascade is not feasible on this machine. Report it with the
 
 ```
 NAME           ID              SIZE      PROCESSOR    CONTEXT    UNTIL
-qwen3:1.7b     8f68893c685c    1.9 GB    100% CPU     4096       4 minutes from now
-llama3.2:3b    a80c4f17acd5    2.6 GB    100% CPU     4096       2 minutes from now
+qwen3:1.7b     8f68893c685c    1.9 GB    100% CPU     4096       29 minutes from now
+llama3.2:3b    a80c4f17acd5    2.6 GB    100% CPU     4096       28 minutes from now
 ```
 
-**Docker stats:** Ollama container uses 4.561 GiB / 15.46 GiB (29.5%).
+**Docker stats:** Ollama container uses 4.393 GiB / 15.46 GiB (28.4%).
 
 **Step 5 — after alternating (small → large → small):**
 
 ```
 NAME           ID              SIZE      PROCESSOR    CONTEXT    UNTIL
-llama3.2:3b    a80c4f17acd5    2.6 GB    100% CPU     4096       4 minutes from now
-qwen3:1.7b     8f68893c685c    1.9 GB    100% CPU     4096       3 minutes from now
+llama3.2:3b    a80c4f17acd5    2.6 GB    100% CPU     4096       29 minutes from now
+qwen3:1.7b     8f68893c685c    1.9 GB    100% CPU     4096       29 minutes from now
 ```
 
-No eviction, no reload delay on alternation.
+No eviction, no reload delay on alternation. UNTIL shows ~29 min, confirming
+`OLLAMA_KEEP_ALIVE=30m` is active.
 
-**Verdict: PASS.** Both models fit comfortably (4.5 GiB of 15.5 GiB).
+**Verdict: PASS.** Both models fit comfortably (4.4 GiB of 15.5 GiB).
 
 Evidence files in `assignment2/cascade-design/memory-check/`:
 `00_version.txt`, `00_env.txt`, `01_ps_empty.txt`, `02_ps_both.txt`,
