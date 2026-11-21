@@ -156,7 +156,7 @@ that also fails, the cascade is not feasible on this machine. Report it with the
 
 **Date:** 2026-11-21
 **Ollama version:** 0.35.0 (pinned in `docker-compose.yml` as `ollama/ollama:0.35.0`)
-**Docker memory:** 15.46 GiB (CPUs=16)
+**Docker memory:** 15.46 GiB (CPUs=12)
 
 **Step 1 — clean start:** `ollama ps` shows no models loaded after restart.
 
