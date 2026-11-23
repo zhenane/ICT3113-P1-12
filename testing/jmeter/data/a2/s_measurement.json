@@ -1,35 +1,35 @@
 {
-  "measured_at": "2026-11-21T04:07:44",
+  "measured_at": "2026-11-23T19:16:01",
   "model": "qwen3:1.7b",
   "target": "http://192.168.0.15:8000",
   "tickets": [
     {
-      "row": "12623",
-      "seconds": 26.115,
-      "server_ms": 26057.5,
+      "row": "12741",
+      "seconds": 20.859,
+      "server_ms": 20814.58,
+      "category": "Money transfer or service"
+    },
+    {
+      "row": "12585",
+      "seconds": 17.747,
+      "server_ms": 17690.76,
       "category": "Debt collection"
     },
     {
-      "row": "12399",
-      "seconds": 13.864,
-      "server_ms": 13805.17,
-      "category": "Credit reporting"
-    },
-    {
-      "row": "12107",
-      "seconds": 14.382,
-      "server_ms": 14347.79,
-      "category": "Debt collection"
+      "row": "12708",
+      "seconds": 26.275,
+      "server_ms": 26229.98,
+      "category": "Bank account or service"
     }
   ],
-  "S_seconds": 14.382,
-  "interval_seconds": 28.765,
-  "rate_per_min": 2.0859,
-  "rate_per_hour": 125.15,
-  "rate_per_sec": 0.03476,
-  "run_minutes": 15,
+  "S_seconds": 20.859,
+  "interval_seconds": 41.718,
+  "rate_per_min": 1.4382,
+  "rate_per_hour": 86.29,
+  "rate_per_sec": 0.02397,
+  "run_minutes": 21,
   "jmeter_response_timeout_s": 300,
   "open_model_pause_min": 6,
-  "expected_tickets_per_run": 31.3,
+  "expected_tickets_per_run": 30.2,
   "client_peak_per_sec_A1": 0.1088
 }
