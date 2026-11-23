@@ -1,0 +1,16 @@
+AMD Ryzen 5 3600 6-Core Processor
+ConfiguredClockSpeed  Speed  
+2133                  2133   
+2133                  2133
+CPUs=12 Mem=16719294464
+ollama version is 0.35.0
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+HOSTNAME=f295cdd7ec39
+TERM=xterm
+OLLAMA_KEEP_ALIVE=30m
+LD_LIBRARY_PATH=/usr/local/nvidia/lib:/usr/local/nvidia/lib64
+NVIDIA_DRIVER_CAPABILITIES=compute,utility
+NVIDIA_VISIBLE_DEVICES=all
+OLLAMA_HOST=0.0.0.0:11434
+HOME=/root
+DOCP(RAM overclock) disabled in BIOs after 4 crashes under cascade load. A2 results are with DOCP off
