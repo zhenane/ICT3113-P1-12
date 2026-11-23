@@ -1,117 +1,134 @@
-# Prediction Record
+# Assignment 2 — Prediction Record
 
-Prepared before benchmarking for the test environment below. All numerical
-predictions are judgement-based estimates, not measured results or published
-model scores. The predictions apply to the hardware, workload and classification
-conditions stated below.
+This is the team's forecast for Assignment 2. The values below are predictions,
+not measured results, and should be compared with the benchmark outcomes.
 
-## Prediction Conditions
+## Evidence and method
 
-- Inference host: service and Ollama run in Docker on the same Windows machine.
-- Host CPU: AMD Ryzen 5 3600; reported clock 4.1 GHz. RAM: 32 GB.
-- Host OS: Windows 10 Home x64, version 10.0.19045, build 19045.
-- Docker-reported memory: 16,720,048,128 bytes (approximately 15.57 GiB),
-  from `docker info`.
-- Ollama version: 0.35.0 (team-confirmed on the inference host).
-- Docker CPU availability: 12 logical CPUs (`docker info`: `CPUs=12`).
-  Ollama container inspection: `NanoCpus=0`, `CpuQuota=0`, `CpuPeriod=0`,
-  empty `Cpuset`; no explicit container CPU quota or CPU-set restriction.
-- Inference: CPU only. Host evidence from `ollama ps` confirms
-  `llama3.2:1b` uses `100% CPU`, context 4096. CPU-only execution is assumed
-  for all four candidates.
-- Candidate identities: the four exact tags and digests in
-  [requirements](../requirements/README.md).
-- Prompt and decoding: the baseline prompt in
-  [ollama_client.py](../service/src/ollama_client.py) requests only a category
-  number with `temperature=0`. Context/output limits and thinking behaviour
-  follow the baseline defaults for Ollama 0.35.0 and the pinned models.
-- Single-request latency: end-to-end `POST /tickets` response time, one request
-  at a time, one selected model already loaded, no competing test traffic.
-  The table predicts the median over successful, valid golden-set requests.
-  Cold starts and failed requests are excluded from this latency statistic.
-- Input basis: team rows 12000–12999. Narrative lengths have median 147,
-  p95 320, and p99 353 words. Words are counted by whitespace separation;
-  percentiles use linear interpolation and are rounded to whole words.
-  Word counts are not model-token counts. The final golden subset may have a
-  different length distribution.
-- Accuracy: correct predictions divided by all tickets in the frozen golden set.
-  Failed requests and invalid outputs count as incorrect. Predictions assume
-  resolved golden labels from the seven service categories, following the final
-  labelling protocol, with no tickets silently excluded.
-- Load basis: C's target arrival rate of 0.13 `POST /tickets` requests/second
-  (468/hour), with no competing test traffic for the isolated latency
-  predictions. The load-capacity predictions refer to this POST arrival rate.
-  JMeter runs on E's separate Windows machine for load testing:
-  Intel Core i7-1255U (reported 1.7 GHz), 16 GB RAM (15.7 GB reported usable),
-  Windows 11 x64 version 25H2, build 26200.9445.
+- Cascade predictions use the tuning set only: 91 odd-row tickets.
+- The escalation rule and its tuning evidence are in
+  [`escalation_rule.md`](../assignment2/cascade-design/escalation_rule.md).
+- Single-model test-set accuracy is reused from Assignment 1, as permitted by
+  the assignment.
+- Test-set accuracy limits are in
+  [`limits.csv`](../assignment2/accuracy-limits/limits.csv).
+- Both cascade models passed the memory check and were listed together with
+  `ollama ps`:
+  [`pair_investigation.md`](../assignment2/cascade-design/pair_investigation.md).
 
-## Expected Bottleneck Under Load
+## Prediction assumptions (A1 baseline)
 
-We predict that CPU-based Ollama inference will be the main bottleneck, rather
-than SQLite storage or HTTP handling. Every POST waits for model classification,
-whereas storing a ticket and querying a small database should require much less
-work. As demand approaches inference capacity, requests will spend more time
-waiting for available inference capacity and POST tail latency will rise.
+- Inference host: Docker service and Ollama on the Ryzen 5 3600 host.
+- Host: Windows 10 Home x64, 32 GB RAM; Docker reported 12 logical CPUs.
+- Docker memory: approximately 15.57 GiB.
+- Ollama: 0.35.0.
+- CPU-only inference.
+- Context: 4096.
+- Prompt and decoding: unchanged from Assignment 1.
+- Model identities: the exact tags and digests in
+  [`requirements/README.md`](../requirements/README.md).
+- Cascade pair: `llama3.2:3b` as the small model and `qwen3:1.7b` as the large
+  model.
 
-Our specific prediction is that model-call time will account for more than 80%
-of median successful POST response time during isolated warm-model requests.
-This can be checked against the service's model-call timing and end-to-end
-request logs. Model-call time includes HTTP overhead and, under load, waiting;
-it does not isolate CPU execution time.
+## A2 test setup and comparability
 
-We predict that the 3B and 4B candidates will exceed the 45-second POST p95
-requirement at 0.13 requests/second and will struggle to sustain 468 successful
-classifications/hour without growing outstanding requests. The two smaller
-candidates should sustain higher throughput, although meeting the target is
-uncertain because inference concurrency and ticket length affect capacity.
+- The physical inference host, Ollama version, model identities, prompt, and
+  temperature are intended to match A1. A2 intentionally uses a fixed
+  `30m` keep-alive and keeps both cascade models resident; these are not
+  settings to revert between A2 configurations.
+- Load generator: separate Windows machine.
+- Speed test: the arrival interval is derived from S, where S is the median of
+  three timings of different warm-model tickets sent to the top model.
+- Three runs per configuration, fixed-ticket open-loop JMeter workload.
 
-At 0.13 requests/second, requests arrive about 7.69 seconds apart. A backend
-processing one request at a time would need mean service time below 7.69 seconds
-to keep up. This is a capacity check, not a claim that the current HTTP handlers
-or Ollama necessarily enforce one-at-a-time execution. Parallel inference could
-change achievable capacity.
+## P1 — Fastest configuration
 
-## Per-Model Predictions
+**Prediction:** `qwen3:1.7b` alone will be the fastest qualifying configuration
+by median latency. Neither cascade setting is predicted to beat it.
 
-These point estimates apply to the recorded Ryzen host, with one candidate
-loaded and the baseline settings above. Each accuracy prediction refers to the
-frozen golden set; each latency prediction refers to isolated warm-model requests.
+Reasons:
 
-| Candidate tag | Predicted overall accuracy | Predicted warm single-request median latency |
+1. The other single llama models are below the required 48/105 test-set overall
+   accuracy. `qwen3:4b` returned no successful Assignment 1 classifications.
+2. Both tuning-selected cascade settings escalate most tickets: approximately
+   85% for S1 and 75% for S2.
+3. Since both settings are predicted to escalate more than half of tickets, the
+   median cascade request is likely to include both model calls. Their A1
+   isolated tuning-set medians were 3.5 s and 15.2 s; adding these gives a
+   rough latency reference, not the measured or mathematically implied median
+   of their sum.
+
+**Specific claim:** the mean of the three run p50 values for each cascade setting
+will be at least 2 seconds higher than the mean p50 for `qwen3:1.7b` alone.
+
+The final recommendation remains evidence-based: only the measured speed and
+test-set accuracy decide the fastest qualifying configuration.
+
+## P2 — Cascade predictions
+
+| Quantity | S1 (`L = 0`) | S2 (`L = 80`) |
 |---|---:|---:|
-| `llama3.2:1b` | 70% | 6 seconds |
-| `qwen3:1.7b` | 76% | 9 seconds |
-| `llama3.2:3b` | 80% | 15 seconds |
-| `qwen3:4b` | 84% | 22 seconds |
+| Accuracy-test escalation fraction | Approximately 85%; predicted range 80–90% | Approximately 75%; predicted range 70–80% |
+| Predicted overall accuracy | Approximately 57/105 (54.3%); range 54–60 | Approximately 54/105 (51.4%); range 51–57 |
+| Predicted overall limit result | Pass (`>= 48/105`) | Pass (`>= 48/105`) |
+| Predicted per-category result | Pass all seven limits | Pass all seven limits; Debt collection is borderline |
+| Predicted non-escalated accuracy | Approximately 85%; 14/16 | Approximately 60%; 16/26 |
+| Predicted escalated accuracy | Approximately 48%; 43/89 | Approximately 48%; 38/79 |
 
-We predict that larger candidates will more reliably distinguish the complaint's
-primary product from secondary issues, improving accuracy at the cost of CPU
-inference time. The two model families may behave differently, so the ordering
-above is a prediction rather than a conclusion from parameter count.
+“Pass” here means passing the A2 relative accuracy limits in
+[`limits.csv`](../assignment2/accuracy-limits/limits.csv). It does not mean
+meeting the separate overall-accuracy, macro-F1, and recall requirements in
+[`requirements/README.md`](../requirements/README.md).
 
-An accuracy deviation greater than 5 percentage points or a median-latency
-deviation greater than 30% is considered a material prediction error. These
-thresholds describe prediction error, not client acceptance requirements or
-confidence intervals; the point predictions remain the values in the table.
+On the tuning set, S1 matched `qwen3:1.7b` at 55/91 correct while accepting only
+categories with tuning precision of at least 80% and at least two observations.
+The predicted 57/105 test-set result extrapolates from that tuning-set result.
 
-We predict that `llama3.2:1b` will miss the 75% overall accuracy requirement and
-the other candidates will reach it. Overall accuracy alone will not establish
-compliance, which also depends on the macro-F1 and per-category recall requirements.
-We do not assume in advance that any candidate meets every requirement.
+S2 adds acceptance of tickets of 80 words or fewer. It is predicted to lose
+some tuning-set accuracy, but to remain within the test-set limits.
 
-## Expected Hardest Categories and Confusions
+**Speed predictions**
 
-We predict that Consumer loan and Money transfer or service will have the lowest
-recall for at least three of the four candidates. For each of those candidates,
-at least one of these two categories is predicted to have recall below 70%.
+| Configuration | Mean p50 across three runs | Predicted p95 pooled |
+|---|---:|---:|
+| `qwen3:1.7b` alone | 16 s; range 13–20 s | Approximately 37 s |
+| S1 | 19.5 s; range 16–24 s | Approximately 40 s |
+| S2 | 19 s; range 16–24 s | Approximately 40 s |
 
-| Category or boundary | Expected error and reason |
+The predicted top-model warm-up median S is 15 s, giving an arrival interval of
+approximately 30 seconds and at least a 15-minute run under the Assignment 2
+formula. Escalation under load is predicted to be approximately 85% for S1 and
+78% for S2, but may differ from the accuracy-test fraction because the
+load-workload tickets are outside the golden set.
+
+No queue is predicted to build at the S-derived arrival rate. Single llama
+models and `qwen3:4b` fail the accuracy limits and do not need speed tests.
+
+## P3 — Categories likely to lose accuracy
+
+Acceptance is based on the small model's **predicted** category and ticket
+length. Accuracy loss is measured against the true test-set category.
+
+- **S1: Credit reporting and Debt collection.** Both are in the safe set and
+  are the likely locations of the small model's two tuning-set wrong
+  acceptances. Predicted loss: at most one test ticket in each category.
+- **S2: Credit reporting, Debt collection and Money transfer or service.**
+  Short tickets are accepted regardless of the llama answer. The tuning set
+  shows extra losses in these categories. Predicted loss: one or two tickets
+  in each. Debt collection is the likely borderline category.
+- **Bank account or service:** the small model's low-precision default answer
+  is not accepted under S1 and is only accepted for short tickets under S2.
+  It is not predicted to lose accuracy.
+
+## Material prediction-error thresholds
+
+| Quantity | Material error threshold |
 |---|---|
-| Consumer loan | Confusion with Credit card and Debt collection when narratives emphasise payments, interest, arrears, or collection activity without clearly identifying the underlying loan. |
-| Money transfer or service | Confusion with Bank account or service when disputed transfers also involve a bank account, fees, or access to funds. |
-| Credit reporting versus Debt collection | Narratives may describe both a collector and an incorrect credit-file entry. Models may classify by a prominent keyword instead of the primary issue defined in the labelling protocol. |
+| Overall accuracy | More than 3 tickets (approximately 3 percentage points) |
+| Escalation fraction | More than 7 percentage points |
+| Mean run p50 | More than 25% |
+| Pass/fail on any limit | Any difference |
+| Fastest qualifying configuration | Any difference |
 
-We predict Mortgage will have higher recall than Consumer loan for all four
-candidates because explicit mortgage, servicing, and foreclosure language should
-provide clearer product cues. Classification correctness follows B's frozen
-labelling protocol.
+These thresholds describe prediction error; they are separate from the
+assignment's accuracy and latency requirements.

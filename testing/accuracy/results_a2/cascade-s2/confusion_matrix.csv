@@ -1,0 +1,9 @@
+golden \ predicted,Debt collection,Mortgage,Bank account or service,Money transfer or service,Credit reporting,Consumer loan,Credit card,Out-of-scope,(error),total
+Debt collection,11,0,3,0,1,0,1,0,4,20
+Mortgage,2,7,1,2,0,0,1,0,5,18
+Bank account or service,1,0,13,0,0,0,1,0,2,17
+Money transfer or service,1,0,2,6,0,0,0,0,6,15
+Credit reporting,0,0,3,0,6,0,1,0,5,15
+Consumer loan,4,0,1,0,0,0,0,0,5,10
+Credit card,0,0,1,0,0,0,4,0,4,9
+Out-of-scope,0,1,0,0,0,0,0,0,0,1
