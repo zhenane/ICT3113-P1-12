@@ -1,0 +1,79 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect,"server_latency_ms","category","ticket_id"
+1795434611558,27782,POST /tickets,200,OK,Open-loop arrivals 1-1,text,true,,193,1412,2,2,http://192.168.0.15:8000/tickets,27782,0,33,27717.1,Bank account or service,345
+1795434635243,17432,POST /tickets,200,OK,Open-loop arrivals 1-2,text,true,,187,428,2,2,http://192.168.0.15:8000/tickets,17432,0,7,17381.75,Credit reporting,346
+1795434644485,60096,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1073,2,2,http://192.168.0.15:8000/tickets,60096,0,10,-1,NONE,-1
+1795434667224,60098,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,2197,1,1,http://192.168.0.15:8000/tickets,60098,0,9,-1,NONE,-1
+1795434766014,24774,POST /tickets,200,OK,Open-loop arrivals 1-5,text,true,,194,1586,1,1,http://192.168.0.15:8000/tickets,24774,0,9,24741.24,Bank account or service,347
+1795434860470,21306,POST /tickets,200,OK,Open-loop arrivals 1-6,text,true,,187,1349,3,3,http://192.168.0.15:8000/tickets,21306,0,9,21255.02,Credit reporting,348
+1795434861125,45689,POST /tickets,200,OK,Open-loop arrivals 1-7,text,true,,196,498,3,3,http://192.168.0.15:8000/tickets,45689,0,8,45650.43,Money transfer or service,349
+1795434866089,50794,POST /tickets,200,OK,Open-loop arrivals 1-8,text,true,,186,1097,2,2,http://192.168.0.15:8000/tickets,50794,0,9,50725.7,Credit reporting,350
+1795434884989,60095,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,527,1,1,http://192.168.0.15:8000/tickets,60095,0,8,-1,NONE,-1
+1795435017007,13307,POST /tickets,200,OK,Open-loop arrivals 1-10,text,true,,187,757,1,1,http://192.168.0.15:8000/tickets,13307,0,10,13269.59,Credit reporting,351
+1795435087428,22999,POST /tickets,200,OK,Open-loop arrivals 1-11,text,true,,182,1077,1,1,http://192.168.0.15:8000/tickets,22999,0,8,22951.83,Credit card,352
+1795435172727,21936,POST /tickets,200,OK,Open-loop arrivals 1-12,text,true,,186,1089,1,1,http://192.168.0.15:8000/tickets,21936,0,8,21895.42,Debt collection,353
+1795435198980,20805,POST /tickets,200,OK,Open-loop arrivals 1-13,text,true,,182,1901,1,1,http://192.168.0.15:8000/tickets,20805,0,8,20769.16,Credit card,354
+1795435281039,24477,POST /tickets,200,OK,Open-loop arrivals 1-14,text,true,,187,1891,1,1,http://192.168.0.15:8000/tickets,24477,0,9,24428.81,Credit reporting,355
+1795435306649,12210,POST /tickets,200,OK,Open-loop arrivals 1-15,text,true,,187,866,1,1,http://192.168.0.15:8000/tickets,12210,0,14,12161.52,Credit reporting,356
+1795435340196,49672,POST /tickets,200,OK,Open-loop arrivals 1-16,text,true,,187,1548,2,2,http://192.168.0.15:8000/tickets,49672,0,174,49457.22,Credit reporting,357
+1795435349950,60052,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-17,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,504,1,1,http://192.168.0.15:8000/tickets,60052,0,10,-1,NONE,-1
+1795435444475,20900,POST /tickets,200,OK,Open-loop arrivals 1-18,text,true,,186,1060,1,1,http://192.168.0.15:8000/tickets,20900,0,8,20848.38,Debt collection,358
+1795435494241,60095,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-19,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,767,2,2,http://192.168.0.15:8000/tickets,60095,0,13,-1,NONE,-1
+1795435509361,60114,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-20,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1773,1,1,http://192.168.0.15:8000/tickets,60114,0,7,-1,NONE,-1
+1795435630584,30133,POST /tickets,200,OK,Open-loop arrivals 1-21,text,true,,194,675,4,4,http://192.168.0.15:8000/tickets,30133,0,9,30094.68,Bank account or service,359
+1795435645547,56157,POST /tickets,200,OK,Open-loop arrivals 1-22,text,true,,194,808,3,3,http://192.168.0.15:8000/tickets,56157,0,8,56109.61,Bank account or service,360
+1795435646113,60106,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-23,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,493,2,2,http://192.168.0.15:8000/tickets,60106,0,11,-1,NONE,-1
+1795435652956,60075,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-24,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1472,2,2,http://192.168.0.15:8000/tickets,60075,0,9,-1,NONE,-1
+1795435708811,28685,POST /tickets,200,OK,Open-loop arrivals 1-25,text,true,,194,808,1,1,http://192.168.0.15:8000/tickets,28685,0,12,28639.27,Bank account or service,361
+1795435769463,13057,POST /tickets,200,OK,Open-loop arrivals 1-26,text,true,,178,1292,1,1,http://192.168.0.15:8000/tickets,13057,0,8,13017.5,Mortgage,362
+1795435787523,21840,POST /tickets,200,OK,Open-loop arrivals 1-27,text,true,,186,1530,1,1,http://192.168.0.15:8000/tickets,21840,0,8,21783.14,Debt collection,363
+1795435815190,12381,POST /tickets,200,OK,Open-loop arrivals 1-28,text,true,,186,1195,3,3,http://192.168.0.15:8000/tickets,12381,0,6,12334.57,Debt collection,364
+1795435817136,28812,POST /tickets,200,OK,Open-loop arrivals 1-29,text,true,,194,573,2,2,http://192.168.0.15:8000/tickets,28812,0,8,28764.08,Bank account or service,365
+1795435825031,45429,POST /tickets,200,OK,Open-loop arrivals 1-30,text,true,,194,1485,1,1,http://192.168.0.15:8000/tickets,45429,0,8,45393.46,Bank account or service,366
