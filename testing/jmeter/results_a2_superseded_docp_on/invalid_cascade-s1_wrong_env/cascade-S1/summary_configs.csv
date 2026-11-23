@@ -1,0 +1,2 @@
+model,rate_per_min,runs,sent,completed,errored,unfinished,p50_mean_ms,p50_sd_ms,p50_min_ms,p50_max_ms,p50_pooled_ms,p95_pooled_ms,p95_pooled_n,throughput_mean_rps,throughput_sd_rps,error_rate_mean,server_p50_mean_ms,overhead_p50_mean_ms,stats_mismatches
+cascade-S1,2.0859,3,93,93,0,0,3542.3333,251.8975,3299.0000,3802.0000,3443.0000,7494.0000,93,0.0355,0.0001,0.0000,3471.4100,57.4233,0

@@ -1,0 +1,2 @@
+model,rate_per_min,duration_min,rep,started_at,jtl,jmeter_exit,stats_before,stats_after,stats_delta,jmeter_successes,jmeter_samples,stats_matches_jmeter,p95_ms,error_rate,window_start_epoch,window_end_epoch,ollama_restarted,both_models_confirmed
+cascade-S1,2.0859,15,1,2026-11-22T14:41:58,cascade-S1_r2.0859_rep1.jtl,0,129,158,29,29,31,True,56635,0.0645,1795329718.615,1795331056.362,yes,yes

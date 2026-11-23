@@ -1,0 +1,4 @@
+model,rate_per_min,rep,jtl,jmeter_samples,log_entries_in_window,jmeter_codes,log_codes,jmeter_timeouts,ids_matched,ids_missing_in_log,log_200_not_success_in_jmeter,log_models,escalated,completed_in_log,escalation_fraction,final_models,overhead_p50_ms,clock_offset_s,verdict
+cascade-S1,2.0859,1,cascade-S1_r2.0859_rep1.jtl,31,31,200 x26; 502 x5,200 x26; 502 x5,0,26,0,0,,22,26,0.8462,qwen3:1.7b x22; llama3.2:3b x4,26.9,1.119,RECONCILED
+cascade-S1,2.0859,2,cascade-S1_r2.0859_rep2.jtl,31,31,200 x22; 502 x9,200 x22; 502 x9,0,22,0,0,,18,22,0.8182,qwen3:1.7b x18; llama3.2:3b x4,26.8,1.118,RECONCILED
+cascade-S1,2.0859,3,cascade-S1_r2.0859_rep3.jtl,31,31,200 x23; 502 x8,200 x23; 502 x8,0,23,0,0,,19,23,0.8261,qwen3:1.7b x19; llama3.2:3b x4,22.7,1.115,RECONCILED

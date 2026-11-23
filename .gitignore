@@ -9,6 +9,9 @@ service/data/
 service/logs/
 service/.env
 
+# html reports from jmeter
+testing/jmeter/results*/**/html/
+
 # OS
 .DS_Store
 Thumbs.db

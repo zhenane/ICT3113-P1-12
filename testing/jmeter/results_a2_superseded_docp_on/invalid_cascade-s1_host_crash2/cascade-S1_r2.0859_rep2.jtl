@@ -1,0 +1,140 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect,"server_latency_ms","category","ticket_id"
+1795331288466,35578,POST /tickets,200,OK,Open-loop arrivals 1-1,text,true,,179,1038,3,3,http://192.168.0.15:8000/tickets,35578,0,42,35494.05,Mortgage,162
+1795331305237,26694,POST /tickets,200,OK,Open-loop arrivals 1-2,text,true,,187,926,3,3,http://192.168.0.15:8000/tickets,26694,0,12,26641.57,Credit reporting,163
+1795331311840,46974,POST /tickets,200,OK,Open-loop arrivals 1-3,text,true,,186,954,2,2,http://192.168.0.15:8000/tickets,46974,0,10,46921.28,Debt collection,164
+1795331328082,48346,POST /tickets,200,OK,Open-loop arrivals 1-4,text,true,,187,1891,1,1,http://192.168.0.15:8000/tickets,48346,0,8,48283.78,Credit reporting,165
+1795331398621,21470,POST /tickets,200,OK,Open-loop arrivals 1-5,text,true,,186,2142,1,1,http://192.168.0.15:8000/tickets,21470,0,11,21423.0,Credit reporting,166
+1795331466099,65290,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1848,4,4,http://192.168.0.15:8000/tickets,65290,0,8,-1,NONE,-1
+1795331466569,68383,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,998,3,3,http://192.168.0.15:8000/tickets,68383,0,8,-1,NONE,-1
+1795331470124,68323,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1023,2,2,http://192.168.0.15:8000/tickets,68323,0,12,-1,NONE,-1
+1795331483610,65131,POST /tickets,502,Bad Gateway,Open-loop arrivals 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",179,1091,1,1,http://192.168.0.15:8000/tickets,65131,0,13,-1,NONE,-1
+1795331577908,20129,POST /tickets,200,OK,Open-loop arrivals 1-10,text,true,,182,1027,1,1,http://192.168.0.15:8000/tickets,20128,0,7,20082.87,Credit card,167
+1795331628223,14173,POST /tickets,200,OK,Open-loop arrivals 1-11,text,true,,194,1187,1,1,http://192.168.0.15:8000/tickets,14173,0,13,14122.54,Bank account or service,168
+1795331689139,2876,POST /tickets,200,OK,Open-loop arrivals 1-12,text,true,,185,996,1,1,http://192.168.0.15:8000/tickets,2876,0,10,2827.01,Debt collection,169
+1795331707890,22974,POST /tickets,200,OK,Open-loop arrivals 1-13,text,true,,179,2131,1,1,http://192.168.0.15:8000/tickets,22974,0,11,22930.51,Mortgage,170
+1795331766509,20610,POST /tickets,200,OK,Open-loop arrivals 1-14,text,true,,193,2007,2,2,http://192.168.0.15:8000/tickets,20610,0,11,20553.4,Bank account or service,171
+1795331784805,29127,POST /tickets,200,OK,Open-loop arrivals 1-15,text,true,,196,1126,2,2,http://192.168.0.15:8000/tickets,29127,0,8,29084.46,Money transfer or service,172
+1795331808760,25124,POST /tickets,200,OK,Open-loop arrivals 1-16,text,true,,194,1868,2,2,http://192.168.0.15:8000/tickets,25124,0,8,25073.41,Bank account or service,173
+1795331815726,50676,POST /tickets,200,OK,Open-loop arrivals 1-17,text,true,,186,965,1,1,http://192.168.0.15:8000/tickets,50675,0,13,50628.58,Debt collection,174
+1795331918801,5018,POST /tickets,Non HTTP response code: org.apache.http.conn.ConnectTimeoutException,Non HTTP response message: Connect to 192.168.0.15:8000 [/192.168.0.15] failed: Connect timed out,Open-loop arrivals 1-20,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.ConnectTimeoutException]]]
+
+****** comparison: [[[200                                                                 ]]]
+
+/",2978,0,3,3,http://192.168.0.15:8000/tickets,0,0,5018,-1,NONE,-1
+1795331929598,5003,POST /tickets,Non HTTP response code: org.apache.http.conn.ConnectTimeoutException,Non HTTP response message: Connect to 192.168.0.15:8000 [/192.168.0.15] failed: Connect timed out,Open-loop arrivals 1-21,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.ConnectTimeoutException]]]
+
+****** comparison: [[[200                                                                 ]]]
+
+/",2978,0,3,3,http://192.168.0.15:8000/tickets,0,0,5002,-1,NONE,-1
+1795332016175,5011,POST /tickets,Non HTTP response code: org.apache.http.conn.ConnectTimeoutException,Non HTTP response message: Connect to 192.168.0.15:8000 [/192.168.0.15] failed: Connect timed out,Open-loop arrivals 1-22,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.ConnectTimeoutException]]]
+
+****** comparison: [[[200                                                                 ]]]
+
+/",2978,0,3,3,http://192.168.0.15:8000/tickets,0,0,5011,-1,NONE,-1
+1795332026881,5008,POST /tickets,Non HTTP response code: org.apache.http.conn.ConnectTimeoutException,Non HTTP response message: Connect to 192.168.0.15:8000 [/192.168.0.15] failed: Connect timed out,Open-loop arrivals 1-23,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.ConnectTimeoutException]]]
+
+****** comparison: [[[200                                                                 ]]]
+
+/",2978,0,4,4,http://192.168.0.15:8000/tickets,0,0,5007,-1,NONE,-1
+1795332027272,5004,POST /tickets,Non HTTP response code: org.apache.http.conn.ConnectTimeoutException,Non HTTP response message: Connect to 192.168.0.15:8000 [/192.168.0.15] failed: Connect timed out,Open-loop arrivals 1-24,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.ConnectTimeoutException]]]
+
+****** comparison: [[[200                                                                 ]]]
+
+/",2978,0,4,4,http://192.168.0.15:8000/tickets,0,0,5004,-1,NONE,-1
+1795332032172,5005,POST /tickets,Non HTTP response code: org.apache.http.conn.ConnectTimeoutException,Non HTTP response message: Connect to 192.168.0.15:8000 [/192.168.0.15] failed: Connect timed out,Open-loop arrivals 1-25,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.ConnectTimeoutException]]]
+
+****** comparison: [[[200                                                                 ]]]
+
+/",2978,0,3,3,http://192.168.0.15:8000/tickets,0,0,5004,-1,NONE,-1
+1795332072062,5010,POST /tickets,Non HTTP response code: org.apache.http.conn.ConnectTimeoutException,Non HTTP response message: Connect to 192.168.0.15:8000 [/192.168.0.15] failed: Connect timed out,Open-loop arrivals 1-26,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.ConnectTimeoutException]]]
+
+****** comparison: [[[200                                                                 ]]]
+
+/",2978,0,3,3,http://192.168.0.15:8000/tickets,0,0,5010,-1,NONE,-1
+1795332115384,5014,POST /tickets,Non HTTP response code: org.apache.http.conn.ConnectTimeoutException,Non HTTP response message: Connect to 192.168.0.15:8000 [/192.168.0.15] failed: Connect timed out,Open-loop arrivals 1-27,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.ConnectTimeoutException]]]
+
+****** comparison: [[[200                                                                 ]]]
+
+/",2978,0,3,3,http://192.168.0.15:8000/tickets,0,0,5014,-1,NONE,-1
+1795332128287,5010,POST /tickets,Non HTTP response code: org.apache.http.conn.ConnectTimeoutException,Non HTTP response message: Connect to 192.168.0.15:8000 [/192.168.0.15] failed: Connect timed out,Open-loop arrivals 1-28,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.ConnectTimeoutException]]]
+
+****** comparison: [[[200                                                                 ]]]
+
+/",2978,0,3,3,http://192.168.0.15:8000/tickets,0,0,5010,-1,NONE,-1
+1795332148046,5010,POST /tickets,Non HTTP response code: org.apache.http.conn.ConnectTimeoutException,Non HTTP response message: Connect to 192.168.0.15:8000 [/192.168.0.15] failed: Connect timed out,Open-loop arrivals 1-29,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.ConnectTimeoutException]]]
+
+****** comparison: [[[200                                                                 ]]]
+
+/",2978,0,4,4,http://192.168.0.15:8000/tickets,0,0,5010,-1,NONE,-1
+1795332149433,5004,POST /tickets,Non HTTP response code: org.apache.http.conn.ConnectTimeoutException,Non HTTP response message: Connect to 192.168.0.15:8000 [/192.168.0.15] failed: Connect timed out,Open-loop arrivals 1-30,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.ConnectTimeoutException]]]
+
+****** comparison: [[[200                                                                 ]]]
+
+/",2978,0,3,3,http://192.168.0.15:8000/tickets,0,0,5004,-1,NONE,-1
+1795332155078,5003,POST /tickets,Non HTTP response code: org.apache.http.conn.ConnectTimeoutException,Non HTTP response message: Connect to 192.168.0.15:8000 [/192.168.0.15] failed: Connect timed out,Open-loop arrivals 1-31,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.ConnectTimeoutException]]]
+
+****** comparison: [[[200                                                                 ]]]
+
+/",2978,0,3,3,http://192.168.0.15:8000/tickets,0,0,5003,-1,NONE,-1
+1795331880853,300021,POST /tickets,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Open-loop arrivals 1-18,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",3177,0,2,2,http://192.168.0.15:8000/tickets,0,0,15,-1,NONE,-1
+1795331883253,300020,POST /tickets,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Open-loop arrivals 1-19,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",3177,0,1,1,http://192.168.0.15:8000/tickets,0,0,6,-1,NONE,-1

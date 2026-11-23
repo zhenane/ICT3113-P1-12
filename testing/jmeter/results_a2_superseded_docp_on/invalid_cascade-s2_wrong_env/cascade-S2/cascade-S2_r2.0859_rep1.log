@@ -1,0 +1,248 @@
+2026-11-21 21:31:26,278 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-11-21 21:31:26,298 INFO o.a.j.JMeter: Loading user properties from: C:\Users\north\Downloads\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin\user.properties
+2026-11-21 21:31:26,299 INFO o.a.j.JMeter: Loading system properties from: C:\Users\north\Downloads\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin\system.properties
+2026-11-21 21:31:26,299 INFO o.a.j.JMeter: Setting JMeter property: host=192.168.0.15
+2026-11-21 21:31:26,299 INFO o.a.j.JMeter: Setting JMeter property: port=8000
+2026-11-21 21:31:26,299 INFO o.a.j.JMeter: Setting JMeter property: rate_per_min=2.0859
+2026-11-21 21:31:26,302 INFO o.a.j.JMeter: Setting JMeter property: rate_unit=min
+2026-11-21 21:31:26,302 INFO o.a.j.JMeter: Setting JMeter property: duration_min=15
+2026-11-21 21:31:26,302 INFO o.a.j.JMeter: Setting JMeter property: timeout_ms=300000
+2026-11-21 21:31:26,303 INFO o.a.j.JMeter: Setting JMeter property: data_file=C:\Users\north\OneDrive\Documents\School\Y3S1\3113-PTO\ICT3113-P1-12\testing\jmeter\data\a2\workload.tsv
+2026-11-21 21:31:26,303 INFO o.a.j.JMeter: Setting JMeter property: tail_min=6
+2026-11-21 21:31:26,303 INFO o.a.j.JMeter: Setting JMeter property: seed=1
+2026-11-21 21:31:26,303 INFO o.a.j.JMeter: Setting JMeter property: sample_variables=server_latency_ms,category,ticket_id
+2026-11-21 21:31:26,303 INFO o.a.j.JMeter: Setting JMeter property: jmeter.save.saveservice.output_format=csv
+2026-11-21 21:31:26,303 INFO o.a.j.JMeter: Setting JMeter property: jmeter.save.saveservice.print_field_names=true
+2026-11-21 21:31:26,311 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2026-11-21 21:31:26,311 INFO o.a.j.JMeter: Version 5.6.3
+2026-11-21 21:31:26,311 INFO o.a.j.JMeter: java.version=17.0.17
+2026-11-21 21:31:26,311 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2026-11-21 21:31:26,311 INFO o.a.j.JMeter: os.name=Windows 11
+2026-11-21 21:31:26,311 INFO o.a.j.JMeter: os.arch=amd64
+2026-11-21 21:31:26,311 INFO o.a.j.JMeter: os.version=10.0
+2026-11-21 21:31:26,311 INFO o.a.j.JMeter: file.encoding=Cp1252
+2026-11-21 21:31:26,311 INFO o.a.j.JMeter: java.awt.headless=true
+2026-11-21 21:31:26,311 INFO o.a.j.JMeter: Max memory     =1073741824
+2026-11-21 21:31:26,311 INFO o.a.j.JMeter: Available Processors =12
+2026-11-21 21:31:26,319 INFO o.a.j.JMeter: Default Locale=English (EN)
+2026-11-21 21:31:26,320 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2026-11-21 21:31:26,320 INFO o.a.j.JMeter: JMeterHome=C:\Users\north\Downloads\apache-jmeter-5.6.3\apache-jmeter-5.6.3
+2026-11-21 21:31:26,320 INFO o.a.j.JMeter: user.dir  =C:\Users\north\OneDrive\Documents\School\Y3S1\3113-PTO\ICT3113-P1-12\testing\jmeter
+2026-11-21 21:31:26,320 INFO o.a.j.JMeter: PWD       =C:\Users\north\OneDrive\Documents\School\Y3S1\3113-PTO\ICT3113-P1-12\testing\jmeter
+2026-11-21 21:31:26,321 INFO o.a.j.JMeter: IP: 192.168.0.10 Name: kaiwei FullName: host.docker.internal
+2026-11-21 21:31:26,336 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'C:\Users\north\OneDrive\Documents\School\Y3S1\3113-PTO\ICT3113-P1-12\testing\jmeter\results_a2\cascade-S2\html\cascade-S2_r2.0859_rep1'
+2026-11-21 21:31:26,340 INFO o.a.j.s.FileServer: Default base='C:\Users\north\OneDrive\Documents\School\Y3S1\3113-PTO\ICT3113-P1-12\testing\jmeter'
+2026-11-21 21:31:26,342 INFO o.a.j.s.FileServer: Set new base='C:\Users\north\OneDrive\Documents\School\Y3S1\3113-PTO\ICT3113-P1-12\testing\jmeter'
+2026-11-21 21:31:26,537 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2026-11-21 21:31:26,569 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2026-11-21 21:31:26,577 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2026-11-21 21:31:26,585 INFO o.a.j.s.SaveService: Loading file: C:\Users\north\OneDrive\Documents\School\Y3S1\3113-PTO\ICT3113-P1-12\testing\jmeter\triage_load_test.jmx
+2026-11-21 21:31:26,644 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-11-21 21:31:26,644 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-11-21 21:31:26,644 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-11-21 21:31:26,644 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-11-21 21:31:26,644 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2026-11-21 21:31:26,644 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2026-11-21 21:31:26,664 INFO o.a.j.JMeter: Creating summariser <summary>
+2026-11-21 21:31:26,672 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
+2026-11-21 21:31:26,672 INFO o.a.j.r.d.ReportGenerator: Will generate report at end of test from  results file: results_a2\cascade-S2\cascade-S2_r2.0859_rep1.jtl
+2026-11-21 21:31:26,672 INFO o.a.j.r.d.ReportGenerator: Reading report generator properties from: C:\Users\north\Downloads\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin\reportgenerator.properties
+2026-11-21 21:31:26,673 INFO o.a.j.r.d.ReportGenerator: Merging with JMeter properties
+2026-11-21 21:31:26,675 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.temp_dir' not found, using default value 'temp' instead.
+2026-11-21 21:31:26,678 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.apdex_per_transaction' not found, using default value 'null' instead.
+2026-11-21 21:31:26,678 INFO o.a.j.r.c.ReportGeneratorConfiguration: apdex_per_transaction is empty, not APDEX per transaction customization
+2026-11-21 21:31:26,678 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.sample_filter' not found, using default value 'null' instead.
+2026-11-21 21:31:26,678 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.report_title' not found, using default value 'null' instead.
+2026-11-21 21:31:26,678 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.start_date' not found, using default value 'null' instead.
+2026-11-21 21:31:26,678 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.end_date' not found, using default value 'null' instead.
+2026-11-21 21:31:26,678 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.date_format' not found, using default value 'null' instead.
+2026-11-21 21:31:26,679 INFO o.a.j.r.c.ReportGeneratorConfiguration: Will use date range start date: null, end date: null
+2026-11-21 21:31:26,682 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.totalTPS.exclude_controllers' not found, using default value 'false' instead.
+2026-11-21 21:31:26,683 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.activeThreadsOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-11-21 21:31:26,683 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.timeVsThreads.exclude_controllers' not found, using default value 'false' instead.
+2026-11-21 21:31:26,684 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimeDistribution.exclude_controllers' not found, using default value 'false' instead.
+2026-11-21 21:31:26,684 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.transactionsPerSecond.exclude_controllers' not found, using default value 'false' instead.
+2026-11-21 21:31:26,685 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentiles.exclude_controllers' not found, using default value 'false' instead.
+2026-11-21 21:31:26,685 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentilesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-11-21 21:31:26,685 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-11-21 21:31:26,686 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.connectTimeOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-11-21 21:31:26,686 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.latenciesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-11-21 21:31:26,687 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.filters_only_sample_series' not found, using default value 'true' instead.
+2026-11-21 21:31:26,687 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.series_filter' not found, using default value '' instead.
+2026-11-21 21:31:26,687 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.show_controllers_only' not found, using default value 'false' instead.
+2026-11-21 21:31:26,687 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.filters_only_sample_series' not found, using default value 'true' instead.
+2026-11-21 21:31:26,687 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.series_filter' not found, using default value '' instead.
+2026-11-21 21:31:26,687 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.show_controllers_only' not found, using default value 'false' instead.
+2026-11-21 21:31:26,694 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-11-21 21:31:26,695 INFO o.a.j.s.SampleEvent: List of sample_variables: [server_latency_ms, category, ticket_id]
+2026-11-21 21:31:26,695 INFO o.a.j.s.SampleEvent: List of sample_variables: [server_latency_ms, category, ticket_id]
+2026-11-21 21:31:26,702 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2026-11-21 21:31:26,702 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2026-11-21 21:31:26,796 INFO o.a.j.JMeter: Running test (1795267886796)
+2026-11-21 21:31:26,808 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Open-loop arrivals
+2026-11-21 21:31:26,808 INFO o.a.j.e.StandardJMeterEngine: Starting 0 threads for group Open-loop arrivals.
+2026-11-21 21:31:26,808 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-11-21 21:31:26,808 INFO o.a.j.t.o.OpenModelThreadGroup: Starting OpenModelThreadGroup#1 with schedule rate(2.0859/min) random_arrivals(15 min) pause(6 min)
+2026-11-21 21:31:26,833 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-11-21 21:31:26,834 INFO o.a.j.t.o.OpenModelThreadGroup: Thread starting init
+2026-11-21 21:31:26,836 INFO o.a.j.t.o.PoissonArrivalsRamp: Generating 31 events, beginRate = 0.034765000000000004 / sec, endRate = 0.034765000000000004 / sec, duration = 900.0 sec
+2026-11-21 21:31:31,265 INFO o.a.j.t.JMeterThread: Thread started: Open-loop arrivals 1-1
+2026-11-21 21:31:31,266 INFO o.a.j.s.FileServer: Stored: C:\Users\north\OneDrive\Documents\School\Y3S1\3113-PTO\ICT3113-P1-12\testing\jmeter\data\a2\workload.tsv
+2026-11-21 21:31:31,285 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = kaiwei
+2026-11-21 21:31:31,289 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2026-11-21 21:31:31,290 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2026-11-21 21:31:31,290 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2026-11-21 21:31:31,290 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2026-11-21 21:31:31,290 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2026-11-21 21:31:32,211 INFO o.a.j.t.JMeterThread: Thread started: Open-loop arrivals 1-2
+2026-11-21 21:31:34,153 INFO o.a.j.r.Summariser: summary +      1 in 00:00:07 =    0.1/s Avg:  2775 Min:  2775 Max:  2775 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+2026-11-21 21:31:34,153 INFO o.a.j.t.JMeterThread: Thread is done: Open-loop arrivals 1-1
+2026-11-21 21:31:34,153 INFO o.a.j.t.JMeterThread: Thread finished: Open-loop arrivals 1-1
+2026-11-21 21:31:36,936 INFO o.a.j.t.JMeterThread: Thread is done: Open-loop arrivals 1-2
+2026-11-21 21:31:36,936 INFO o.a.j.t.JMeterThread: Thread finished: Open-loop arrivals 1-2
+2026-11-21 21:33:11,071 INFO o.a.j.t.JMeterThread: Thread started: Open-loop arrivals 1-3
+2026-11-21 21:33:13,653 INFO o.a.j.t.JMeterThread: Thread is done: Open-loop arrivals 1-3
+2026-11-21 21:33:13,653 INFO o.a.j.t.JMeterThread: Thread finished: Open-loop arrivals 1-3
+2026-11-21 21:33:32,487 INFO o.a.j.t.JMeterThread: Thread started: Open-loop arrivals 1-4
+2026-11-21 21:33:34,521 INFO o.a.j.t.JMeterThread: Thread started: Open-loop arrivals 1-5
+2026-11-21 21:33:38,429 INFO o.a.j.t.JMeterThread: Thread is done: Open-loop arrivals 1-4
+2026-11-21 21:33:38,429 INFO o.a.j.t.JMeterThread: Thread finished: Open-loop arrivals 1-4
+2026-11-21 21:33:44,883 INFO o.a.j.t.JMeterThread: Thread is done: Open-loop arrivals 1-5
+2026-11-21 21:33:44,883 INFO o.a.j.t.JMeterThread: Thread finished: Open-loop arrivals 1-5
+2026-11-21 21:33:47,773 INFO o.a.j.t.JMeterThread: Thread started: Open-loop arrivals 1-6
+2026-11-21 21:33:52,882 INFO o.a.j.t.JMeterThread: Thread is done: Open-loop arrivals 1-6
+2026-11-21 21:33:52,882 INFO o.a.j.t.JMeterThread: Thread finished: Open-loop arrivals 1-6
+2026-11-21 21:34:31,122 INFO o.a.j.t.JMeterThread: Thread started: Open-loop arrivals 1-7
+2026-11-21 21:34:33,642 INFO o.a.j.t.JMeterThread: Thread started: Open-loop arrivals 1-8
+2026-11-21 21:34:33,781 INFO o.a.j.r.Summariser: summary +      6 in 00:03:00 =    0.0/s Avg:  5226 Min:  2579 Max: 10359 Err:     0 (0.00%) Active: 2 Started: 8 Finished: 6
+2026-11-21 21:34:33,781 INFO o.a.j.r.Summariser: summary =      7 in 00:03:07 =    0.0/s Avg:  4876 Min:  2579 Max: 10359 Err:     0 (0.00%)
+2026-11-21 21:34:33,781 INFO o.a.j.t.JMeterThread: Thread is done: Open-loop arrivals 1-7
+2026-11-21 21:34:33,781 INFO o.a.j.t.JMeterThread: Thread finished: Open-loop arrivals 1-7
+2026-11-21 21:34:36,134 INFO o.a.j.t.JMeterThread: Thread is done: Open-loop arrivals 1-8
+2026-11-21 21:34:36,134 INFO o.a.j.t.JMeterThread: Thread finished: Open-loop arrivals 1-8
+2026-11-21 21:35:51,350 INFO o.a.j.t.JMeterThread: Thread started: Open-loop arrivals 1-9
+2026-11-21 21:35:54,829 INFO o.a.j.t.JMeterThread: Thread is done: Open-loop arrivals 1-9
+2026-11-21 21:35:54,829 INFO o.a.j.t.JMeterThread: Thread finished: Open-loop arrivals 1-9
+2026-11-21 21:36:26,145 INFO o.a.j.t.JMeterThread: Thread started: Open-loop arrivals 1-10
+2026-11-21 21:36:28,687 INFO o.a.j.t.JMeterThread: Thread is done: Open-loop arrivals 1-10
+2026-11-21 21:36:28,687 INFO o.a.j.t.JMeterThread: Thread finished: Open-loop arrivals 1-10
+2026-11-21 21:36:39,466 INFO o.a.j.t.JMeterThread: Thread started: Open-loop arrivals 1-11
+2026-11-21 21:36:43,022 INFO o.a.j.t.JMeterThread: Thread is done: Open-loop arrivals 1-11
+2026-11-21 21:36:43,022 INFO o.a.j.t.JMeterThread: Thread finished: Open-loop arrivals 1-11
+2026-11-21 21:37:07,083 INFO o.a.j.t.JMeterThread: Thread started: Open-loop arrivals 1-12
+2026-11-21 21:37:09,901 INFO o.a.j.t.JMeterThread: Thread is done: Open-loop arrivals 1-12
+2026-11-21 21:37:09,901 INFO o.a.j.t.JMeterThread: Thread finished: Open-loop arrivals 1-12
+2026-11-21 21:37:24,156 INFO o.a.j.t.JMeterThread: Thread started: Open-loop arrivals 1-13
+2026-11-21 21:37:30,729 INFO o.a.j.r.Summariser: summary +      6 in 00:02:57 =    0.0/s Avg:  3574 Min:  2490 Max:  6570 Err:     0 (0.00%) Active: 1 Started: 13 Finished: 12
+2026-11-21 21:37:30,730 INFO o.a.j.r.Summariser: summary =     13 in 00:06:04 =    0.0/s Avg:  4275 Min:  2490 Max: 10359 Err:     0 (0.00%)
+2026-11-21 21:37:30,731 INFO o.a.j.t.JMeterThread: Thread is done: Open-loop arrivals 1-13
+2026-11-21 21:37:30,731 INFO o.a.j.t.JMeterThread: Thread finished: Open-loop arrivals 1-13
+2026-11-21 21:37:35,779 INFO o.a.j.t.JMeterThread: Thread started: Open-loop arrivals 1-14
+2026-11-21 21:37:42,117 INFO o.a.j.t.JMeterThread: Thread is done: Open-loop arrivals 1-14
+2026-11-21 21:37:42,118 INFO o.a.j.t.JMeterThread: Thread finished: Open-loop arrivals 1-14
+2026-11-21 21:38:40,255 INFO o.a.j.t.JMeterThread: Thread started: Open-loop arrivals 1-15
+2026-11-21 21:38:43,568 INFO o.a.j.t.JMeterThread: Thread is done: Open-loop arrivals 1-15
+2026-11-21 21:38:43,568 INFO o.a.j.t.JMeterThread: Thread finished: Open-loop arrivals 1-15
+2026-11-21 21:39:02,541 INFO o.a.j.t.JMeterThread: Thread started: Open-loop arrivals 1-16
+2026-11-21 21:39:08,109 INFO o.a.j.t.JMeterThread: Thread is done: Open-loop arrivals 1-16
+2026-11-21 21:39:08,112 INFO o.a.j.t.JMeterThread: Thread finished: Open-loop arrivals 1-16
+2026-11-21 21:39:17,520 INFO o.a.j.t.JMeterThread: Thread started: Open-loop arrivals 1-17
+2026-11-21 21:39:20,590 INFO o.a.j.t.JMeterThread: Thread is done: Open-loop arrivals 1-17
+2026-11-21 21:39:20,591 INFO o.a.j.t.JMeterThread: Thread finished: Open-loop arrivals 1-17
+2026-11-21 21:39:36,802 INFO o.a.j.t.JMeterThread: Thread started: Open-loop arrivals 1-18
+2026-11-21 21:39:39,924 INFO o.a.j.t.JMeterThread: Thread is done: Open-loop arrivals 1-18
+2026-11-21 21:39:39,924 INFO o.a.j.t.JMeterThread: Thread finished: Open-loop arrivals 1-18
+2026-11-21 21:40:06,089 INFO o.a.j.t.JMeterThread: Thread started: Open-loop arrivals 1-19
+2026-11-21 21:40:08,906 INFO o.a.j.t.JMeterThread: Thread is done: Open-loop arrivals 1-19
+2026-11-21 21:40:08,907 INFO o.a.j.t.JMeterThread: Thread finished: Open-loop arrivals 1-19
+2026-11-21 21:40:47,726 INFO o.a.j.t.JMeterThread: Thread started: Open-loop arrivals 1-20
+2026-11-21 21:40:52,432 INFO o.a.j.t.JMeterThread: Thread is done: Open-loop arrivals 1-20
+2026-11-21 21:40:52,433 INFO o.a.j.t.JMeterThread: Thread finished: Open-loop arrivals 1-20
+2026-11-21 21:41:20,602 INFO o.a.j.t.JMeterThread: Thread started: Open-loop arrivals 1-21
+2026-11-21 21:41:23,907 INFO o.a.j.t.JMeterThread: Thread is done: Open-loop arrivals 1-21
+2026-11-21 21:41:23,908 INFO o.a.j.t.JMeterThread: Thread finished: Open-loop arrivals 1-21
+2026-11-21 21:41:52,153 INFO o.a.j.t.JMeterThread: Thread started: Open-loop arrivals 1-22
+2026-11-21 21:41:55,421 INFO o.a.j.t.JMeterThread: Thread is done: Open-loop arrivals 1-22
+2026-11-21 21:41:55,421 INFO o.a.j.t.JMeterThread: Thread finished: Open-loop arrivals 1-22
+2026-11-21 21:42:24,489 INFO o.a.j.t.JMeterThread: Thread started: Open-loop arrivals 1-23
+2026-11-21 21:42:26,772 INFO o.a.j.t.JMeterThread: Thread is done: Open-loop arrivals 1-23
+2026-11-21 21:42:26,772 INFO o.a.j.t.JMeterThread: Thread finished: Open-loop arrivals 1-23
+2026-11-21 21:42:36,284 INFO o.a.j.t.JMeterThread: Thread started: Open-loop arrivals 1-24
+2026-11-21 21:42:42,058 INFO o.a.j.t.JMeterThread: Thread is done: Open-loop arrivals 1-24
+2026-11-21 21:42:42,058 INFO o.a.j.t.JMeterThread: Thread finished: Open-loop arrivals 1-24
+2026-11-21 21:43:00,182 INFO o.a.j.t.JMeterThread: Thread started: Open-loop arrivals 1-25
+2026-11-21 21:43:02,908 INFO o.a.j.r.Summariser: summary +     12 in 00:05:32 =    0.0/s Avg:  3854 Min:  2280 Max:  6334 Err:     0 (0.00%) Active: 1 Started: 25 Finished: 24
+2026-11-21 21:43:02,909 INFO o.a.j.r.Summariser: summary =     25 in 00:11:36 =    0.0/s Avg:  4073 Min:  2280 Max: 10359 Err:     0 (0.00%)
+2026-11-21 21:43:02,909 INFO o.a.j.t.JMeterThread: Thread is done: Open-loop arrivals 1-25
+2026-11-21 21:43:02,909 INFO o.a.j.t.JMeterThread: Thread finished: Open-loop arrivals 1-25
+2026-11-21 21:43:31,414 INFO o.a.j.t.JMeterThread: Thread started: Open-loop arrivals 1-26
+2026-11-21 21:43:34,740 INFO o.a.j.r.Summariser: summary +      1 in 00:00:32 =    0.0/s Avg:  3324 Min:  3324 Max:  3324 Err:     0 (0.00%) Active: 1 Started: 26 Finished: 25
+2026-11-21 21:43:34,744 INFO o.a.j.r.Summariser: summary =     26 in 00:12:08 =    0.0/s Avg:  4044 Min:  2280 Max: 10359 Err:     0 (0.00%)
+2026-11-21 21:43:34,745 INFO o.a.j.t.JMeterThread: Thread is done: Open-loop arrivals 1-26
+2026-11-21 21:43:34,745 INFO o.a.j.t.JMeterThread: Thread finished: Open-loop arrivals 1-26
+2026-11-21 21:45:30,075 INFO o.a.j.t.JMeterThread: Thread started: Open-loop arrivals 1-27
+2026-11-21 21:45:32,576 INFO o.a.j.t.JMeterThread: Thread started: Open-loop arrivals 1-28
+2026-11-21 21:45:36,648 INFO o.a.j.t.JMeterThread: Thread is done: Open-loop arrivals 1-27
+2026-11-21 21:45:36,648 INFO o.a.j.t.JMeterThread: Thread finished: Open-loop arrivals 1-27
+2026-11-21 21:45:39,173 INFO o.a.j.t.JMeterThread: Thread started: Open-loop arrivals 1-29
+2026-11-21 21:45:43,679 INFO o.a.j.t.JMeterThread: Thread is done: Open-loop arrivals 1-28
+2026-11-21 21:45:43,679 INFO o.a.j.t.JMeterThread: Thread finished: Open-loop arrivals 1-28
+2026-11-21 21:45:46,465 INFO o.a.j.t.JMeterThread: Thread is done: Open-loop arrivals 1-29
+2026-11-21 21:45:46,466 INFO o.a.j.t.JMeterThread: Thread finished: Open-loop arrivals 1-29
+2026-11-21 21:45:54,032 INFO o.a.j.t.JMeterThread: Thread started: Open-loop arrivals 1-30
+2026-11-21 21:45:57,678 INFO o.a.j.t.o.EvenArrivalsRamp: Generating 0 events, beginRate = 0.0 / sec, endRate = 0.0 / sec, duration = 360.0 sec
+2026-11-21 21:45:57,678 INFO o.a.j.t.JMeterThread: Thread started: Open-loop arrivals 1-31
+2026-11-21 21:45:57,679 INFO o.a.j.t.o.OpenModelThreadGroup: There will be no more events, so will wait for 389 sec till the end of the schedule
+2026-11-21 21:45:59,981 INFO o.a.j.t.JMeterThread: Thread is done: Open-loop arrivals 1-30
+2026-11-21 21:45:59,982 INFO o.a.j.t.JMeterThread: Thread finished: Open-loop arrivals 1-30
+2026-11-21 21:46:02,696 INFO o.a.j.r.Summariser: summary +      5 in 00:02:28 =    0.0/s Avg:  7184 Min:  5015 Max: 11101 Err:     0 (0.00%) Active: 1 Started: 31 Finished: 30
+2026-11-21 21:46:02,698 INFO o.a.j.r.Summariser: summary =     31 in 00:14:36 =    0.0/s Avg:  4551 Min:  2280 Max: 11101 Err:     0 (0.00%)
+2026-11-21 21:46:02,699 INFO o.a.j.t.JMeterThread: Thread is done: Open-loop arrivals 1-31
+2026-11-21 21:46:02,699 INFO o.a.j.t.JMeterThread: Thread finished: Open-loop arrivals 1-31
+2026-11-21 21:52:26,700 INFO o.a.j.t.o.OpenModelThreadGroup: There will be no more events, will shutdown the thread pool
+2026-11-21 21:52:26,701 INFO o.a.j.t.o.OpenModelThreadGroup: Thread starting done
+2026-11-21 21:52:26,701 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-11-21 21:52:26,701 INFO o.a.j.s.FileServer: Close: C:\Users\north\OneDrive\Documents\School\Y3S1\3113-PTO\ICT3113-P1-12\testing\jmeter\data\a2\workload.tsv
+2026-11-21 21:52:26,705 INFO o.a.j.r.Summariser: summary =     31 in 00:21:00 =    0.0/s Avg:  4551 Min:  2280 Max: 11101 Err:     0 (0.00%)
+2026-11-21 21:52:26,707 INFO o.a.j.JMeter: Generating Dashboard
+2026-11-21 21:52:26,707 INFO o.a.j.r.d.ReportGenerator: Flushing result collector before report Generation
+2026-11-21 21:52:26,722 INFO o.a.j.r.p.NormalizerSampleConsumer: Using format, 'ms', to parse timeStamp field
+2026-11-21 21:52:26,912 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): beginDate produced 0 samples
+2026-11-21 21:52:26,912 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): endDate produced 0 samples
+2026-11-21 21:52:26,917 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ApdexSummaryConsumer#stopProducing(): apdexSummary produced 0 samples
+2026-11-21 21:52:26,917 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.RequestsSummaryConsumer#stopProducing(): requestsSummary produced 0 samples
+2026-11-21 21:52:26,922 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.StatisticsSummaryConsumer#stopProducing(): statisticsSummary produced 0 samples
+2026-11-21 21:52:26,923 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.Top5ErrorsBySamplerConsumer#stopProducing(): top5ErrorsBySampler produced 0 samples
+2026-11-21 21:52:26,923 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ErrorsSummaryConsumer#stopProducing(): errorsSummary produced 0 samples
+2026-11-21 21:52:26,924 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.HitsPerSecondGraphConsumer#stopProducing(): hitsPerSecond produced 0 samples
+2026-11-21 21:52:26,942 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyVSRequestGraphConsumer#stopProducing(): latencyVsRequest produced 0 samples
+2026-11-21 21:52:26,942 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.SyntheticResponseTimeDistributionGraphConsumer#stopProducing(): syntheticResponseTimeDistribution produced 0 samples
+2026-11-21 21:52:26,942 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.BytesThroughputGraphConsumer#stopProducing(): bytesThroughputOverTime produced 0 samples
+2026-11-21 21:52:26,943 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.CodesPerSecondGraphConsumer#stopProducing(): codesPerSecond produced 0 samples
+2026-11-21 21:52:26,949 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeVSRequestGraphConsumer#stopProducing(): responseTimeVsRequest produced 0 samples
+2026-11-21 21:52:26,949 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): startIntervalControlerFilter produced 217 samples
+2026-11-21 21:52:26,949 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TotalTPSGraphConsumer#stopProducing(): totalTPS produced 0 samples
+2026-11-21 21:52:26,949 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ActiveThreadsGraphConsumer#stopProducing(): activeThreadsOverTime produced 0 samples
+2026-11-21 21:52:26,949 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TimeVSThreadGraphConsumer#stopProducing(): timeVsThreads produced 0 samples
+2026-11-21 21:52:26,949 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeDistributionGraphConsumer#stopProducing(): responseTimeDistribution produced 0 samples
+2026-11-21 21:52:26,950 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TransactionsPerSecondGraphConsumer#stopProducing(): transactionsPerSecond produced 0 samples
+2026-11-21 21:52:26,950 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesGraphConsumer#stopProducing(): responseTimePercentiles produced 0 samples
+2026-11-21 21:52:26,950 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesOverTimeGraphConsumer#stopProducing(): responseTimePercentilesOverTime produced 0 samples
+2026-11-21 21:52:26,951 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeOverTimeGraphConsumer#stopProducing(): responseTimesOverTime produced 0 samples
+2026-11-21 21:52:26,951 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ConnectTimeOverTimeGraphConsumer#stopProducing(): connectTimeOverTime produced 0 samples
+2026-11-21 21:52:26,951 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyOverTimeGraphConsumer#stopProducing(): latenciesOverTime produced 0 samples
+2026-11-21 21:52:26,951 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): nameFilter produced 465 samples
+2026-11-21 21:52:26,951 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): dateRangeFilter produced 93 samples
+2026-11-21 21:52:26,951 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.NormalizerSampleConsumer#stopProducing(): normalizer produced 31 samples
+2026-11-21 21:52:26,952 INFO o.a.j.r.p.CsvFileSampleSource: produce(): 31 samples produced in 197ms on channel 0
+2026-11-21 21:52:26,952 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'json' of className:'org.apache.jmeter.report.dashboard.JsonExporter'
+2026-11-21 21:52:27,003 INFO o.a.j.r.d.JsonExporter: Found data for consumer statisticsSummary in context
+2026-11-21 21:52:27,004 INFO o.a.j.r.d.JsonExporter: Creating statistics for overall
+2026-11-21 21:52:27,004 INFO o.a.j.r.d.JsonExporter: Creating statistics for other transactions
+2026-11-21 21:52:27,005 INFO o.a.j.r.d.JsonExporter: Checking output folder
+2026-11-21 21:52:27,006 INFO o.a.j.r.d.JsonExporter: Writing statistics JSON to C:\Users\north\OneDrive\Documents\School\Y3S1\3113-PTO\ICT3113-P1-12\testing\jmeter\results_a2\cascade-S2\html\cascade-S2_r2.0859_rep1\statistics.json
+2026-11-21 21:52:27,033 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'html' of className:'org.apache.jmeter.report.dashboard.HtmlTemplateExporter'
+2026-11-21 21:52:27,035 INFO o.a.j.r.d.HtmlTemplateExporter: Will generate dashboard in folder: C:\Users\north\OneDrive\Documents\School\Y3S1\3113-PTO\ICT3113-P1-12\testing\jmeter\results_a2\cascade-S2\html\cascade-S2_r2.0859_rep1
+2026-11-21 21:52:27,114 INFO o.a.j.r.d.HtmlTemplateExporter: Report will be generated in: C:\Users\north\OneDrive\Documents\School\Y3S1\3113-PTO\ICT3113-P1-12\testing\jmeter\results_a2\cascade-S2\html\cascade-S2_r2.0859_rep1, creating folder structure
+2026-11-21 21:52:27,115 INFO o.a.j.r.d.TemplateVisitor: Copying folder from 'C:\Users\north\Downloads\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin\report-template' to 'C:\Users\north\OneDrive\Documents\School\Y3S1\3113-PTO\ICT3113-P1-12\testing\jmeter\results_a2\cascade-S2\html\cascade-S2_r2.0859_rep1', got message: C:\Users\north\OneDrive\Documents\School\Y3S1\3113-PTO\ICT3113-P1-12\testing\jmeter\results_a2\cascade-S2\html\cascade-S2_r2.0859_rep1, found non empty folder with following content [C:\Users\north\OneDrive\Documents\School\Y3S1\3113-PTO\ICT3113-P1-12\testing\jmeter\results_a2\cascade-S2\html\cascade-S2_r2.0859_rep1\statistics.json], will be ignored
+2026-11-21 21:52:27,652 INFO o.a.j.JMeter: Dashboard generated

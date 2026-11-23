@@ -1,0 +1,4 @@
+model,rate_per_min,rep,jtl,jmeter_samples,log_entries_in_window,jmeter_codes,log_codes,jmeter_timeouts,ids_matched,ids_missing_in_log,log_200_not_success_in_jmeter,log_models,escalated,completed_in_log,escalation_fraction,final_models,overhead_p50_ms,clock_offset_s,verdict
+cascade-S2,2.0859,1,cascade-S2_r2.0859_rep1.jtl,31,31,200 x31,200 x31,0,31,0,0,llama3.2:3b x31,,,,,44.4,0.044,"CHECK: log shows model(s) ['llama3.2:3b'], run is labelled 'cascade-S2'"
+cascade-S2,2.0859,2,cascade-S2_r2.0859_rep2.jtl,31,31,200 x31,200 x31,0,31,0,0,llama3.2:3b x31,,,,,40.7,0.048,"CHECK: log shows model(s) ['llama3.2:3b'], run is labelled 'cascade-S2'"
+cascade-S2,2.0859,3,cascade-S2_r2.0859_rep3.jtl,31,31,200 x31,200 x31,0,31,0,0,llama3.2:3b x31,,,,,34.5,0.05,"CHECK: log shows model(s) ['llama3.2:3b'], run is labelled 'cascade-S2'"

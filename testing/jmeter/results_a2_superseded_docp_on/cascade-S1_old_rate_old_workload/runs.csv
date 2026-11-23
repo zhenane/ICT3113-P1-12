@@ -1,0 +1,4 @@
+model,rate_per_min,duration_min,rep,started_at,jtl,jmeter_exit,stats_before,stats_after,stats_delta,jmeter_successes,jmeter_samples,stats_matches_jmeter,p95_ms,error_rate,window_start_epoch,window_end_epoch,ollama_restarted,both_models_confirmed
+cascade-S1,2.0859,15,1,2026-11-22T17:13:31,cascade-S1_r2.0859_rep1.jtl,0,224,250,26,26,31,True,58014,0.1613,1795338811.272,1795340148.247,yes,yes
+cascade-S1,2.0859,15,2,2026-11-22T17:44:40,cascade-S1_r2.0859_rep2.jtl,0,253,275,22,22,31,True,62027,0.2903,1795340680.192,1795342017.273,yes,yes
+cascade-S1,2.0859,15,3,2026-11-22T18:11:44,cascade-S1_r2.0859_rep3.jtl,0,278,301,23,23,31,True,57082,0.2581,1795342304.441,1795343641.294,yes,yes
