@@ -1,2 +1,2 @@
 model,rate_per_min,runs,sent,completed,errored,unfinished,p50_mean_ms,p50_sd_ms,p50_min_ms,p50_max_ms,p50_pooled_ms,p95_pooled_ms,p95_pooled_n,throughput_mean_rps,throughput_sd_rps,error_rate_mean,server_p50_mean_ms,overhead_p50_mean_ms,stats_mismatches
-qwen3:1.7b,2.0859,3,93,85,8,0,25536.1667,6329.8175,19675.0000,32248.5000,26220.0000,56124.2000,85,0.0306,0.0023,0.0860,25479.2133,47.6700,0
+qwen3:1.7b,1.4382,3,90,73,17,0,28277.3333,4030.6650,23738.0000,31437.0000,28752.0000,54419.6000,73,0.0193,0.0017,0.1889,28222.4650,45.3383,0

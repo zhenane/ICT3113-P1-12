@@ -1,4 +1,4 @@
-model,rate_per_min,rep,jtl,jmeter_samples,log_entries_in_window,jmeter_codes,log_codes,jmeter_timeouts,ids_matched,ids_missing_in_log,log_200_not_success_in_jmeter,log_models,escalated,completed_in_log,escalation_fraction,final_models,overhead_p50_ms,clock_offset_s,verdict
-qwen3:1.7b,2.0859,1,qwen3-1.7b_r2.0859_rep1.jtl,31,31,200 x26; 502 x5,200 x26; 502 x5,0,26,0,0,qwen3:1.7b x26,,,,,32.6,3.669,RECONCILED
-qwen3:1.7b,2.0859,2,qwen3-1.7b_r2.0859_rep2.jtl,31,31,200 x30; 502 x1,200 x30; 502 x1,0,30,0,0,qwen3:1.7b x30,,,,,27.0,0.028,RECONCILED
-qwen3:1.7b,2.0859,3,qwen3-1.7b_r2.0859_rep3.jtl,31,31,200 x29; 502 x2,200 x29; 502 x2,0,29,0,0,qwen3:1.7b x29,,,,,25.2,0.024,RECONCILED
+model,rate_per_min,rep,jtl,jmeter_samples,log_entries_in_window,jmeter_codes,log_codes,jmeter_timeouts,ids_matched,ids_missing_in_log,log_200_not_success_in_jmeter,log_models,escalated,completed_in_log,escalation_fraction,escalation_fraction_completed,decision_reasons,final_models,overhead_p50_ms,clock_offset_s,verdict
+qwen3:1.7b,1.4382,1,qwen3-1.7b_r1.4382_rep1.jtl,30,30,200 x25; 502 x5,200 x25; 502 x5,0,25,0,0,qwen3:1.7b x25,,,,,,,20.6,1.853,RECONCILED
+qwen3:1.7b,1.4382,2,qwen3-1.7b_r1.4382_rep2.jtl,30,30,200 x22; 502 x8,200 x22; 502 x8,0,22,0,0,qwen3:1.7b x22,,,,,,,24.1,1.693,RECONCILED
+qwen3:1.7b,1.4382,3,qwen3-1.7b_r1.4382_rep3.jtl,30,30,200 x26; 502 x4,200 x26; 502 x4,0,26,0,0,qwen3:1.7b x26,,,,,,,26.3,1.605,RECONCILED

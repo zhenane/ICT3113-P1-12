@@ -1,0 +1,4 @@
+model,rate_per_min,rep,jtl,jmeter_samples,log_entries_in_window,jmeter_codes,log_codes,jmeter_timeouts,ids_matched,ids_missing_in_log,log_200_not_success_in_jmeter,log_models,escalated,completed_in_log,escalation_fraction,escalation_fraction_completed,decision_reasons,final_models,overhead_p50_ms,clock_offset_s,verdict
+cascade-S1,1.4382,1,cascade-S1_r1.4382_rep1.jtl,30,30,200 x25; 502 x5,200 x25; 502 x5,0,25,0,0,,25,30,0.8333,0.8,unsafe_category x25; safe_category x5,qwen3:1.7b x20; llama3.2:3b x5,37.8,1.489,RECONCILED
+cascade-S1,1.4382,2,cascade-S1_r1.4382_rep2.jtl,30,30,200 x25; 502 x5,200 x25; 502 x5,0,25,0,0,,24,30,0.8,0.76,unsafe_category x24; safe_category x6,qwen3:1.7b x19; llama3.2:3b x6,39.5,1.48,RECONCILED
+cascade-S1,1.4382,3,cascade-S1_r1.4382_rep3.jtl,30,30,200 x23; 502 x7,200 x23; 502 x7,0,23,0,0,,25,30,0.8333,0.7826,unsafe_category x25; safe_category x5,qwen3:1.7b x18; llama3.2:3b x5,34.7,1.475,RECONCILED

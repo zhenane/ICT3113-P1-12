@@ -1,0 +1,4 @@
+model,rate_per_min,rep,sent,completed,errored,unfinished,error_rate,throughput_rps,arrival_rps,p50_ms,mean_ms,max_ms,server_p50_ms,overhead_p50_ms,error_breakdown,stats_delta,stats_matches_completed,jtl
+cascade-S1,1.4382,1,30,25,5,0,0.1667,0.0196,0.0239,33681.0000,31083.9200,63103.0000,33623.1800,57.8200,502 x5,25,True,results_a2\cascade-S1\cascade-S1_r1.4382_rep1.jtl
+cascade-S1,1.4382,2,30,25,5,0,0.1667,0.0199,0.0239,27432.0000,27804.1600,64604.0000,27388.8400,58.4000,502 x5,25,True,results_a2\cascade-S1\cascade-S1_r1.4382_rep2.jtl
+cascade-S1,1.4382,3,30,23,7,0,0.2333,0.0180,0.0237,27502.0000,30761.0870,65565.0000,27451.2800,55.5300,502 x7,23,True,results_a2\cascade-S1\cascade-S1_r1.4382_rep3.jtl

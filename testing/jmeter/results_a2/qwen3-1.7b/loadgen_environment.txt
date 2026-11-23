@@ -1,4 +1,4 @@
-recorded: 2026-11-21T16:38:37
+recorded: 2026-11-23T19:18:17
 load generator: kaiwei | Windows-11-10.0.26200-SP0 | Intel64 Family 6 Model 154 Stepping 4, GenuineIntel
 python: 3.12.6
 target: http://192.168.0.15:8000

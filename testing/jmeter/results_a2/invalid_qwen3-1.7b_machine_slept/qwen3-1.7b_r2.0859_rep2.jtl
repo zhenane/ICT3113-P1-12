@@ -1,2 +1,0 @@
-timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect,"server_latency_ms","category","ticket_id"
-1795206934945,20945,POST /tickets,200,OK,Open-loop arrivals 1-1,text,true,,180,1038,2,2,http://192.168.0.15:8000/tickets,20944,0,51,20843.49,Mortgage,5247

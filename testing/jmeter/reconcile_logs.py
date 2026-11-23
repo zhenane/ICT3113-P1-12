@@ -188,14 +188,21 @@ def reconcile_run(run, jtl_rows, log, args):
     out["jmeter_timeouts"] = timeouts
 
     # --- escalation (cascade): fraction of this run's completed tickets that were escalated ---
-    ok_entries = [e for e in in_window if e.get("status_code") == 200]
-    is_cascade = any(args.escalation_field in e for e in ok_entries)
+    # Definition (escalation_rule.md): escalated = true / all cascade rows in the run's log,
+    # including requests that later failed. Also reported over completed (HTTP 200) rows only.
+    casc = [e for e in in_window if args.escalation_field in e]
+    is_cascade = bool(casc)
     if is_cascade:
-        esc = sum(1 for e in ok_entries if _truthy(e.get(args.escalation_field)))
+        esc = sum(1 for e in casc if _truthy(e.get(args.escalation_field)))
+        ok_c = [e for e in casc if e.get("status_code") == 200]
+        esc_ok = sum(1 for e in ok_c if _truthy(e.get(args.escalation_field)))
         out["escalated"] = esc
-        out["completed_in_log"] = len(ok_entries)
-        out["escalation_fraction"] = round(esc / len(ok_entries), 4) if ok_entries else ""
-        finals = Counter(str(e.get(args.final_model_field, e.get("model"))) for e in ok_entries)
+        out["completed_in_log"] = len(casc)          # all cascade rows (column name kept for compatibility)
+        out["escalation_fraction"] = round(esc / len(casc), 4)
+        out["escalation_fraction_completed"] = round(esc_ok / len(ok_c), 4) if ok_c else ""
+        reasons = Counter(str(e.get("decision_reason", "")) for e in casc if e.get("decision_reason"))
+        out["decision_reasons"] = "; ".join(f"{k} x{v}" for k, v in reasons.most_common())
+        finals = Counter(str(e.get(args.final_model_field, e.get("model"))) for e in ok_c)
         out["final_models"] = "; ".join(f"{k} x{v}" for k, v in finals.most_common())
 
     # --- model check (single-model configs only) ---
@@ -270,7 +277,7 @@ def main():
         fields = ["model", "rate_per_min", "rep", "jtl", "jmeter_samples", "log_entries_in_window",
                   "jmeter_codes", "log_codes", "jmeter_timeouts", "ids_matched", "ids_missing_in_log",
                   "log_200_not_success_in_jmeter", "log_models", "escalated", "completed_in_log",
-                  "escalation_fraction", "final_models", "overhead_p50_ms", "clock_offset_s", "verdict"]
+                  "escalation_fraction", "escalation_fraction_completed", "decision_reasons", "final_models", "overhead_p50_ms", "clock_offset_s", "verdict"]
         out = mpath.parent / "reconciliation.csv"
         with out.open("w", newline="", encoding="utf-8") as f:
             w = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore")

@@ -1,2 +1,0 @@
-model,rate_per_min,duration_min,rep,started_at,jtl,jmeter_exit,stats_before,stats_after,stats_delta,jmeter_successes,jmeter_samples,stats_matches_jmeter,p95_ms,error_rate,window_start_epoch,window_end_epoch,ollama_restarted,both_models_confirmed
-qwen3:1.7b,2.0859,15,1,2026-11-21T04:11:11,qwen3-1.7b_r2.0859_rep1.jtl,0,5232,5243,11,11,31,True,45938,0.6452,1795205471.541,1795206808.366,yes,

@@ -14,12 +14,19 @@ caches prompts it has seen, which would make a repeat unrealistically fast):
 
   warm-up (3)      typical length, sent before every run, timings thrown away
   S tickets (3)    typical length, used once by measure_s.py
-  workload (45)    30 typical + 15 long, shuffled once with a fixed seed. A run
-                   at the A2 rate sends ~30 tickets on average; 45 means the list
-                   practically never wraps round (which would repeat a ticket).
+  workload (45)    stratified by WORD COUNT: 9 tickets from each fifth (quintile)
+                   of the non-golden length distribution, shuffled once with a
+                   fixed seed. This keeps the real mix of short, typical and long
+                   tickets. That matters for the cascade: setting S2 accepts the
+                   small model on tickets of <= 80 words (~19% of real tickets),
+                   so a workload with no short tickets would make S2 behave
+                   exactly like S1. A run at the A2 rate sends ~30 tickets on
+                   average; 45 means the list practically never wraps round.
 
-"Typical" = between the 40th and 60th percentile of narrative length,
-"long"    = above the 90th percentile (of the non-golden rows).
+Length = words counted on whitespace, as the escalation rule does
+(len(narrative.strip().split())). "Typical" = 40th-60th percentile;
+labels in workload_rows.csv: short (<= 80 words), long (longest fifth, > 80th percentile),
+otherwise typical.
 
 Usage (from testing/jmeter/):
     python select_workload.py --tickets ../../data/raw/team_12_tickets.csv \
@@ -51,12 +58,16 @@ def read_csv(path):
         return list(csv.DictReader(f))
 
 
+def words(r):
+    return len(r["narrative"].strip().split())
+
+
 def write_set(out, name, rows, kinds):
     with (out / f"{name}_rows.csv").open("w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
-        w.writerow(["order", "row", "chars", "kind"])
+        w.writerow(["order", "row", "words", "chars", "kind"])
         for i, (r, k) in enumerate(zip(rows, kinds), 1):
-            w.writerow([i, r["row"], len(r["narrative"].strip()), k])
+            w.writerow([i, r["row"], words(r), len(r["narrative"].strip()), k])
     tsv = "workload" if name == "workload" else ("warmup" if name == "warmup" else "s_tickets")
     with (out / f"{tsv}.tsv").open("w", encoding="ascii", newline="\n") as f:
         f.write("body\n")
@@ -69,8 +80,8 @@ def main():
     ap.add_argument("--tickets", default=str(HERE.parent.parent / "data" / "raw" / "team_12_tickets.csv"))
     ap.add_argument("--golden", default=str(HERE.parent.parent / "golden-test-set" / "final" / "golden_test_set.csv"))
     ap.add_argument("--out", default=str(HERE / "data" / "a2"))
-    ap.add_argument("--typical", type=int, default=30)
-    ap.add_argument("--long", type=int, default=15)
+    ap.add_argument("--per-quintile", type=int, default=9, help="workload tickets per length quintile")
+    ap.add_argument("--short-words", type=int, default=80, help="label tickets <= this many words 'short'")
     ap.add_argument("--seed", type=int, default=3113)
     args = ap.parse_args()
 
@@ -79,35 +90,42 @@ def main():
     pool = [r for r in tickets if r["row"] not in golden and r.get("narrative", "").strip()]
     if not pool:
         sys.exit("No non-golden tickets found")
-    pool.sort(key=lambda r: (len(r["narrative"].strip()), int(r["row"])))
+    pool.sort(key=lambda r: (words(r), int(r["row"])))
     n = len(pool)
     typical = pool[int(0.40 * n):int(0.60 * n)]
-    long_ = pool[int(0.90 * n):]
+    p80 = words(pool[int(0.80 * (n - 1))])
 
     rng = random.Random(args.seed)
-    need_typ = 3 + 3 + args.typical
-    if len(typical) < need_typ or len(long_) < args.long:
-        sys.exit(f"Not enough tickets: typical pool {len(typical)} (need {need_typ}), long pool {len(long_)}")
-    typ_pick = rng.sample(typical, need_typ)
-    warm, s_rows, work_typ = typ_pick[:3], typ_pick[3:6], typ_pick[6:]
-    work_long = rng.sample(long_, args.long)
-    workload = [(r, "typical") for r in work_typ] + [(r, "long") for r in work_long]
+    warm_s = rng.sample(typical, 6)
+    warm, s_rows = warm_s[:3], warm_s[3:]
+    taken = {r["row"] for r in warm_s}
+    workload = []
+    for q in range(5):
+        band = [r for r in pool[int(q * n / 5):int((q + 1) * n / 5)] if r["row"] not in taken]
+        if len(band) < args.per_quintile:
+            sys.exit(f"Quintile {q + 1} has only {len(band)} tickets")
+        workload += rng.sample(band, args.per_quintile)
     rng.shuffle(workload)
+    kind = lambda r: ("short" if words(r) <= args.short_words else "long" if words(r) > p80 else "typical")  # noqa: E731
 
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
     write_set(out, "warmup", warm, ["typical"] * 3)
     write_set(out, "s", s_rows, ["typical"] * 3)
-    write_set(out, "workload", [r for r, _ in workload], [k for _, k in workload])
+    write_set(out, "workload", workload, [kind(r) for r in workload])
 
-    lens = lambda rs: [len(r["narrative"].strip()) for r in rs]  # noqa: E731
-    print(f"Non-golden pool: {n} tickets (golden rows excluded: {len(golden)})")
-    print(f"Typical band (p40-p60): {lens(typical)[0]}-{lens(typical)[-1]} chars; "
-          f"long (>p90): {lens(long_)[0]}-{lens(long_)[-1]} chars")
-    print(f"Warm-up rows : {[r['row'] for r in warm]}")
-    print(f"S rows       : {[r['row'] for r in s_rows]}")
-    print(f"Workload     : {len(workload)} tickets ({args.typical} typical + {args.long} long), "
-          f"first 10 rows {[r['row'] for r, _ in workload[:10]]}")
+    wl = [words(r) for r in workload]
+    kinds = [kind(r) for r in workload]
+    pw = [words(r) for r in pool]
+    print(f"Non-golden pool: {n} tickets (golden rows excluded: {len(golden)}); words median {pw[n // 2]}, "
+          f"p80 {p80}; <= {args.short_words} words: {sum(w <= args.short_words for w in pw) / n:.1%}")
+    print(f"Warm-up rows : {[r['row'] for r in warm]}  (words {[words(r) for r in warm]})")
+    print(f"S rows       : {[r['row'] for r in s_rows]}  (words {[words(r) for r in s_rows]})")
+    print(f"Workload     : {len(workload)} tickets, {args.per_quintile} per length quintile; "
+          f"short {kinds.count('short')}, typical {kinds.count('typical')}, long {kinds.count('long')}; "
+          f"words {min(wl)}-{max(wl)}, median {sorted(wl)[len(wl) // 2]}")
+    print(f"             first 30 (a typical run): <= {args.short_words} words "
+          f"{sum(w <= args.short_words for w in wl[:30])}/30")
     print(f"Wrote {out}/workload_rows.csv (commit this), workload.tsv, warmup_rows.csv, warmup.tsv, "
           f"s_rows.csv, s_tickets.tsv")
 

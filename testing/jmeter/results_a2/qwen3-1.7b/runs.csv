@@ -1,4 +1,4 @@
 model,rate_per_min,duration_min,rep,started_at,jtl,jmeter_exit,stats_before,stats_after,stats_delta,jmeter_successes,jmeter_samples,stats_matches_jmeter,p95_ms,error_rate,window_start_epoch,window_end_epoch,ollama_restarted,both_models_confirmed
-qwen3:1.7b,2.0859,15,1,2026-11-21T16:40:01,qwen3-1.7b_r2.0859_rep1.jtl,0,5252,5278,26,26,31,True,54357,0.1613,1795250401.689,1795251739.718,yes,
-qwen3:1.7b,2.0859,15,2,2026-11-21T17:17:16,qwen3-1.7b_r2.0859_rep2.jtl,0,5281,5311,30,30,31,True,55017,0.0323,1795252636.763,1795253973.870,yes,
-qwen3:1.7b,2.0859,15,3,2026-11-21T17:45:23,qwen3-1.7b_r2.0859_rep3.jtl,0,5314,5343,29,29,31,True,56718,0.0645,1795254323.379,1795255660.326,yes,
+qwen3:1.7b,1.4382,21,1,2026-11-23T19:19:34,qwen3-1.7b_r1.4382_rep1.jtl,0,316,341,25,25,30,True,52495,0.1667,1795432774.656,1795434471.531,yes,
+qwen3:1.7b,1.4382,21,2,2026-11-23T19:49:31,qwen3-1.7b_r1.4382_rep2.jtl,0,344,366,22,22,30,True,50738,0.2667,1795434571.545,1795436268.533,yes,
+qwen3:1.7b,1.4382,21,3,2026-11-23T20:19:05,qwen3-1.7b_r1.4382_rep3.jtl,0,369,395,26,26,30,True,54826,0.1333,1795436345.810,1795438042.627,yes,
